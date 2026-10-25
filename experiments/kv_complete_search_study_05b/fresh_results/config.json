@@ -1,0 +1,75 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B",
+  "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "groups": [
+    1,
+    8,
+    32,
+    128
+  ],
+  "budgets": [
+    200,
+    400,
+    600
+  ],
+  "methods": [
+    "original",
+    "linear_rbf"
+  ],
+  "epsilons": [
+    0.1,
+    0.25
+  ],
+  "calibrations": [
+    200,
+    600,
+    1200
+  ],
+  "repeats": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "deltas": [
+    0.05,
+    0.01
+  ],
+  "primary_groups": 32,
+  "primary_calibration_count": 600,
+  "primary_epsilon": 0.25,
+  "primary_layer": 12,
+  "old_search_unchanged": true,
+  "new_model_forwards": 0,
+  "hidden_table_replay": true,
+  "query_costs_include_all_stages": true,
+  "frozen_inputs_sha256": {
+    "/path/to/litertlm/kvidence/experiments/kv_guided_search_large/search.py": "c8444d94b50d63d68bf2d57a3fd28f8998e138a9af3fcbfa2d3f1854f128bf3a",
+    "/path/to/litertlm/kvidence/experiments/kv_search_strategies_05b/experiment.py": "772033ba8605284668a09f87d6bedd2a32fb99a6440322c53724f0a480a81f7d",
+    "/path/to/litertlm/kvidence/experiments/kv_linfact_05b/experiment.py": "19ec7d237285ffd305416d05b6c088c3490e2ca09b2868c80505c24366d4c410",
+    "/path/to/litertlm/kvidence/experiments/kv_search_strategies_05b/results/config.json": "49f703728cbf4307f2ce6e673b0a23e578bfcc3697101386845a9af0ab278d78",
+    "/path/to/litertlm/kvidence/experiments/kv_search_strategies_05b/results/trials.json": "de99a9eb1409b02ba373341cb930e083d0af242b23467e2cad98aebbcabaafb6",
+    "/path/to/litertlm/kvidence/experiments/kv_linfact_05b/data/20261019/features.npz": "2a445ccb40634c184b2d3b695509e0eb0bf6a981ad91d087ca6bbd41efda1554",
+    "/path/to/litertlm/kvidence/experiments/kv_linfact_05b/data/20261019/prefix_0.npz": "73437327e9c91e39901ba4ae3f392f7f64a4c266d4995fde3db7f2f8fcd3cbcc",
+    "/path/to/litertlm/kvidence/experiments/kv_linfact_05b/data/20261019/prefix_1.npz": "8dd7952daea5622cf19bd1ed9284756eae2ffe58e90beeb16f9760eb835a6ba0",
+    "/path/to/litertlm/kvidence/experiments/kv_linfact_05b/data/20261019/prefix_2.npz": "190d0515307b58422c0d9189b08bbba589ca3366264152b5fb2413d7dc6c9488",
+    "/path/to/litertlm/kvidence/experiments/kv_linfact_05b/data/20261019/prefix_3.npz": "87e53adb454dda62d588856a8ad4357c4ae96db9f7dac87e3658a1e06047f103",
+    "/path/to/litertlm/kvidence/experiments/kv_linfact_05b/data/20261020/features.npz": "6d0bad3bdf22c9cbb4a6261849fc18f1c0bbe6862cea954773b65d445dcfe044",
+    "/path/to/litertlm/kvidence/experiments/kv_linfact_05b/data/20261020/prefix_0.npz": "7164b83695373bc5bcd5d15b98a483520a5d3599fdf08d4a8088f014690299f9",
+    "/path/to/litertlm/kvidence/experiments/kv_linfact_05b/data/20261020/prefix_1.npz": "2ee76cf85604cd81f983ee98ce069e6525ebbaa7b38e94d2c851f7f82df25897",
+    "/path/to/litertlm/kvidence/experiments/kv_linfact_05b/data/20261020/prefix_2.npz": "8e098a68d037cb733c4b8027eaacb5b93819c27ce38940cd7c4ed8932ece3aaf",
+    "/path/to/litertlm/kvidence/experiments/kv_linfact_05b/data/20261020/prefix_3.npz": "fba3dceb0e9f1c6ea09499dc05af3363d0f103b32929f4cd8543f940bf9db83c",
+    "/path/to/litertlm/kvidence/experiments/kv_exclusion_diagnostic_05b/results/diagnostic.json": "ec19a843d7bff7a33875fdf3ef75c3532c5a92dcab3301d4b9db32ab2d539c32",
+    "/path/to/litertlm/kvidence/experiments/kv_exclusion_diagnostic_05b/diagnose.py": "430eb94481b28fb9a456910d814b40a5aa9d569db0555ef6cfa8843b408a398f",
+    "/path/to/litertlm/kvidence/experiments/kv_complete_search_study_05b/experiment.py": "2dd811650fa2da0a028484ec78a7a78b1d0cc542373d9ab418874f733df17dca",
+    "/path/to/litertlm/kvidence/experiments/kv_complete_search_study_05b/results/local.json": "c177d7b92798a0c4c91c68252c4c0c13c05a8422916011215232cc7d46ebb349",
+    "/path/to/litertlm/kvidence/experiments/kv_complete_search_study_05b/results/empirical.json": "3ce61f4344af6f87a09462aa5447ec1e90b4ec4a8f21d25b7249ce57aff9475b"
+  },
+  "source_sha256": "12a320c085821f62fda0c4d2dca7435733ab8d983daed07402aea4ed6f547e49",
+  "protocol_sha256": "6a1cdc82b674377713c931df470ace13e55d90f6b3dddb4b92d534dce2c1100c",
+  "cohort": "fresh",
+  "study_script_sha256": "2dd811650fa2da0a028484ec78a7a78b1d0cc542373d9ab418874f733df17dca",
+  "fresh_targets_per_pool": 8,
+  "target_seed_offset": 14000000
+}

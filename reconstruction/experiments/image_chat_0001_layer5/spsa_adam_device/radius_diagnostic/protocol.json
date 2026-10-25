@@ -1,0 +1,17 @@
+{
+  "selected_start": "synthetic_seed_29",
+  "radii": [
+    0.08,
+    0.02,
+    0.005
+  ],
+  "update_rms": [
+    0.005,
+    0.02,
+    0.05
+  ],
+  "direction_seed": 3107,
+  "identical_directions_for_all_radii": true,
+  "purpose": "local sensitivity test after baseline; no convergence claim",
+  "source_sha256": "3f55bb669b3ef0eed1681c3a48ed5d0516d50b3aa59067a1e14be098f422cccc"
+}

@@ -1,0 +1,14 @@
+{
+  "adapter": "phone tf_lite_vision_adapter/vision_adapter_280, CPU",
+  "decoder": "phone tf_lite_prefill_decode/prefill_128 and decode, NPU",
+  "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+  "target_sha256": "af6b66b92112e54b2806d9df9c3e192a79fadf16d45ffc0746a05141b3a6265d",
+  "method": "separate native finite-difference damped Gauss-Newton feasibility probe; existing algorithm unchanged",
+  "scope": "first image position, public prefix only; expand only after validating this path",
+  "epsilon": 4.0,
+  "seed": 17,
+  "steps": 30,
+  "finite_difference_step": 0.5,
+  "original_image_accessed": false,
+  "original_text_accessed": false
+}

@@ -1,0 +1,84 @@
+{
+  "optimizer": "official_dfbgn",
+  "package_version": "0.1",
+  "source_sha256": "02a888dcda1115c8f7815b332c9cec1b6022e597e97f4fd1f05d983d16aae8dd",
+  "package_source_sha256": {
+    "params.py": "3bec1f137de2939a710bde3655642f22d1d713e8276a686c6c0ecd2cb2f8c8c1",
+    "version.py": "fd85be82c0efed0dbae58ca70fdf587aead9ee6339ecb2df213d4137a528a73d",
+    "solver.py": "4846d621a0c6219df6b0483e3efd27e83aa67cc6cbb5ccf6a1dd0f7570bd63df",
+    "util.py": "2a47091d7443dd6fde2c9171563755ccfe629fc61cc2f775c9f5b18ac482da4a",
+    "diagnostic_info.py": "b3e1e75c11fb1d34e6ff76d69f20d88011324b95344c29effcd39d65329b1858",
+    "hessian.py": "0ca3a6e76d2bac515a5d55eef81b03eda8f6fe2949a21c59dad9ccb2749af331",
+    "__init__.py": "e9039387857c8ad2328c62022e0525222c4c9e1202bf4825e6812e5830921038",
+    "exit_information.py": "83b6a4d788668c3b87c21ba5d5dedc9659e522c075a28123594bf4fed9aebb84",
+    "model.py": "01986e5243fbb5e9ae555dd2c4c6aa6abbbd168cbb0b1ed7b5f9c996e72bfed9",
+    "trust_region.py": "fc1a0ceabc2e4267bb2c3f7f470b931274479a5b12ab5b1bdc3c26561c70b543"
+  },
+  "numpy_compatibility": [
+    "np.int=int",
+    "np.float=float"
+  ],
+  "numpy_version": "2.2.6",
+  "seed": 29,
+  "observation": {
+    "dataset": "image_chat_100",
+    "sample": "0001",
+    "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+    "snapshot_sha256": "ffe191a90dcfb0bbe7198d3267d8d7e4bf737ff1161a7bab2b35b69c6b81944b",
+    "observation_sha256": "a57f6a6caaf2cb76cb9d94f7eabc83dd7f1052feab0a4708b4dfe70d7835e3c9",
+    "layer_index": 4,
+    "quantization": [
+      {
+        "width": 512,
+        "scale": 0.0011563472216948867,
+        "zero_point": 0,
+        "dtype": "int8"
+      },
+      {
+        "width": 512,
+        "scale": 0.01785714365541935,
+        "zero_point": 0,
+        "dtype": "int8"
+      }
+    ],
+    "public_prefix": [
+      2,
+      105,
+      2364,
+      109,
+      255999
+    ],
+    "media_start": 5,
+    "media_end": 265,
+    "image_dimensions": [
+      640,
+      427
+    ],
+    "boundary_source": "known Gemma capture template and public image dimensions; no pixel or text reads",
+    "original_media_accessed": false,
+    "original_text_accessed": false
+  },
+  "distance_space": "lsb",
+  "distance_metric": "rmse",
+  "epsilon": 0.125,
+  "residual": "(measured integer KV codes - target codes) / sqrt(1024); sum of squares is MSE",
+  "seconds": 173.0,
+  "maxfun": 45001,
+  "block": 64,
+  "rhobeg": null,
+  "effective_rhobeg": 0.312872314453125,
+  "rhoend": 1e-08,
+  "user_params": {
+    "logging.save_diagnostic_info": false
+  },
+  "objfun_has_noise": false,
+  "diagnostics_note": "No expensive solver diagnostics; every physical query logged separately",
+  "batch_size": 1,
+  "initial_sha256": "070acf45223536d7417984d8b1768f2a12f0f0965e4d14ab96ae7c5d03947806",
+  "reference_run": "kvidence/reconstruction/experiments/image_trust_region/results/0001_rounds300_seed29_20261020",
+  "warm_run": null,
+  "warm_seconds": 0.0,
+  "warm_queries": 0,
+  "original_media_accessed": false,
+  "original_text_accessed": false
+}

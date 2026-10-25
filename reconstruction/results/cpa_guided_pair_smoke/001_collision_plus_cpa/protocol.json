@@ -1,0 +1,251 @@
+{
+  "schema": 1,
+  "observation_metadata": {
+    "schema": 1,
+    "layer_index": 4,
+    "layer_1based": 5,
+    "quantization": [
+      {
+        "width": 512,
+        "scale": 0.0011563472216948867,
+        "zero_point": 0,
+        "dtype": "int8"
+      },
+      {
+        "width": 512,
+        "scale": 0.01785714365541935,
+        "zero_point": 0,
+        "dtype": "int8"
+      }
+    ],
+    "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+    "source": {
+      "kind": "controlled backend single-token decode fixture",
+      "selection": "greedy next-token; intentionally easy integration smoke"
+    },
+    "metric": "L2 of dequantized original K+V values; no LSB/RMS normalization",
+    "observed_sha256": "329d974211b2ae9454066fd605e528524873ecfd8db5eae275da2056bb5754de"
+  },
+  "config": {
+    "method": "collision_plus_cpa",
+    "epsilon": 4.0,
+    "batch_size": 256,
+    "probability_seeds": 50,
+    "random_seeds": 150,
+    "proposals": 20,
+    "seed": 20261019,
+    "max_queries": null,
+    "kv_thresholds": [
+      0.37839773297309875,
+      10.247016906738281
+    ],
+    "k_width": 512,
+    "stop_partition": 1
+  },
+  "manifest_sha256": "7f6907a74e1257105644912558d349d9c7df240df671374505d9510d2ca415b5",
+  "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+  "model_config": {
+    "name": "Gemma 4 E2B IT / Tensor G5",
+    "model": "/path/to/litertlm/annoymous/models/gemma-4-E2B-it_Google_Tensor_G5.litertlm",
+    "device_model": "/sdcard/Android/data/com.example.annoymous/files/gemma-4-E2B-it_Google_Tensor_G5.litertlm",
+    "manifest": "/path/to/litertlm/kvidence/experiments/npu_candidate_batch/inputs/probe.json",
+    "tokenizer": "/path/to/litertlm/kvidence/experiments/kv_guided_search_gemma4_int8/model/tokenizer.json",
+    "embeddings": "/path/to/litertlm/kvidence/experiments/embedding_hnsw/assets/embeddings.npy",
+    "batch_signature": "prefill_128",
+    "mask_token_id": 1437,
+    "vocabulary": null,
+    "adapter": "litert_tensor_gemma",
+    "first_v_table": "/path/to/litertlm/kvidence/reconstruction/assets/first_v_gemma4_full",
+    "adapter_options": {},
+    "default_layer": 4
+  },
+  "model_config_sha256": "26573347deccfb2c91fc142f8ba4c80e6733546d9afcbcc51bce2622c93834fb",
+  "model_dimensions": {
+    "vocab_size": 262144,
+    "embedding_dim": 1536,
+    "batch_capacity": 128,
+    "context_capacity": 4096
+  },
+  "adapter": "litert_tensor_gemma",
+  "capabilities": {
+    "vocab_size": 262144,
+    "embedding_dim": 1536,
+    "context_capacity": 4096,
+    "batch_capacity": 128,
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "kv_dtype": "int8",
+    "kv_width": 1024
+  },
+  "tokenizer_sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+  "candidate_vocabulary": {
+    "kind": "full_original",
+    "count": 262144,
+    "filtered": false
+  },
+  "original_vocabulary": {
+    "start": 0,
+    "stop_exclusive": 262144,
+    "filtered": false
+  },
+  "max_positions": null,
+  "metric": "separate_k_v_l2_float32",
+  "implementation": "collision_plus_cpa_npu_port",
+  "calibration": {
+    "schema": 1,
+    "identity": {
+      "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+      "manifest_sha256": "7f6907a74e1257105644912558d349d9c7df240df671374505d9510d2ca415b5",
+      "adapter": "litert_tensor_gemma",
+      "batch_signature": "prefill_128",
+      "layer_index": 4,
+      "quantization": [
+        {
+          "width": 512,
+          "scale": 0.0011563472216948867,
+          "zero_point": 0,
+          "dtype": "int8"
+        },
+        {
+          "width": 512,
+          "scale": 0.01785714365541935,
+          "zero_point": 0,
+          "dtype": "int8"
+        }
+      ],
+      "observation_sha256": "686da317f43830f7a7ac5aab505053bd721e09562f6d819e1d0c2968f2cbc89a",
+      "observation_metadata_sha256": "d4e489289b48e5c385e4dcd81e5fe3e275e765cf8a9603d3f15f47f294fb33f2",
+      "runtime": {
+        "runtime_sha256": "ce88d0add27860ebdd50295a5a2cfcce7c35ffb2c76dcf43827f35fd82f932a9",
+        "test_apk_sha256": "05b0b24b48845d0a4614edf43c1e4a9510941d10d6de0f5eae17c06384c868ba",
+        "batch_signature": "prefill_128"
+      }
+    },
+    "metric": "separate K/V Frobenius norms, original values, float32 accumulation",
+    "k_width": 512,
+    "statistics": {
+      "target_mean": [
+        0.0,
+        0.0
+      ],
+      "target_std": [
+        0.0,
+        0.0
+      ],
+      "target_max": [
+        0.0,
+        0.0
+      ],
+      "others_mean": [
+        1.3737106760372049,
+        30.050988587466154
+      ],
+      "others_std": [
+        0.12024095824674966,
+        1.5725862981863887
+      ],
+      "others_min": [
+        0.7567954659461975,
+        20.494033813476562
+      ],
+      "target_count": 8,
+      "others_count": 8184,
+      "std_ddof": 1
+    },
+    "fit": {
+      "rank": 8,
+      "thresholds": [
+        0.37839773297309875,
+        10.247016906738281
+      ],
+      "effective_thresholds": [
+        0.38218171030282977,
+        10.349487075805664
+      ],
+      "branches": [
+        "separated_midpoint",
+        "separated_midpoint"
+      ],
+      "strict_inequality": true,
+      "upstream_commit": "6b40f36edb2f337557543e7e60b10022308883d4",
+      "note": "Rank is an assumed probability rank, not sequence length. Gaussian fit is not a uniqueness proof."
+    },
+    "coverage": {
+      "positions": 8,
+      "candidates": 1024,
+      "full_vocabulary": false
+    },
+    "calibration_protocol_sha256": "04559046b0802e46766974ecd2e420d3afa8d51b1e7dcb70f5a2234a0ea3d3ac",
+    "source_observation_sha256": "686da317f43830f7a7ac5aab505053bd721e09562f6d819e1d0c2968f2cbc89a",
+    "seconds_this_invocation": 32.97925795799529,
+    "scope": "pilot candidate subset; not benchmark calibration",
+    "checkpoint_hashes": [
+      "6de1547094096c1d1a63e6b6d665ec9909e13b6db3ff0aab4c353e5e00359ba5",
+      "8a66567726069fbfb67569caa39b4d2ef8e282f8c557c31f3cb7e3c0e8338017",
+      "15a8151ef35549bd80c93b8fb23d56b97a4374dbfc6991607aad9a5bcbc3d184",
+      "40e2a5af26a0127f2dd88f0f67b6d6deb933635b071d3301d83e9811b49f277a",
+      "3e4aeee15b8c60dbb3469891e2e1ab0950cad2c748cdbe45d9d8ee125a9152f7",
+      "b217c7977edf732f1df56bd71deb58542baa3a79bd02591b67e8221c873ec54b",
+      "4aaa5f3289179bf5a6aa91ee48862fcf31d6023fabf92f8e9e286ab60f626ef9",
+      "d9d2b2a0efa7f4c3b165e0fda753b7c23a5703384961cb01c55ae9873f74b04e"
+    ]
+  },
+  "calibration_sha256": "25bb4f7f977d9c5eb01a6f445f64e13f5875a747c75f3d2711bc3cc67d24ed2a",
+  "selection_policy": "first passing ID in model-probability order",
+  "initial_candidates": 200,
+  "prediction_candidates": 50,
+  "random_candidates": 150,
+  "probability_source": "selected backend model's full probability ranking",
+  "source_hashes": {
+    "kvrecon/__init__.py": "c2bde96242441ed593b00881b8275a9301f5b693a84848a185795982698456d8",
+    "kvrecon/adapters.py": "0014c92eb686029b13efeca01fe0634a9edc28004cd91fa6bb0266a975734923",
+    "kvrecon/backend.py": "5045ed5a3aa415f643d5139ffb360c114bfcf3c5d32d080ebac3f89953640ac9",
+    "kvrecon/cli.py": "70795ecca11a7e3abcc69398fe4fde129857d843259d6bec341ceefe26c0bbcf",
+    "kvrecon/common.py": "69303849c139aa018c80d48a7b32c516120fc7df0fef16dbb44f9026033ac4d9",
+    "kvrecon/comparison.py": "92f8472ddda7b71ff218642ef185d110e202798285f749102ab150b7d81bcec8",
+    "kvrecon/config.py": "f384a3056ba45682875abd60d6d71f920e3ed8e393b3d7defe2f3eda4bd5fa1f",
+    "kvrecon/cpa.py": "22fd59158f5ba4b9c1ae1f6f29664a8ad50dff9a1efe4ae535600c711b9a8d28",
+    "kvrecon/engine.py": "dcbfab2e4a0160dfcbb5318ec399e79e530c50d14a950f5a392b8080a8955fb7",
+    "kvrecon/first_v.py": "cd8899a63062d79ca057db61252312e99811bf0dc3cc154e884633b45b988773",
+    "kvrecon/npu.py": "a8a92a4fd0b82c3cf495f731a284d1de8696a4d3b6b9656282d4b32f4269ec59",
+    "kvrecon/observation.py": "37aa8d9a85a9dbad696c01823e176fed5f3b524af9bd523221081cd49720202b",
+    "kvrecon/search.py": "247713202629e48b1584514a1021a3760d02c2669182892c8ea2cc37c0f38e82",
+    "kvrecon/surrogate.py": "3b894c7db7602256b489d0dc93f8714d3cfd71d476abc00aea7f3cc9bf83e4eb",
+    "native/build.sh": "cad4d08988cceeb79a73a2f517d403f2fac5a788dd003468472ef60ff9c6eb01",
+    "native/litert_support.h": "92768d645e4b1ead470f262f62c795763d22d235cd2c05e722a98ee85cb1cec5",
+    "native/worker.cc": "a291c5c1ebbc1b16d7b0882768eee65784d30b5578f6cdfd6941a3d1a8c80d16",
+    "prepare_gemma3.py": "6ff3cad9539be58ff1396a4b7c13bb47db760b58e19f5d134234334b6dafb0b1",
+    "run.py": "3ab8410a34643138310239da60df3751f2034d5e23441338ea82a0478007387d",
+    "tests/device_contract.py": "4ceb1c2b8b45563780cf8d59458398de65cf3e90a5a83ad5c780867a9d92e391",
+    "tests/gemma3_assets_device.py": "20496cf638d3aa8e82bc515676f999480757dbca559f5e020200d7ef6d384dfb",
+    "tests/support_cpu_adapter.py": "e523440130acca844ed41ef512fa27776cccfd5e0c88aa81b76ef2e39a31bad1",
+    "tests/surrogate_preflight.py": "464b07d64e328cb485a8161bcf5921b71607039b2823ce4d28e7d99107161910",
+    "tests/test_backend.py": "9cc4837e1d1f3a599271209b8eb8291a4d0262a78a4f3b79788121a87d3c2168",
+    "tests/test_comparison.py": "702e4380b17b7569fcc78f460d31d7925935a0d762be0bfdc6d98c393186d4f9",
+    "tests/test_config.py": "60b49363f81c94b805435e4298ab5f53ed115e28b46e72b35b76443cd1d5e509",
+    "tests/test_core.py": "e3bc3c468ea24046bd108ef1d52da8feb0ff5b24021d0738c7adf5c9022940cc",
+    "tests/test_cpa.py": "a7f18bc586f3a40759464f159f0b91f4ad9a4a17d418ca82280e2a079bdf6ff1",
+    "tests/test_first_v.py": "51162e37b8f9010acc1fdc3183e377e9a7848b4c453d2964250588fdf061f0f0",
+    "tests/test_models.py": "8dd08299f00f86e4dad8c2f98844160d8c2eab485ccb982e06a4f636f827943c"
+  },
+  "surrogate": null,
+  "surrogate_setup_seconds": 2.500019036233425e-07,
+  "candidate_quantization": "Native model KV; integer codes dequantized using each tensor's metadata; float32 used directly",
+  "stopping": "K < tau_K + .01*tau_K AND V < tau_V + .01*tau_V; epsilon unused",
+  "private_labels_allowed": false
+}

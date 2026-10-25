@@ -1,0 +1,238 @@
+{
+  "records": [
+    {
+      "seed": 17,
+      "path": "/path/to/litertlm/kvidence/reconstruction/experiments/image_trust_region/results/0001_fullmultiscale5_seed17_20261021",
+      "before_rmse": 7.714257295747919,
+      "after_rmse": 6.415237597899239,
+      "relative_reduction_percent": 16.839206265063222,
+      "added_queries": 23646,
+      "added_seconds": 61.237172583001666,
+      "total_queries": 102924,
+      "total_seconds": 275.7981693739712,
+      "rounds": 5,
+      "status": "round_budget",
+      "passes_query": false,
+      "first_round_probe_comparison": [
+        {
+          "scale": 0.25,
+          "probe_rms": 0.021784600783422516,
+          "best_probe_rmse": 7.7803714363454395,
+          "changed_code_fraction": 0.8407173156738281
+        },
+        {
+          "scale": 1.0,
+          "probe_rms": 0.08713840313369006,
+          "best_probe_rmse": 8.021516475237085,
+          "changed_code_fraction": 0.8733355204264323
+        },
+        {
+          "scale": 4.0,
+          "probe_rms": 0.34855361253476025,
+          "best_probe_rmse": 10.089492136004667,
+          "changed_code_fraction": 0.9387690226236979
+        }
+      ],
+      "first_round_step_comparison": [
+        {
+          "scale": 0.25,
+          "best_broad_step_rmse": 7.863955548895225,
+          "best_original_step_subset_rmse": 7.92808250382777
+        },
+        {
+          "scale": 1.0,
+          "best_broad_step_rmse": 7.770952020988162,
+          "best_original_step_subset_rmse": 7.834593759410886
+        },
+        {
+          "scale": 4.0,
+          "best_broad_step_rmse": 7.857246854019543,
+          "best_original_step_subset_rmse": 7.857246854019543
+        }
+      ],
+      "improvements": [
+        {
+          "round": 2,
+          "best_rmse": 7.709191956683917,
+          "improvement": 0.00506533906400275,
+          "selected": {
+            "kind": "adam",
+            "scale": 4.0,
+            "factor": 0.5,
+            "rms": 0.00027877595533395413,
+            "file": "round_0002_updates",
+            "index": 117
+          }
+        },
+        {
+          "round": 3,
+          "best_rmse": 7.477701225978476,
+          "improvement": 0.23149073070544102,
+          "selected": {
+            "kind": "ridge",
+            "scale": 4.0,
+            "damping": 1.0,
+            "factor": 1.0,
+            "rms": 0.12104275471062091,
+            "file": "round_0003_updates",
+            "index": 113
+          }
+        },
+        {
+          "round": 4,
+          "best_rmse": 7.178867098122098,
+          "improvement": 0.2988341278563773,
+          "selected": {
+            "kind": "ridge",
+            "scale": 4.0,
+            "damping": 0.1,
+            "factor": 0.5,
+            "rms": 0.17427680627269487,
+            "file": "round_0004_updates",
+            "index": 103
+          }
+        },
+        {
+          "round": 5,
+          "best_rmse": 6.415237597899239,
+          "improvement": 0.7636295002228595,
+          "selected": {
+            "kind": "ridge",
+            "scale": 4.0,
+            "damping": 0.1,
+            "factor": 0.5,
+            "rms": 0.1706549758574792,
+            "file": "round_0005_updates",
+            "index": 103
+          }
+        }
+      ],
+      "source_sha256": "8f4c4ac30a42a11f839c832041019ad9c4e8d65bb0c1c4b4c9e3e7cf56a81833",
+      "trace_sha256": "aecb85984633a97763bfe48e48d9bc114ddb329f865f5c62c9996c03de442e4a"
+    },
+    {
+      "seed": 29,
+      "path": "/path/to/litertlm/kvidence/reconstruction/experiments/image_trust_region/results/0001_fullmultiscale5_seed29_20261021",
+      "before_rmse": 9.6637309209487,
+      "after_rmse": 5.944896708522361,
+      "relative_reduction_percent": 38.4823857663998,
+      "added_queries": 23646,
+      "added_seconds": 61.15688674998819,
+      "total_queries": 121620,
+      "total_seconds": 326.7354581670079,
+      "rounds": 5,
+      "status": "round_budget",
+      "passes_query": false,
+      "first_round_probe_comparison": [
+        {
+          "scale": 0.25,
+          "probe_rms": 0.021784600783422516,
+          "best_probe_rmse": 9.729445481372512,
+          "changed_code_fraction": 0.8432846069335938
+        },
+        {
+          "scale": 1.0,
+          "probe_rms": 0.08713840313369006,
+          "best_probe_rmse": 9.7477461337224,
+          "changed_code_fraction": 0.8703689575195312
+        },
+        {
+          "scale": 4.0,
+          "probe_rms": 0.34855361253476025,
+          "best_probe_rmse": 11.475559967273929,
+          "changed_code_fraction": 0.9382502237955729
+        }
+      ],
+      "first_round_step_comparison": [
+        {
+          "scale": 0.25,
+          "best_broad_step_rmse": 10.148651003335369,
+          "best_original_step_subset_rmse": 10.160335716648342
+        },
+        {
+          "scale": 1.0,
+          "best_broad_step_rmse": 9.930372837285617,
+          "best_original_step_subset_rmse": 10.146437567565279
+        },
+        {
+          "scale": 4.0,
+          "best_broad_step_rmse": 8.63981969574597,
+          "best_original_step_subset_rmse": 8.63981969574597
+        }
+      ],
+      "improvements": [
+        {
+          "round": 1,
+          "best_rmse": 8.63981969574597,
+          "improvement": 1.0239112252027294,
+          "selected": {
+            "kind": "ridge",
+            "scale": 4.0,
+            "damping": 0.1,
+            "factor": 1.0,
+            "rms": 0.3485536131167105,
+            "file": "round_0001_updates",
+            "index": 104
+          }
+        },
+        {
+          "round": 2,
+          "best_rmse": 7.6272409616780825,
+          "improvement": 1.0125787340678878,
+          "selected": {
+            "kind": "ridge",
+            "scale": 4.0,
+            "damping": 1.0,
+            "factor": 1.0,
+            "rms": 0.14244160131217706,
+            "file": "round_0002_updates",
+            "index": 113
+          }
+        },
+        {
+          "round": 3,
+          "best_rmse": 7.242587805819133,
+          "improvement": 0.3846531558589499,
+          "selected": {
+            "kind": "ridge",
+            "scale": 4.0,
+            "damping": 0.1,
+            "factor": 1.0,
+            "rms": 0.3485536129596764,
+            "file": "round_0003_updates",
+            "index": 104
+          }
+        },
+        {
+          "round": 4,
+          "best_rmse": 6.344750536861162,
+          "improvement": 0.8978372689579706,
+          "selected": {
+            "kind": "ridge",
+            "scale": 4.0,
+            "damping": 1.0,
+            "factor": 1.0,
+            "rms": 0.11102551168357215,
+            "file": "round_0004_updates",
+            "index": 113
+          }
+        },
+        {
+          "round": 5,
+          "best_rmse": 5.944896708522361,
+          "improvement": 0.39985382833880134,
+          "selected": {
+            "kind": "probe",
+            "scale": 0.25,
+            "direction": 537,
+            "sign": -1,
+            "file": "round_0005_scale_0.25_probes",
+            "index": 1305
+          }
+        }
+      ],
+      "source_sha256": "8f4c4ac30a42a11f839c832041019ad9c4e8d65bb0c1c4b4c9e3e7cf56a81833",
+      "trace_sha256": "8fe05b3182f4668673f232bce6ea0aa5eb77f25b9d465b81d08707104744ecac"
+    }
+  ]
+}

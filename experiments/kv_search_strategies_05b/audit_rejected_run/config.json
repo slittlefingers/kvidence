@@ -1,0 +1,57 @@
+{
+  "seeds": [
+    20261019,
+    20261020
+  ],
+  "trials_per_seed_per_split": 8,
+  "layers": [
+    12,
+    24
+  ],
+  "splits": [
+    "development",
+    "confirmation"
+  ],
+  "methods": [
+    "original",
+    "random",
+    "linfact_vector_reference",
+    "ridge_linf",
+    "target_weighted_ridge",
+    "linear_rbf",
+    "target_design_16_4"
+  ],
+  "budgets": [
+    200,
+    220,
+    240,
+    300,
+    400,
+    600
+  ],
+  "initial_queries": 200,
+  "batch_size": 20,
+  "candidate_count": 10000,
+  "model": "Qwen/Qwen2.5-0.5B",
+  "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "dtype": "float32",
+  "known_correct_prefix": true,
+  "noise": null,
+  "benchmark_type": "hidden_table_replay",
+  "primary_metric": "hit_at_220",
+  "threads": 4,
+  "source_sha256": "fa455e3748d2e752794038e22ca40a2f2fce012028466727542bbe80b04c5a2e",
+  "original_source_path": "/path/to/litertlm/kvidence/experiments/kv_guided_search_large/search.py",
+  "original_source_sha256": "c8444d94b50d63d68bf2d57a3fd28f8998e138a9af3fcbfa2d3f1854f128bf3a",
+  "prior_experiment_sha256": "19ec7d237285ffd305416d05b6c088c3490e2ca09b2868c80505c24366d4c410",
+  "parameters": {
+    "ridge": 0.01,
+    "target_weight_quantile": 0.25,
+    "target_weight_floor": 0.1,
+    "rbf_amplitude": 896,
+    "rbf_bandwidth": "median_train_pair_squared_distance",
+    "target_design_pool": 200,
+    "target_design_greedy": 16,
+    "target_design_explore": 4
+  }
+}

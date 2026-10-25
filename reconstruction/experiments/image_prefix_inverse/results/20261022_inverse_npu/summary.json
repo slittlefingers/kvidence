@@ -1,0 +1,317 @@
+{
+  "points": 20,
+  "searches": [
+    {
+      "position": 133,
+      "arm": "learned",
+      "trace": [
+        {
+          "round": 0,
+          "queries": 64,
+          "rmse": 14.203185162138809,
+          "seconds": 0.23986337502719834
+        },
+        {
+          "round": 1,
+          "queries": 1636,
+          "rmse": 8.392530626247366,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 3.176806416013278
+        },
+        {
+          "round": 2,
+          "queries": 3208,
+          "rmse": 6.226753643552955,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 6.23268412501784
+        },
+        {
+          "round": 3,
+          "queries": 4780,
+          "rmse": 5.596455351380908,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 9.534215958003188
+        },
+        {
+          "round": 4,
+          "queries": 6352,
+          "rmse": 5.257156580557592,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 12.835849125025561
+        }
+      ],
+      "rmse_lsb": 5.257156580557592,
+      "k_rmse_lsb": 4.287745984197292,
+      "v_rmse_lsb": 6.073765306628171,
+      "dequantized_rmse": 0.07677296461838312,
+      "exact_fraction": 0.140625
+    },
+    {
+      "position": 133,
+      "arm": "random",
+      "trace": [
+        {
+          "round": 0,
+          "queries": 64,
+          "rmse": 56.491944945717705,
+          "seconds": 0.22728945899871178
+        },
+        {
+          "round": 1,
+          "queries": 1636,
+          "rmse": 47.64064293620522,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 3.6530390420230106
+        },
+        {
+          "round": 2,
+          "queries": 3208,
+          "rmse": 41.871758270044026,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 6.959638291998999
+        },
+        {
+          "round": 3,
+          "queries": 4780,
+          "rmse": 39.98632578769897,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 10.333426791999955
+        },
+        {
+          "round": 4,
+          "queries": 6352,
+          "rmse": 35.394884539471235,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 13.67399337500683
+        }
+      ],
+      "rmse_lsb": 35.394884539471235,
+      "k_rmse_lsb": 30.57927070541415,
+      "v_rmse_lsb": 39.62958372541907,
+      "dequantized_rmse": 0.5010233686575088,
+      "exact_fraction": 0.02734375
+    },
+    {
+      "position": 1055,
+      "arm": "learned",
+      "trace": [
+        {
+          "round": 0,
+          "queries": 64,
+          "rmse": 11.759678527174968,
+          "seconds": 0.24554445801186375
+        },
+        {
+          "round": 1,
+          "queries": 1636,
+          "rmse": 8.455709517095535,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 3.627672041009646
+        },
+        {
+          "round": 2,
+          "queries": 3208,
+          "rmse": 6.725214912922858,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 6.932882207998773
+        },
+        {
+          "round": 3,
+          "queries": 4780,
+          "rmse": 6.049196098449777,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 10.27705916602281
+        },
+        {
+          "round": 4,
+          "queries": 6352,
+          "rmse": 5.50683169458628,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 13.695971916022245
+        }
+      ],
+      "rmse_lsb": 5.50683169458628,
+      "k_rmse_lsb": 4.490441236671514,
+      "v_rmse_lsb": 6.362886776063204,
+      "dequantized_rmse": 0.08042743458814779,
+      "exact_fraction": 0.1767578125
+    },
+    {
+      "position": 1055,
+      "arm": "random",
+      "trace": [
+        {
+          "round": 0,
+          "queries": 64,
+          "rmse": 42.958680638347126,
+          "seconds": 0.22710829100105911
+        },
+        {
+          "round": 1,
+          "queries": 1636,
+          "rmse": 33.354994589453916,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 3.567422082996927
+        },
+        {
+          "round": 2,
+          "queries": 3208,
+          "rmse": 27.352409343145624,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 6.905621415993664
+        },
+        {
+          "round": 3,
+          "queries": 4780,
+          "rmse": 20.722096260694766,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 10.219701583002461
+        },
+        {
+          "round": 4,
+          "queries": 6352,
+          "rmse": 17.780096623401686,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 13.542021832981845
+        }
+      ],
+      "rmse_lsb": 17.780096623401686,
+      "k_rmse_lsb": 14.165870075643078,
+      "v_rmse_lsb": 20.774787528997738,
+      "dequantized_rmse": 0.2625769160667466,
+      "exact_fraction": 0.05078125
+    },
+    {
+      "position": 1976,
+      "arm": "learned",
+      "trace": [
+        {
+          "round": 0,
+          "queries": 64,
+          "rmse": 12.486946309046099,
+          "seconds": 0.2416092089843005
+        },
+        {
+          "round": 1,
+          "queries": 1636,
+          "rmse": 7.483249523936777,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 3.6107702500012238
+        },
+        {
+          "round": 2,
+          "queries": 3208,
+          "rmse": 6.076337301368317,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 6.866137000004528
+        },
+        {
+          "round": 3,
+          "queries": 4780,
+          "rmse": 5.238174926680093,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 10.250467542005936
+        },
+        {
+          "round": 4,
+          "queries": 6352,
+          "rmse": 5.01014595595777,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 13.588605333992746
+        }
+      ],
+      "rmse_lsb": 5.01014595595777,
+      "k_rmse_lsb": 4.363825013677794,
+      "v_rmse_lsb": 5.582128290356645,
+      "dequantized_rmse": 0.07057527292550037,
+      "exact_fraction": 0.2099609375
+    },
+    {
+      "position": 1976,
+      "arm": "random",
+      "trace": [
+        {
+          "round": 0,
+          "queries": 64,
+          "rmse": 58.76847282716729,
+          "seconds": 0.22782595801982097
+        },
+        {
+          "round": 1,
+          "queries": 1636,
+          "rmse": 42.41305444671487,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 3.5288259579974692
+        },
+        {
+          "round": 2,
+          "queries": 3208,
+          "rmse": 29.803031777404794,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 6.936014583014185
+        },
+        {
+          "round": 3,
+          "queries": 4780,
+          "rmse": 21.37600509332836,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 10.41420566700981
+        },
+        {
+          "round": 4,
+          "queries": 6352,
+          "rmse": 16.42983423912122,
+          "probe_rms": 0.08713840313369006,
+          "seconds": 13.701016083010472
+        }
+      ],
+      "rmse_lsb": 16.42983423912122,
+      "k_rmse_lsb": 13.126934381263586,
+      "v_rmse_lsb": 19.171919570037844,
+      "dequantized_rmse": 0.2423198828981115,
+      "exact_fraction": 0.06640625
+    }
+  ],
+  "aggregate": {
+    "truth_floor": {
+      "mean_rmse_lsb": 0.0,
+      "median_rmse_lsb": 0.0
+    },
+    "ridge_direct": {
+      "mean_rmse_lsb": 13.835421936542241,
+      "median_rmse_lsb": 12.952010885925333
+    },
+    "prefix_last_direct": {
+      "mean_rmse_lsb": 13.87696664664331,
+      "median_rmse_lsb": 12.97922191705203
+    },
+    "mean": {
+      "mean_rmse_lsb": 51.9829784382236,
+      "median_rmse_lsb": 51.26472023872586
+    },
+    "previous_true": {
+      "mean_rmse_lsb": 47.28043117022917,
+      "median_rmse_lsb": 48.034351797401186
+    },
+    "truth_projected_control": {
+      "mean_rmse_lsb": 0.2455512373339829,
+      "median_rmse_lsb": 0.0
+    },
+    "ridge_projected": {
+      "mean_rmse_lsb": 13.828642217323742,
+      "median_rmse_lsb": 12.91951291971069
+    },
+    "prefix_last_projected": {
+      "mean_rmse_lsb": 13.838470331456012,
+      "median_rmse_lsb": 12.865143799194108
+    }
+  },
+  "seconds": 99.37695245799841,
+  "canonical_prefix_replay_exact": true,
+  "limits": [
+    "true prefixes only",
+    "block-start subset of one held-out sequence",
+    "projected/direct spaces differ",
+    "search is finite-budget full-basis pilot, not historical run comparison"
+  ]
+}

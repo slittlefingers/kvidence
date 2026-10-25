@@ -1,0 +1,44 @@
+{
+  "config": {
+    "dimension": 768,
+    "directions": 64,
+    "initial_candidates": 128,
+    "steps": 1000,
+    "lr": 0.05,
+    "lr_floor": 0.1,
+    "perturbation": 0.1,
+    "perturbation_decay": 0.101,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "adam_epsilon": 1e-08,
+    "acceptance_l2": 4.0,
+    "seed": 17
+  },
+  "seeds": [
+    17,
+    29
+  ],
+  "synthetic_target_seed": 999,
+  "target_layer_1based": 5,
+  "position": 5,
+  "public_prefix": [
+    2,
+    105,
+    2364,
+    109,
+    255999
+  ],
+  "adapter": "phone model vision_adapter_280 / CPU",
+  "decoder": "phone model prefill_128 and decode / NPU",
+  "original_media_accessed": false,
+  "original_text_accessed": false,
+  "desktop_model_loaded": false,
+  "acceptance": "per-position raw concatenated K+V L2 < 4, verify single-position commit",
+  "plan": "two independent initializations for one reachable synthetic target; real first image slot only after both pass",
+  "synthetic_truth_supplied_to_optimizer": false,
+  "source_sha256": {
+    "run_spsa_device.py": "4207ab48e3ff9d4d31d63d9f15815ef7694285d5b2fb825a6d91c72a709a3f4e",
+    "spsa_adam.py": "d21920925bd48e753488a3bc202018fa70ace2416486bd1fceda8e3b5d5d5aab"
+  },
+  "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc"
+}

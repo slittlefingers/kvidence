@@ -1,0 +1,23 @@
+{
+  "controls": {
+    "original_prediction_ranking_equal": true,
+    "unit_weight_ridge_equal": true,
+    "kernel_training_order_invariant": true,
+    "design_batch_constraints": true,
+    "conditional_covariance_matches_direct_solve": true
+  },
+  "audit": {
+    "cases": 64,
+    "method_budget_checkpoints": 2688,
+    "original_source_unchanged": true,
+    "prior_experiment_source_unchanged": true,
+    "baseline_trajectories_identical_to_previous_experiment": 32,
+    "development_confirmation_target_ids_disjoint": true,
+    "audit_correction_unchanged_target_trajectories": 62
+  },
+  "online_audit": {
+    "cases": 8,
+    "actual_model_search_runs": 32,
+    "passed": true
+  }
+}

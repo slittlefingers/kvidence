@@ -1,0 +1,103 @@
+{
+  "selection": "worst measured layer15 drift in each repeat4 trajectory",
+  "not_unbiased_accuracy_estimate": true,
+  "prefix_replay_exactly_matches_original_payloads": true,
+  "rows": [
+    {
+      "sequence": "random_alnum",
+      "variant": "clean",
+      "layer": 10,
+      "position": 108,
+      "target_text": " ",
+      "candidate_count": 86513,
+      "winner_id": 236743,
+      "winner_text": " ",
+      "correct": true,
+      "distance_gap_l2": 9.592253126016558
+    },
+    {
+      "sequence": "random_alnum",
+      "variant": "clean",
+      "layer": 15,
+      "position": 108,
+      "target_text": " ",
+      "candidate_count": 86513,
+      "winner_id": 236743,
+      "winner_text": " ",
+      "correct": true,
+      "distance_gap_l2": 3.640195806189496
+    },
+    {
+      "sequence": "random_alnum",
+      "variant": "repeat4",
+      "layer": 10,
+      "position": 108,
+      "target_text": " ",
+      "candidate_count": 86513,
+      "winner_id": 236743,
+      "winner_text": " ",
+      "correct": true,
+      "distance_gap_l2": 16.73935491447715
+    },
+    {
+      "sequence": "random_alnum",
+      "variant": "repeat4",
+      "layer": 15,
+      "position": 108,
+      "target_text": " ",
+      "candidate_count": 86513,
+      "winner_id": 236743,
+      "winner_text": " ",
+      "correct": true,
+      "distance_gap_l2": 16.95498283529007
+    },
+    {
+      "sequence": "english",
+      "variant": "clean",
+      "layer": 10,
+      "position": 127,
+      "target_text": "7",
+      "candidate_count": 86513,
+      "winner_id": 236832,
+      "winner_text": "7",
+      "correct": true,
+      "distance_gap_l2": 11.040892866051985
+    },
+    {
+      "sequence": "english",
+      "variant": "clean",
+      "layer": 15,
+      "position": 127,
+      "target_text": "7",
+      "candidate_count": 86513,
+      "winner_id": 236832,
+      "winner_text": "7",
+      "correct": true,
+      "distance_gap_l2": 23.28519932241483
+    },
+    {
+      "sequence": "english",
+      "variant": "repeat4",
+      "layer": 10,
+      "position": 127,
+      "target_text": "7",
+      "candidate_count": 86513,
+      "winner_id": 236832,
+      "winner_text": "7",
+      "correct": true,
+      "distance_gap_l2": 6.631620787075563
+    },
+    {
+      "sequence": "english",
+      "variant": "repeat4",
+      "layer": 15,
+      "position": 127,
+      "target_text": "7",
+      "candidate_count": 86513,
+      "winner_id": 236832,
+      "winner_text": "7",
+      "correct": true,
+      "distance_gap_l2": 0.5314125904947673
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "optimizer": "joint_secant_ridge_spsa",
+  "seed": 29,
+  "steps": 300,
+  "directions": 64,
+  "lr": 0.05,
+  "perturbation": 0.1,
+  "perturbation_schedule": "c=.1*(1+(step-1)/100)^(-.101), with .1 configurable",
+  "lr_schedule": "cosine to 0.1 * initial lr",
+  "query_budget": 45001,
+  "center_every": 5,
+  "warm_start": false,
+  "warm_start_seconds": 0.0,
+  "warm_start_queries": 0,
+  "distance_space": "lsb",
+  "distance_metric": "rmse",
+  "epsilon": 0.125,
+  "loss": "0.5 * MSE",
+  "initial_sha256": "070acf45223536d7417984d8b1768f2a12f0f0965e4d14ab96ae7c5d03947806",
+  "reference_run": "kvidence/reconstruction/experiments/image_trust_region/results/0001_rounds300_seed29_20261020",
+  "observation": {
+    "dataset": "image_chat_100",
+    "sample": "0001",
+    "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+    "snapshot_sha256": "ffe191a90dcfb0bbe7198d3267d8d7e4bf737ff1161a7bab2b35b69c6b81944b",
+    "observation_sha256": "a57f6a6caaf2cb76cb9d94f7eabc83dd7f1052feab0a4708b4dfe70d7835e3c9",
+    "layer_index": 4,
+    "quantization": [
+      {
+        "width": 512,
+        "scale": 0.0011563472216948867,
+        "zero_point": 0,
+        "dtype": "int8"
+      },
+      {
+        "width": 512,
+        "scale": 0.01785714365541935,
+        "zero_point": 0,
+        "dtype": "int8"
+      }
+    ],
+    "public_prefix": [
+      2,
+      105,
+      2364,
+      109,
+      255999
+    ],
+    "media_start": 5,
+    "media_end": 265,
+    "image_dimensions": [
+      640,
+      427
+    ],
+    "boundary_source": "known Gemma capture template and public image dimensions; no pixel or text reads",
+    "original_media_accessed": false,
+    "original_text_accessed": false
+  },
+  "update_projection": "none; same unconstrained float input space as trust-region",
+  "no_model_gradients": true,
+  "original_media_accessed": false,
+  "original_text_accessed": false,
+  "source_sha256": "232eed7accf0db4667c362a1a9835e205d22e139a21376a8ef898500c6f52579"
+}

@@ -1,0 +1,61 @@
+{
+  "verified": true,
+  "runs": [
+    {
+      "modality": "image",
+      "seed": 17,
+      "initial_nmse": 1.636277675628662,
+      "kv_nmse": 0.0006959385937079787,
+      "max_l2": 1.1334180190253795,
+      "positions": 64,
+      "fit_seconds": 41.74090987499221,
+      "selected": true,
+      "initial_optimizer_nmse": 1.6361924409866333,
+      "replay_kv_nmse": 0.000702417574955831
+    },
+    {
+      "modality": "image",
+      "seed": 29,
+      "initial_nmse": 1.578157901763916,
+      "kv_nmse": 0.0007059372146613896,
+      "max_l2": 1.4336437634267727,
+      "positions": 64,
+      "fit_seconds": 41.705956874997355,
+      "selected": false,
+      "initial_optimizer_nmse": 1.577653169631958,
+      "replay_kv_nmse": 0.0007277153464811857
+    },
+    {
+      "modality": "audio",
+      "seed": 17,
+      "initial_nmse": 1.6381423473358154,
+      "kv_nmse": 0.0015426338650286198,
+      "max_l2": 2.6125656585405412,
+      "positions": 45,
+      "fit_seconds": 31.862993874994572,
+      "selected": false,
+      "initial_optimizer_nmse": 1.6396865844726562,
+      "replay_kv_nmse": 0.0015513029055431338
+    },
+    {
+      "modality": "audio",
+      "seed": 29,
+      "initial_nmse": 1.503447413444519,
+      "kv_nmse": 0.0014706470537930727,
+      "max_l2": 1.6557357307221643,
+      "positions": 45,
+      "fit_seconds": 31.901700750022428,
+      "selected": true,
+      "initial_optimizer_nmse": 1.502354383468628,
+      "replay_kv_nmse": 0.0015110125175629172
+    }
+  ],
+  "source_hashes_match": true,
+  "feature_hashes_match": true,
+  "selection_uses_kv_only": true,
+  "unit_tests_passed": 70,
+  "real_model_tests_passed": 2,
+  "npu_tested": false,
+  "content_accuracy_evaluated": false,
+  "subsequent_token_recovery_evaluated": false
+}

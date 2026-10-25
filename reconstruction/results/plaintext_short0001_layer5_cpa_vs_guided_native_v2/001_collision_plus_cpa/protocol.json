@@ -1,0 +1,269 @@
+{
+  "schema": 1,
+  "observation_metadata": {
+    "schema": 1,
+    "layer_index": 4,
+    "layer_1based": 5,
+    "quantization": [
+      {
+        "width": 512,
+        "scale": 0.0011563472216948867,
+        "zero_point": 0,
+        "dtype": "int8"
+      },
+      {
+        "width": 512,
+        "scale": 0.01785714365541935,
+        "zero_point": 0,
+        "dtype": "int8"
+      }
+    ],
+    "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+    "source": {
+      "kind": "GHOSTKV1 runtime capture",
+      "snapshot_sha256": "00b2c178266026394b3ff4d145fae1628c6901efd23700a135d68bb34ca16fca",
+      "note": "Only selected target-layer rows imported; no target-prefix cache supplied to recovery"
+    },
+    "metric": "L2 of dequantized original K+V values; no LSB/RMS normalization",
+    "observed_sha256": "9ff7f44cf44179b83762904f4d165ec689fb9403a2bb24dda15dfcc400a666f7"
+  },
+  "config": {
+    "method": "collision_plus_cpa",
+    "epsilon": 4.0,
+    "batch_size": 256,
+    "probability_seeds": 50,
+    "random_seeds": 150,
+    "proposals": 20,
+    "seed": 20261019,
+    "max_queries": null,
+    "kv_thresholds": [
+      0.37839773297309875,
+      10.247016906738281
+    ],
+    "k_width": 512,
+    "stop_partition": 1
+  },
+  "manifest_sha256": "7f6907a74e1257105644912558d349d9c7df240df671374505d9510d2ca415b5",
+  "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+  "model_config": {
+    "name": "Gemma 4 E2B IT / Tensor G5",
+    "model": "/path/to/litertlm/annoymous/models/gemma-4-E2B-it_Google_Tensor_G5.litertlm",
+    "device_model": "/sdcard/Android/data/com.example.annoymous/files/gemma-4-E2B-it_Google_Tensor_G5.litertlm",
+    "manifest": "/path/to/litertlm/kvidence/experiments/npu_candidate_batch/inputs/probe.json",
+    "tokenizer": "/path/to/litertlm/kvidence/experiments/kv_guided_search_gemma4_int8/model/tokenizer.json",
+    "embeddings": "/path/to/litertlm/kvidence/experiments/embedding_hnsw/assets/embeddings.npy",
+    "batch_signature": "prefill_128",
+    "mask_token_id": 1437,
+    "vocabulary": null,
+    "adapter": "litert_tensor_gemma",
+    "first_v_table": "/path/to/litertlm/kvidence/reconstruction/assets/first_v_gemma4_full",
+    "adapter_options": {},
+    "default_layer": 4
+  },
+  "model_config_sha256": "26573347deccfb2c91fc142f8ba4c80e6733546d9afcbcc51bce2622c93834fb",
+  "model_dimensions": {
+    "vocab_size": 262144,
+    "embedding_dim": 1536,
+    "batch_capacity": 128,
+    "context_capacity": 4096
+  },
+  "adapter": "litert_tensor_gemma",
+  "capabilities": {
+    "vocab_size": 262144,
+    "embedding_dim": 1536,
+    "context_capacity": 4096,
+    "batch_capacity": 128,
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "kv_dtype": "int8",
+    "kv_width": 1024
+  },
+  "tokenizer_sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+  "candidate_vocabulary": {
+    "kind": "full_original",
+    "count": 262144,
+    "filtered": false
+  },
+  "original_vocabulary": {
+    "start": 0,
+    "stop_exclusive": 262144,
+    "filtered": false
+  },
+  "max_positions": null,
+  "metric": "separate_k_v_l2_float32",
+  "implementation": "collision_plus_cpa_npu_port",
+  "calibration": {
+    "schema": 1,
+    "identity": {
+      "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+      "manifest_sha256": "7f6907a74e1257105644912558d349d9c7df240df671374505d9510d2ca415b5",
+      "adapter": "litert_tensor_gemma",
+      "batch_signature": "prefill_128",
+      "layer_index": 4,
+      "quantization": [
+        {
+          "width": 512,
+          "scale": 0.0011563472216948867,
+          "zero_point": 0,
+          "dtype": "int8"
+        },
+        {
+          "width": 512,
+          "scale": 0.01785714365541935,
+          "zero_point": 0,
+          "dtype": "int8"
+        }
+      ],
+      "observation_sha256": "686da317f43830f7a7ac5aab505053bd721e09562f6d819e1d0c2968f2cbc89a",
+      "observation_metadata_sha256": "d4e489289b48e5c385e4dcd81e5fe3e275e765cf8a9603d3f15f47f294fb33f2",
+      "runtime": {
+        "runtime_sha256": "ce88d0add27860ebdd50295a5a2cfcce7c35ffb2c76dcf43827f35fd82f932a9",
+        "test_apk_sha256": "c3ecffdb0e92172e900a6d9b7df3f562284014b6822d0baa4d5863876e36ee86",
+        "batch_signature": "prefill_128",
+        "native_mode": "optimized_v2"
+      }
+    },
+    "metric": "separate K/V Frobenius norms, original values, float32 accumulation",
+    "k_width": 512,
+    "statistics": {
+      "target_mean": [
+        0.0,
+        0.0
+      ],
+      "target_std": [
+        0.0,
+        0.0
+      ],
+      "target_max": [
+        0.0,
+        0.0
+      ],
+      "others_mean": [
+        1.3737106760372049,
+        30.050988587466154
+      ],
+      "others_std": [
+        0.12024095824674966,
+        1.5725862981863887
+      ],
+      "others_min": [
+        0.7567954659461975,
+        20.494033813476562
+      ],
+      "target_count": 8,
+      "others_count": 8184,
+      "std_ddof": 1
+    },
+    "fit": {
+      "rank": 8,
+      "thresholds": [
+        0.37839773297309875,
+        10.247016906738281
+      ],
+      "effective_thresholds": [
+        0.38218171030282977,
+        10.349487075805664
+      ],
+      "branches": [
+        "separated_midpoint",
+        "separated_midpoint"
+      ],
+      "strict_inequality": true,
+      "upstream_commit": "6b40f36edb2f337557543e7e60b10022308883d4",
+      "note": "Rank is an assumed probability rank, not sequence length. Gaussian fit is not a uniqueness proof."
+    },
+    "coverage": {
+      "positions": 8,
+      "candidates": 1024,
+      "full_vocabulary": false
+    },
+    "calibration_protocol_sha256": "d9f1de133cd7d4733c797dc23fd105951582e58cc9f0feb5bcf2e2d3de1ac42b",
+    "source_observation_sha256": "686da317f43830f7a7ac5aab505053bd721e09562f6d819e1d0c2968f2cbc89a",
+    "seconds_this_invocation": 8.564386749989353,
+    "scope": "pilot candidate subset; not benchmark calibration",
+    "checkpoint_hashes": [
+      "6de1547094096c1d1a63e6b6d665ec9909e13b6db3ff0aab4c353e5e00359ba5",
+      "8a66567726069fbfb67569caa39b4d2ef8e282f8c557c31f3cb7e3c0e8338017",
+      "15a8151ef35549bd80c93b8fb23d56b97a4374dbfc6991607aad9a5bcbc3d184",
+      "40e2a5af26a0127f2dd88f0f67b6d6deb933635b071d3301d83e9811b49f277a",
+      "3e4aeee15b8c60dbb3469891e2e1ab0950cad2c748cdbe45d9d8ee125a9152f7",
+      "b217c7977edf732f1df56bd71deb58542baa3a79bd02591b67e8221c873ec54b",
+      "4aaa5f3289179bf5a6aa91ee48862fcf31d6023fabf92f8e9e286ab60f626ef9",
+      "d9d2b2a0efa7f4c3b165e0fda753b7c23a5703384961cb01c55ae9873f74b04e"
+    ]
+  },
+  "calibration_sha256": "12897ee885ff6d2317ec3ccb96fec4dc3ac3dd01379bfe2a77e75c87a3c2f9ca",
+  "selection_policy": "first passing ID in model-probability order",
+  "initial_candidates": 200,
+  "prediction_candidates": 50,
+  "random_candidates": 150,
+  "probability_source": "selected backend model's full probability ranking",
+  "source_hashes": {
+    "experiments/native_validation.py": "14252362338d2e3427aec38d15772754b092721b452fea8f28bb771da06fd3ea",
+    "experiments/plaintext_short0001_layer5/check_prefix.py": "57f8bd8b067a88962cc7fa65b4ffc6e3934a9e6b380d9a7e8db2c1e046552521",
+    "experiments/plaintext_short0001_layer5/prepare.py": "469f695f12bc57b37c3a6bb29790ead5c9d2c5648c5282e743c97131218888b2",
+    "experiments/stored_short0001_layer5/check_prefix.py": "0fd04ed7604858d57a586f7116e76beaa8d0bf7f9b714fae90e7197535e3b212",
+    "experiments/stored_short0001_layer5/prepare.py": "c324a31ea6f083a8271d51261649cf0af661c0b3476e109120d566bdeba3e556",
+    "experiments/stored_short0001_layer5/report.py": "21389b3d60f88c5b1e99834ac33fd85883686ee079c1cdb67ad5e13165222913",
+    "experiments/transport_validation.py": "951c3b98c569ee64218a435477a3c5ed8585ed972f8cb720eb55d2c6d9364cd1",
+    "kvrecon/__init__.py": "c2bde96242441ed593b00881b8275a9301f5b693a84848a185795982698456d8",
+    "kvrecon/adapters.py": "0014c92eb686029b13efeca01fe0634a9edc28004cd91fa6bb0266a975734923",
+    "kvrecon/backend.py": "5045ed5a3aa415f643d5139ffb360c114bfcf3c5d32d080ebac3f89953640ac9",
+    "kvrecon/cli.py": "1ad8f21658bab6b1bb93602cdcf9c1405b6199a6ff1848276b40233f2fa63c26",
+    "kvrecon/common.py": "69303849c139aa018c80d48a7b32c516120fc7df0fef16dbb44f9026033ac4d9",
+    "kvrecon/comparison.py": "70d6674a15dbe9b48f1c336e2ecfab8ee37d21afb895b1e03312922078ec6f35",
+    "kvrecon/config.py": "f384a3056ba45682875abd60d6d71f920e3ed8e393b3d7defe2f3eda4bd5fa1f",
+    "kvrecon/cpa.py": "22fd59158f5ba4b9c1ae1f6f29664a8ad50dff9a1efe4ae535600c711b9a8d28",
+    "kvrecon/engine.py": "dcbfab2e4a0160dfcbb5318ec399e79e530c50d14a950f5a392b8080a8955fb7",
+    "kvrecon/first_v.py": "cd8899a63062d79ca057db61252312e99811bf0dc3cc154e884633b45b988773",
+    "kvrecon/npu.py": "58c6552ebd480285ae7b52a2035a8872ec8eb500ce535cdc11426a61a47854f6",
+    "kvrecon/observation.py": "37aa8d9a85a9dbad696c01823e176fed5f3b524af9bd523221081cd49720202b",
+    "kvrecon/search.py": "7af04b89af402e160e7dc6ed36fb851de2ddc99551a195be0adc1b7a10d56630",
+    "kvrecon/surrogate.py": "3b894c7db7602256b489d0dc93f8714d3cfd71d476abc00aea7f3cc9bf83e4eb",
+    "kvrecon/transport.py": "0161df5ccd31800347b2415fad6ad2d0750cff2c76fee9240e3700291f49cf61",
+    "native/build.sh": "cad4d08988cceeb79a73a2f517d403f2fac5a788dd003468472ef60ff9c6eb01",
+    "native/float_ranking.h": "d87d145f0be3e368a2564144ff83c9cd60b3bf130167afb3a2bea954516f8eb3",
+    "native/litert_support.h": "2d54dbcd05b866a7c82a2eae031fb225ed58c89f701daafdec047b29ba8b6949",
+    "native/socket_rpc.h": "86ed357c69ca6f171f3d409b453bcba7c835f36cb53ab803e5ac0bb37139dba7",
+    "native/tensor_copy.h": "bd2f453aa50237fbed3e1a76951002c4445ebc0e6d7ef4ea70b9beacf0118778",
+    "native/worker.cc": "ed65bfba7cec0565de05befe383e5ccc12b5bd635847ac7a53ff550a6da9f10b",
+    "prepare_gemma3.py": "6ff3cad9539be58ff1396a4b7c13bb47db760b58e19f5d134234334b6dafb0b1",
+    "run.py": "3ab8410a34643138310239da60df3751f2034d5e23441338ea82a0478007387d",
+    "tests/device_contract.py": "4ceb1c2b8b45563780cf8d59458398de65cf3e90a5a83ad5c780867a9d92e391",
+    "tests/float_ranking_test.cc": "839d008bf9542237f416c6718c130aed4ffd8831658ceb81cf51d369c77da4bd",
+    "tests/gemma3_assets_device.py": "20496cf638d3aa8e82bc515676f999480757dbca559f5e020200d7ef6d384dfb",
+    "tests/support_cpu_adapter.py": "e523440130acca844ed41ef512fa27776cccfd5e0c88aa81b76ef2e39a31bad1",
+    "tests/surrogate_preflight.py": "464b07d64e328cb485a8161bcf5921b71607039b2823ce4d28e7d99107161910",
+    "tests/tensor_copy_test.cc": "036473a2576ee58090d04dcc773fd5e827f56927e0a96a89ee7d24a079f91bb3",
+    "tests/test_backend.py": "f19e5b27063307bddc94b8b9cc84e6e7fd356b60d52b851210b6a988b5dca2e7",
+    "tests/test_comparison.py": "f91a37b5cf599131d9ed074de918105f74637d0643e3736df41123dbaa599c2d",
+    "tests/test_config.py": "60b49363f81c94b805435e4298ab5f53ed115e28b46e72b35b76443cd1d5e509",
+    "tests/test_core.py": "e3bc3c468ea24046bd108ef1d52da8feb0ff5b24021d0738c7adf5c9022940cc",
+    "tests/test_cpa.py": "a7f18bc586f3a40759464f159f0b91f4ad9a4a17d418ca82280e2a079bdf6ff1",
+    "tests/test_first_v.py": "51162e37b8f9010acc1fdc3183e377e9a7848b4c453d2964250588fdf061f0f0",
+    "tests/test_models.py": "8dd08299f00f86e4dad8c2f98844160d8c2eab485ccb982e06a4f636f827943c",
+    "tests/test_native_copy.py": "3459e753b03cf141c5600d35e164089f63deafc8840cc4b57e1386141d09bf19",
+    "tests/test_selection.py": "f05f4274f1b3d73e9e1ae53f435a1fb332c38b32e394eaa20f929981393601fb",
+    "tests/test_transport.py": "a8504a86e12b0f8777b128f9b3d18e7a120dcc6471e7cab1c5e8d16715363da5"
+  },
+  "surrogate": null,
+  "surrogate_setup_seconds": 4.169996827840805e-07,
+  "candidate_quantization": "Native model KV; integer codes dequantized using each tensor's metadata; float32 used directly",
+  "stopping": "K < tau_K + .01*tau_K AND V < tau_V + .01*tau_V; epsilon unused",
+  "private_labels_allowed": false
+}

@@ -1,0 +1,64 @@
+{
+  "observation": {
+    "dataset": "image_chat_100",
+    "sample": "0001",
+    "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+    "snapshot_sha256": "ffe191a90dcfb0bbe7198d3267d8d7e4bf737ff1161a7bab2b35b69c6b81944b",
+    "observation_sha256": "a57f6a6caaf2cb76cb9d94f7eabc83dd7f1052feab0a4708b4dfe70d7835e3c9",
+    "layer_index": 4,
+    "quantization": [
+      {
+        "width": 512,
+        "scale": 0.0011563472216948867,
+        "zero_point": 0,
+        "dtype": "int8"
+      },
+      {
+        "width": 512,
+        "scale": 0.01785714365541935,
+        "zero_point": 0,
+        "dtype": "int8"
+      }
+    ],
+    "public_prefix": [
+      2,
+      105,
+      2364,
+      109,
+      255999
+    ],
+    "media_start": 5,
+    "media_end": 265,
+    "image_dimensions": [
+      640,
+      427
+    ],
+    "boundary_source": "known Gemma capture template and public image dimensions; no pixel or text reads",
+    "original_media_accessed": false,
+    "original_text_accessed": false
+  },
+  "seed": 217,
+  "probability_candidates": 50,
+  "random_candidates": 150,
+  "proposals": 20,
+  "rounds": 3,
+  "method": "existing_text_ridge_at_media_position",
+  "surrogate": {
+    "source": "/path/to/litertlm/kvidence/experiments/ciphertext_full_vocabulary/stable_surrogate.py",
+    "source_sha256": "1e5fd8d09a1e025f8625d0733668eabf075c61c4f2d6544982148ccc237bf9e4",
+    "embedding_sha256": "be74121046399c6f947cd9ecead1153200d81ba8df22aa6143c901dc3cf6cdbf",
+    "shape": [
+      262144,
+      1536
+    ],
+    "proposal_only": true,
+    "note": "Configured embedding asset is proposal-only, not asserted bit-identical to device embedding quantization. Only real NPU KV is accepted."
+  },
+  "source_sha256": "6df3b4022eaa4b25c6d74a1d586901c5761be22aa412f0a6c366d179b79dd8e7",
+  "actual_embedding_source": "deployed runtime embedding RPC",
+  "media_ple_id": 0,
+  "adapter_called": false,
+  "distance_metric": "LSB code-space RMSE",
+  "epsilon": 0.1,
+  "original_media_accessed": false
+}

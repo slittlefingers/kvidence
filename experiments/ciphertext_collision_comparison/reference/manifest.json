@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/SiO-2/kvcloak",
+  "revision": "6b40f36edb2f337557543e7e60b10022308883d4",
+  "files": {
+    "attack/collision.py": {
+      "url": "https://raw.githubusercontent.com/SiO-2/kvcloak/6b40f36edb2f337557543e7e60b10022308883d4/attack/collision.py",
+      "sha256": "7b9dd072e2d28d0f2e24b2b0dd06bd2da35c994da6198e8a1282a6eb24655b9a"
+    },
+    "attack/get_collision_threshold.py": {
+      "url": "https://raw.githubusercontent.com/SiO-2/kvcloak/6b40f36edb2f337557543e7e60b10022308883d4/attack/get_collision_threshold.py",
+      "sha256": "c5e9ce1d6c60b692a81f5f5a97358b3864b0476198e87d6ed2b4ec69003dbeee"
+    }
+  }
+}

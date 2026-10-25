@@ -1,0 +1,3636 @@
+{
+  "model_revision": "03dcf209f3f549b4075e7191e77cf69b3d48e1b2",
+  "candidate_count": 10,
+  "cases": [
+    {
+      "prefix": "english",
+      "layer": 10,
+      "target": "0",
+      "target_token_id": 236771,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "64490601106",
+      "nearest_wrong": "1",
+      "nearest_wrong_distance_squared_integer_units": "97266663980228",
+      "distance_gap_l2_diagnostic": 18.32663788900082,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "97202173379122",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9608436",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "93259545831930",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "8487485",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "89316918291822",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7366534",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "85374348173634",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "6245583",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "81431778055446",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5124632",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "63032092292366",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 10,
+      "target": "1",
+      "target_token_id": 236770,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "60251855678",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "29486245239362",
+      "distance_gap_l2_diagnostic": 9.88895670976902,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "29425993383684",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5184660",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "26866093918480",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3927621",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "24306194453276",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2670582",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "21746294988072",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1413543",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "19186395522868",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "156504",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "8002273411792",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 10,
+      "target": "2",
+      "target_token_id": 236778,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "41879653643",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "25445013798678",
+      "distance_gap_l2_diagnostic": 9.230918686226792,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "25403134145035",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4839659",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "23008970400323",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3601920",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "20625057641083",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2364181",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "18241144881843",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1126442",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "15857232122603",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-111297",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "5191586131195",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 10,
+      "target": "3",
+      "target_token_id": 236800,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "43127385603",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "25678865070012",
+      "distance_gap_l2_diagnostic": 9.26925747271682,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "25635737684409",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4859759",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "23182230652853",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3612708",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "20728723621297",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2365657",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "18275216589741",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1118606",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "15821709784625",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-128445",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "5242394170449",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 10,
+      "target": "4",
+      "target_token_id": 236812,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "49383228922",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "26029279284030",
+      "distance_gap_l2_diagnostic": 9.307225035819801,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "25979896055108",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4879665",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "23479769262702",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3617277",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "20980855254936",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2354889",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "18481941247170",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1092501",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "15983027239404",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-169887",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "5120492498922",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 10,
+      "target": "5",
+      "target_token_id": 236810,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "45879127424",
+      "nearest_wrong": "7",
+      "nearest_wrong_distance_squared_integer_units": "21776346433079",
+      "distance_gap_l2_diagnostic": 8.49212488344149,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "21730467305655",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4452318",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "19471843014925",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3183752",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "17213220708189",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1915186",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "14956502369709",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "646620",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "12699784031229",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-621946",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "2526040437788",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 10,
+      "target": "6",
+      "target_token_id": 236825,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "45871896181",
+      "nearest_wrong": "8",
+      "nearest_wrong_distance_squared_integer_units": "27382237988523",
+      "distance_gap_l2_diagnostic": 9.572270914499393,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "27336366092342",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5018626",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "24857292228034",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3793449",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "22378422314766",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2568272",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "19899552401498",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1343095",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "17428968188326",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "117918",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "6659706386549",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 10,
+      "target": "7",
+      "target_token_id": 236832,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "43432300066",
+      "nearest_wrong": "5",
+      "nearest_wrong_distance_squared_integer_units": "21980578539235",
+      "distance_gap_l2_diagnostic": 8.54480894708161,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "21937146239169",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4479939",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "19663686002287",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3209229",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "17390301247955",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1938519",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "15116916493623",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "667809",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "12848733968539",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-602901",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "2706249482059",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 10,
+      "target": "8",
+      "target_token_id": 236828,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "64321594186",
+      "nearest_wrong": "6",
+      "nearest_wrong_distance_squared_integer_units": "27681531639342",
+      "distance_gap_l2_diagnostic": 9.551443311663192,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "27617210045156",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5007706",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "25101239370308",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3776375",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "22585337168502",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2545044",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "20069435375838",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1313713",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "17553533583174",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "82382",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "6803861741438",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 10,
+      "target": "9",
+      "target_token_id": 236819,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "48733979167",
+      "nearest_wrong": "8",
+      "nearest_wrong_distance_squared_integer_units": "31604765690743",
+      "distance_gap_l2_diagnostic": 10.301692702437485,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "31556031711576",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5401053",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "29036977485480",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4204293",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "26517927778392",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3007533",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "23998912184968",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1810773",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "21479896591544",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "614013",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "10283332067794",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 15,
+      "target": "0",
+      "target_token_id": 236771,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "140913337203",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "394684433324487",
+      "distance_gap_l2_diagnostic": 18.588335165085653,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "394543519987284",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "19491281",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "378368361715140",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17049263",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "362193209881102",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "14607245",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "346018058047064",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12165227",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "329857668459170",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9723209",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "259200797385330",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 15,
+      "target": "1",
+      "target_token_id": 236770,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "113240987784",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "240019983721752",
+      "distance_gap_l2_diagnostic": 14.453950271765288,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "239906742733968",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15156065",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "226070553980320",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12498983",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "212234424602288",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9841901",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "198398295224256",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7184819",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "184569698637776",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4527737",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "124633792725904",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 15,
+      "target": "2",
+      "target_token_id": 236778,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "99366549952",
+      "nearest_wrong": "1",
+      "nearest_wrong_distance_squared_integer_units": "240746586873560",
+      "distance_gap_l2_diagnostic": 14.496599254551503,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "240647220323608",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15200785",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "226671100064776",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12549997",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "212695021039096",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9899209",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "198718942013416",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7248421",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "184742862987736",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4597633",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "125281193322156",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 15,
+      "target": "3",
+      "target_token_id": 236800,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "144319201380",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "243582854650852",
+      "distance_gap_l2_diagnostic": 14.5218348232613,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "243438535449472",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15227247",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "231030363566192",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12653175",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "218634451010912",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "10079103",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "206238557332560",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7505031",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "193842687477056",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4930959",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "137275686415152",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 15,
+      "target": "4",
+      "target_token_id": 236812,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "120581645287",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "261720301873083",
+      "distance_gap_l2_diagnostic": 15.097163358510628,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "261599720227796",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15830522",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "248404953834060",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "13211664",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "235211722075844",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "10592806",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "222018490317628",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7973948",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "208825258559412",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5355090",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "150456768990868",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 15,
+      "target": "5",
+      "target_token_id": 236810,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "95752526332",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "281145308011610",
+      "distance_gap_l2_diagnostic": 15.695523431407954,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "281049555485278",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16457948",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "267237750321094",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "13981039",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "253426059956414",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11504130",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "239614369591734",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9027221",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "225802711227310",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "6533166",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "164889723176938",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 15,
+      "target": "6",
+      "target_token_id": 236825,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "241962822794",
+      "nearest_wrong": "4",
+      "nearest_wrong_distance_squared_integer_units": "285479324533285",
+      "distance_gap_l2_diagnostic": 15.644298794480417,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "285237361710491",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16404235",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "269908346737353",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "13811169",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "254620505918193",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11218103",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "239332665099033",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "8625037",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "224045753416513",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "6026442",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "158890445931033",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 15,
+      "target": "7",
+      "target_token_id": 236832,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "95892210664",
+      "nearest_wrong": "5",
+      "nearest_wrong_distance_squared_integer_units": "299250453340226",
+      "distance_gap_l2_diagnostic": 16.202156372686197,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "299154561129562",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16989191",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "285120055411514",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "14559223",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "271085549693466",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12103759",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "257051043975418",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9648295",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "243016538257370",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7192831",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "179763166994648",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 15,
+      "target": "8",
+      "target_token_id": 236828,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "105931862144",
+      "nearest_wrong": "9",
+      "nearest_wrong_distance_squared_integer_units": "305305252132872",
+      "distance_gap_l2_diagnostic": 16.353144265123536,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "305199320270728",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17147514",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "290965544988728",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "14728204",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "276748724905800",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12308894",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "262325376913384",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9859649",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "247651722589392",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7388669",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "184845362376976",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "english",
+      "layer": 15,
+      "target": "9",
+      "target_token_id": 236819,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "112982059440",
+      "nearest_wrong": "8",
+      "nearest_wrong_distance_squared_integer_units": "305530503493160",
+      "distance_gap_l2_diagnostic": 16.349127605856953,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "305417521433720",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17143301",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "290593855374904",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "14700735",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "275770204341368",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12210074",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "260946553307832",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9706294",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "246122902274296",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7202514",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "182017709935772",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 10,
+      "target": "0",
+      "target_token_id": 236771,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "59949389516",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "58571911397648",
+      "distance_gap_l2_diagnostic": 14.13036952487341,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "58511962008132",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7408382",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "54951033084132",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "6169717",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "51393996117508",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4931052",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "47836959150884",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3692387",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "44279922184260",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2453722",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "29217974149125",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 10,
+      "target": "1",
+      "target_token_id": 236770,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "62905367880",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "39328216117943",
+      "distance_gap_l2_diagnostic": 11.48302428561655,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "39265310750063",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "6020411",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "36421125755443",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4793725",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "33579979271927",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3567039",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "30738833024955",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2340353",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "27897686777983",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1113667",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "15137359944136",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 10,
+      "target": "2",
+      "target_token_id": 236778,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "47381714293",
+      "nearest_wrong": "4",
+      "nearest_wrong_distance_squared_integer_units": "26691262479306",
+      "distance_gap_l2_diagnostic": 9.438868166688293,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "26643880765013",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4948684",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "24220394541735",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3674306",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "21800994483065",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2399928",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "19381594424395",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1125550",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "16962194365725",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-148828",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "5965616160929",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 10,
+      "target": "3",
+      "target_token_id": 236800,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "46891423126",
+      "nearest_wrong": "7",
+      "nearest_wrong_distance_squared_integer_units": "21621682390411",
+      "distance_gap_l2_diagnostic": 8.45597802915545,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "21574790967285",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4433367",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "19323401742359",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3137680",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "17072012517433",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1841993",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "14820623292507",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "546306",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "12569234067581",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-749381",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "2399999644675",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 10,
+      "target": "4",
+      "target_token_id": 236812,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "53293772618",
+      "nearest_wrong": "5",
+      "nearest_wrong_distance_squared_integer_units": "23898632914426",
+      "distance_gap_l2_diagnostic": 8.883988119365691,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "23845339141808",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4657767",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "21454891124364",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3354839",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "19064478376552",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2051911",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "16674100234820",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "748983",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "14283722093088",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-553945",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "3756646209588",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 10,
+      "target": "5",
+      "target_token_id": 236810,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "52532707802",
+      "nearest_wrong": "4",
+      "nearest_wrong_distance_squared_integer_units": "24124292210938",
+      "distance_gap_l2_diagnostic": 8.931061700113572,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "24071759503136",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4682447",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "21788048215448",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3397449",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "19517259701264",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2112451",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "17246471187080",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "827453",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "14975682672896",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-457545",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "4448078108136",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 10,
+      "target": "6",
+      "target_token_id": 236825,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "60337381211",
+      "nearest_wrong": "4",
+      "nearest_wrong_distance_squared_integer_units": "33491514526147",
+      "distance_gap_l2_diagnostic": 10.56966531044628,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "33431177144936",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5541548",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "30821146781980",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4294356",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "28159668886508",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3047164",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "25455966441820",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1799972",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "22759671105228",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "552780",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "11025931161080",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 10,
+      "target": "7",
+      "target_token_id": 236832,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "67911420145",
+      "nearest_wrong": "9",
+      "nearest_wrong_distance_squared_integer_units": "12378163806633",
+      "distance_gap_l2_diagnostic": 6.213499599993957,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "12310252386488",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3257662",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "10567838395838",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1961613",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "8825488024772",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "665564",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "7083473576906",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-630485",
+          "both_sides_certified": false
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "5341459129040",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-1926534",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "-3089611246955",
+      "radius4_both_sides_exact_certified": false,
+      "radius4_both_sides_witness": {
+        "wrong_digit": "9",
+        "file": "witness_after_one_l10_digit7_r4.npz"
+      }
+    },
+    {
+      "prefix": "after_one",
+      "layer": 10,
+      "target": "8",
+      "target_token_id": 236828,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "66329768728",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "29473233471221",
+      "distance_gap_l2_diagnostic": 9.863624504713359,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "29406903702493",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5171379",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "26831687957013",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3922210",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "24256472211533",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2673041",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "21681303666181",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1423872",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "19106147294781",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "174703",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "7747290552344",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 10,
+      "target": "9",
+      "target_token_id": 236819,
+      "binary_unit_exponent": -19,
+      "correct_distance_squared_integer_units": "51457716371",
+      "nearest_wrong": "7",
+      "nearest_wrong_distance_squared_integer_units": "12623666051167",
+      "distance_gap_l2_diagnostic": 6.344102764210461,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "12572208334796",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3326136",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "10855832341802",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2038523",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "9139456348808",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "750910",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "7423080355814",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-536703",
+          "both_sides_certified": false
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "5706704909054",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-1824316",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "-2625288314299",
+      "radius4_both_sides_exact_certified": false,
+      "radius4_both_sides_witness": {
+        "wrong_digit": "7",
+        "file": "witness_after_one_l10_digit9_r4.npz"
+      }
+    },
+    {
+      "prefix": "after_one",
+      "layer": 15,
+      "target": "0",
+      "target_token_id": 236771,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "143975892294",
+      "nearest_wrong": "1",
+      "nearest_wrong_distance_squared_integer_units": "414966955102560",
+      "distance_gap_l2_diagnostic": 19.065185702333075,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "414822979210266",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "19991295",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "397563350833658",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17604044",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "380303808079834",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15216793",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "363044265326010",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12829542",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "345784722572186",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "10442291",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "275494458125002",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 15,
+      "target": "1",
+      "target_token_id": 236770,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "119216520100",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "414168450595167",
+      "distance_gap_l2_diagnostic": 19.079066774501243,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "414049234075067",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "20005850",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "396844258266893",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17611194",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "379639350504543",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15216538",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "362434442742193",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12821882",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "345229534979843",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "10427226",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "274397990339703",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 15,
+      "target": "2",
+      "target_token_id": 236778,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "98747788060",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "351769635305972",
+      "distance_gap_l2_diagnostic": 17.586976229679596,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "351670887517912",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18441280",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "335870665385814",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16037757",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "320070494716756",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "13634234",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "304270324047698",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11230711",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "288470156594640",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "8827188",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "223982704301954",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 15,
+      "target": "3",
+      "target_token_id": 236800,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "111012740163",
+      "nearest_wrong": "4",
+      "nearest_wrong_distance_squared_integer_units": "347366991311544",
+      "distance_gap_l2_diagnostic": 17.456625200023627,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "347255978571381",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18304597",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "332301710178585",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15935137",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "317347441785789",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "13565677",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "302407485144673",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11196217",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "287467528503557",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "8826757",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "222852775200430",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 15,
+      "target": "4",
+      "target_token_id": 236812,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "221923636052",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "347539670957251",
+      "distance_gap_l2_diagnostic": 17.329528993615394,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "347317747321199",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18171327",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "331507907434685",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15730841",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "315698068647681",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "13290355",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "299888229860677",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "10849869",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "284078391073673",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "8409383",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "219690284063280",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 15,
+      "target": "5",
+      "target_token_id": 236810,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "110640813972",
+      "nearest_wrong": "4",
+      "nearest_wrong_distance_squared_integer_units": "355625065710896",
+      "distance_gap_l2_diagnostic": 17.667195099200203,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "355514424896924",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18525395",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "339932634528352",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16167568",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "324375250814756",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "13809741",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "308817965546600",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11451914",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "293260727416556",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9094087",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "226319307803260",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 15,
+      "target": "6",
+      "target_token_id": 236825,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "127263222512",
+      "nearest_wrong": "5",
+      "nearest_wrong_distance_squared_integer_units": "373895493820332",
+      "distance_gap_l2_diagnostic": 18.100393067868556,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "373768230597820",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18979637",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "357984034032764",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16621401",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "342199837467708",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "14263165",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "326415640902652",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11904929",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "310643898758204",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9546693",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "245221443329256",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 15,
+      "target": "7",
+      "target_token_id": 236832,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "169151012230",
+      "nearest_wrong": "8",
+      "nearest_wrong_distance_squared_integer_units": "367746357879491",
+      "distance_gap_l2_diagnostic": 17.896112655543618,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "367577206867261",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18765433",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "352757794986531",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16536608",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "337938383105801",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "14307783",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "323118971225071",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12078958",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "308299656434901",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9850133",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "242630442874484",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 15,
+      "target": "8",
+      "target_token_id": 236828,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "212678667421",
+      "nearest_wrong": "7",
+      "nearest_wrong_distance_squared_integer_units": "369195312539856",
+      "distance_gap_l2_diagnostic": 17.884526107727606,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "368982633872435",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18753284",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "352812149285635",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16449462",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "336646221089235",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "14130547",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "320480334520739",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11811632",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "304314447952243",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9492717",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "239339295946155",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "after_one",
+      "layer": 15,
+      "target": "9",
+      "target_token_id": 236819,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "118111970104",
+      "nearest_wrong": "8",
+      "nearest_wrong_distance_squared_integer_units": "370534643980567",
+      "distance_gap_l2_diagnostic": 18.029787285366353,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "370416532010463",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18905601",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "354620859356475",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16624084",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "338846595193495",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "14342567",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "323072331030515",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12061050",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "307298992953847",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9779533",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "241613438152741",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 10,
+      "target": "0",
+      "target_token_id": 236771,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "212194251559",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "321223437662283",
+      "distance_gap_l2_diagnostic": 16.653119894797783,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "321011243410724",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17462061",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "307431920568776",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15506775",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "293852761644908",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "13551489",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "280273602721040",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11596203",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "266694468734644",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9640917",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "212379718292964",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 10,
+      "target": "1",
+      "target_token_id": 236770,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "169814738684",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "80501840012888",
+      "distance_gap_l2_diagnostic": 8.163638994990583,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "80332025274204",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "8560195",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "74247693756100",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "6775472",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "68163362237996",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4990749",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "62079032345292",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3206026",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "56001566529388",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1421303",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "29131774272636",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 10,
+      "target": "2",
+      "target_token_id": 236778,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "176013535700",
+      "nearest_wrong": "4",
+      "nearest_wrong_distance_squared_integer_units": "92282802418708",
+      "distance_gap_l2_diagnostic": 8.761266859911258,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "92106788883008",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9186853",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "85267062712432",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7263612",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "78427473384864",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5340371",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "71587884057296",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3417130",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "64749427191808",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1493889",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "34560651268112",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 10,
+      "target": "3",
+      "target_token_id": 236800,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "237909585016",
+      "nearest_wrong": "5",
+      "nearest_wrong_distance_squared_integer_units": "63616579356468",
+      "distance_gap_l2_diagnostic": 7.1413425911246025,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "63378669771452",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7488240",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "57874211661540",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5643792",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "52375138377228",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3799344",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "46876065092916",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1954896",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "41376991808604",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "110448",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "16462792802692",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 10,
+      "target": "4",
+      "target_token_id": 236812,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "333069084948",
+      "nearest_wrong": "6",
+      "nearest_wrong_distance_squared_integer_units": "69595663922428",
+      "distance_gap_l2_diagnostic": 7.405548276936127,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "69262594837480",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7765279",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "62875925673848",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5814972",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "56489256510216",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3864665",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "50102587346584",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1914358",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "43715918182952",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-35949",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "16509538559260",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 10,
+      "target": "5",
+      "target_token_id": 236810,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "273317574080",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "62754905261116",
+      "distance_gap_l2_diagnostic": 7.056237733142653,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "62481587687036",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7399001",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "56738122983828",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5522013",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "50994658280620",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3645025",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "45268257677252",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1768037",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "39541857073884",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-108951",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "14610095831608",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 10,
+      "target": "6",
+      "target_token_id": 236825,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "172101530528",
+      "nearest_wrong": "4",
+      "nearest_wrong_distance_squared_integer_units": "69524801174336",
+      "distance_gap_l2_diagnostic": 7.556249740837302,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "69352699643808",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7923301",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "63338946134240",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "6024480",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "57325528432128",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4125659",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "51339807390496",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2226838",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "45354086348864",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "328017",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "18483381365504",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 10,
+      "target": "7",
+      "target_token_id": 236832,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "174385484072",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "68845372495300",
+      "distance_gap_l2_diagnostic": 7.514683037038615,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "68670987011228",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7879716",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "63005244555996",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "6070940",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "57344845971740",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4257502",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "51684447387484",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2436840",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "46031769337244",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "616178",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "20853487232152",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 10,
+      "target": "8",
+      "target_token_id": 236828,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "193035026188",
+      "nearest_wrong": "7",
+      "nearest_wrong_distance_squared_integer_units": "101915282600900",
+      "distance_gap_l2_diagnostic": 9.208633819265208,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "101722247574712",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9655951",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "94440330982224",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7811809",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "87158414754632",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5967667",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "79876498527040",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4123525",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "72594582299448",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2279383",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "42518790414084",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 10,
+      "target": "9",
+      "target_token_id": 236819,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "233802541852",
+      "nearest_wrong": "8",
+      "nearest_wrong_distance_squared_integer_units": "143760115183216",
+      "distance_gap_l2_diagnostic": 10.973424252109186,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "143526312641364",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11506468",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "134953286516996",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9637035",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "126380264162548",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7767602",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "117807241808100",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5898169",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "109235742969044",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4028736",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "73308128024792",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 15,
+      "target": "0",
+      "target_token_id": 236771,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "278708845005",
+      "nearest_wrong": "1",
+      "nearest_wrong_distance_squared_integer_units": "668811689893882",
+      "distance_gap_l2_diagnostic": 24.15987490291045,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "668532981048877",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "25333464",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "647931856289413",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "23300846",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "627330731529949",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "21268228",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "606729606770485",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "19235610",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "586128482011021",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17202992",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "513218894315548",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 15,
+      "target": "1",
+      "target_token_id": 236770,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "154891223767",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "354104627924779",
+      "distance_gap_l2_diagnostic": 17.57059645561183,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "353949736701012",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18424104",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "341457467811536",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16593824",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "328980737769804",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "14763544",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "316504009283472",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12933264",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "304027315670484",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11102984",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "250677796992900",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 15,
+      "target": "2",
+      "target_token_id": 236778,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "228735081016",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "344144927854176",
+      "distance_gap_l2_diagnostic": 17.235642440554642,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "343916192773160",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18072880",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "331459572282704",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16198848",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "319006461157220",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "14324816",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "306553350031736",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12450784",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "294100238906252",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "10576752",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "243787761293748",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 15,
+      "target": "3",
+      "target_token_id": 236800,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "162687700844",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "345552771215976",
+      "distance_gap_l2_diagnostic": 17.343238956342912,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "345390083515132",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18185703",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "333226666962612",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16330559",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "321063259004012",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "14475415",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "308899851045412",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12620271",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "296736443086812",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "10765127",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "245719261452568",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 15,
+      "target": "4",
+      "target_token_id": 236812,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "191322018888",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "391134134641528",
+      "distance_gap_l2_diagnostic": 18.443782479634738,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "390942812622640",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "19339707",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "377428133793728",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17462009",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "363913467285584",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15584311",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "350398800777440",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "13706613",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "336475135095551",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11826422",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "279391308810768",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 15,
+      "target": "5",
+      "target_token_id": 236810,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "182254033345",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "382503875642199",
+      "distance_gap_l2_diagnostic": 18.24454697616543,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "382321621608854",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "19130793",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "367979308280326",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17207755",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "353636994951798",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15284717",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "339294682534070",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "13361679",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "324952370116342",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11438641",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "269442803182303",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 15,
+      "target": "6",
+      "target_token_id": 236825,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "150657652677",
+      "nearest_wrong": "4",
+      "nearest_wrong_distance_squared_integer_units": "393029373263464",
+      "distance_gap_l2_diagnostic": 18.53639793236123,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "392878715610787",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "19436821",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "378904169344381",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17574662",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "364929687810775",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15712503",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "350955206277169",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "13850344",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "336980724743563",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11988185",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "279822226024083",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 15,
+      "target": "7",
+      "target_token_id": 236832,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "174066821212",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "385370436820932",
+      "distance_gap_l2_diagnostic": 18.32355598895482,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "385196369999720",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "19213640",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "370765630681824",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17285270",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "356334946964542",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15356900",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "341904263247260",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "13428530",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "327473579529978",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11500160",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "270674025185556",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 15,
+      "target": "8",
+      "target_token_id": 236828,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "208245304787",
+      "nearest_wrong": "7",
+      "nearest_wrong_distance_squared_integer_units": "426302564760063",
+      "distance_gap_l2_diagnostic": 19.255406161167134,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "426094319455276",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "20190755",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "411094821599590",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18295261",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "396095380128416",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16399767",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "381095939902014",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "14504273",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "366107775930844",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12608779",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "303341234427720",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_short",
+      "layer": 15,
+      "target": "9",
+      "target_token_id": 236819,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "192451985428",
+      "nearest_wrong": "8",
+      "nearest_wrong_distance_squared_integer_units": "500927263558324",
+      "distance_gap_l2_diagnostic": 20.926199832980902,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "500734811572896",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "21942710",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "485704225363108",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "20147551",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "470673712782934",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18352392",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "455643200202760",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16557233",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "440612687622586",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "14762074",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "376336787981053",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 10,
+      "target": "0",
+      "target_token_id": 236771,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "315782131240",
+      "nearest_wrong": "8",
+      "nearest_wrong_distance_squared_integer_units": "228324193237116",
+      "distance_gap_l2_diagnostic": 13.874488081052101,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "228008411105876",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "14548455",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "215971117907284",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12407788",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "203933826576852",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "10267121",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "191896535246420",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "8126454",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "179859243915988",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5985787",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "125446127957936",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 10,
+      "target": "1",
+      "target_token_id": 236770,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "267094852592",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "144415351376898",
+      "distance_gap_l2_diagnostic": 10.967713969596572,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "144148256524306",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11500480",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "132707248359994",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "8877945",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "121266353016162",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "6255410",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "109825457672330",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3632875",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "98384562328498",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1010340",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "47772780731647",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 10,
+      "target": "2",
+      "target_token_id": 236778,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "380662556206",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "100563890655636",
+      "distance_gap_l2_diagnostic": 8.975197150774845,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "100183228099430",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9411175",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "90303650180326",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "6777664",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "80436869205606",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4144153",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "70575719182310",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1510642",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "60714569159014",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-1122869",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "16334308712545",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 10,
+      "target": "3",
+      "target_token_id": 236800,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "300770582845",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "100553166756693",
+      "distance_gap_l2_diagnostic": 9.040064473184477,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "100252396173848",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9479194",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "90251228026896",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "6841419",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "80250059879944",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4203644",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "70248891732992",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1565869",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "60247723586040",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-1071906",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "16183249995205",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 10,
+      "target": "4",
+      "target_token_id": 236812,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "178639551587",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "104612771524143",
+      "distance_gap_l2_diagnostic": 9.351139807179305,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "104434131972556",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9805380",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "94164885913916",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7099467",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "83907200082108",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4393554",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "73649514250300",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "1687641",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "63391828418492",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-1018272",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "17664817702344",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 10,
+      "target": "5",
+      "target_token_id": 236810,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "346523969215",
+      "nearest_wrong": "6",
+      "nearest_wrong_distance_squared_integer_units": "128432296420883",
+      "distance_gap_l2_diagnostic": 10.246405137012307,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "128085772451668",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "10744134",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "116754771996672",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "8039503",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "105430981157036",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5334872",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "94107258523992",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2630241",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "82783535890948",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "-74390",
+          "both_sides_certified": false
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "32939468203408",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 10,
+      "target": "6",
+      "target_token_id": 236825,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "222987286015",
+      "nearest_wrong": "5",
+      "nearest_wrong_distance_squared_integer_units": "126772766219215",
+      "distance_gap_l2_diagnostic": 10.287405005301807,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "126549778933200",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "10787125",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "115416032415016",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "8096796",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "104308854027392",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5406467",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "93201796108248",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2716138",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "82094738647724",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "25809",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "32258688305524",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 10,
+      "target": "7",
+      "target_token_id": 236832,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "482249262849",
+      "nearest_wrong": "6",
+      "nearest_wrong_distance_squared_integer_units": "136943048860155",
+      "distance_gap_l2_diagnostic": 10.497880110019453,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "136460799597306",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "11007824",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "125248522909332",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "8403662",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "114036246221358",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5799500",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "102823969533384",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "3195338",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "91641687886178",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "591176",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "40914086956192",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 10,
+      "target": "8",
+      "target_token_id": 236828,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "287924079240",
+      "nearest_wrong": "7",
+      "nearest_wrong_distance_squared_integer_units": "163436127267453",
+      "distance_gap_l2_diagnostic": 11.680248653539813,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "163148203188213",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12247627",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "152080160198017",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "9855929",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "141012118596701",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7464231",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "129949908716345",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "5072533",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "118887748243221",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2680835",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "68532972516916",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 10,
+      "target": "9",
+      "target_token_id": 236819,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "193060582192",
+      "nearest_wrong": "6",
+      "nearest_wrong_distance_squared_integer_units": "174233217413951",
+      "distance_gap_l2_diagnostic": 12.169224246706284,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "174040156831759",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "12760356",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "160879146985015",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "10081030",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "147718137138271",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "7401704",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "134557127291527",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "4722378",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "121396117444783",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "2043052",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "64704043310801",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 15,
+      "target": "0",
+      "target_token_id": 236771,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "195100652344",
+      "nearest_wrong": "8",
+      "nearest_wrong_distance_squared_integer_units": "625783519961296",
+      "distance_gap_l2_diagnostic": 23.435557838556633,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "625588419308952",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "24573963",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "605825218814232",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "22490252",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "586062018319512",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "20406541",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "566298817824792",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18322830",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "546535617330072",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16239119",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "468493752711264",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 15,
+      "target": "1",
+      "target_token_id": 236770,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "114971153550",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "585549350912333",
+      "distance_gap_l2_diagnostic": 22.753766105428607,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "585434379758783",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "23859053",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "568313053666783",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "21871922",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "551191761983535",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "19884791",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "534070470300287",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17897660",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "516949214424271",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15910529",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "439527492794347",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 15,
+      "target": "2",
+      "target_token_id": 236778,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "307718444088",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "583481097738221",
+      "distance_gap_l2_diagnostic": 22.507314340910483,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "583173379294133",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "23600629",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "564301475238449",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "21473102",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "544582429889113",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "19345575",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "524863384539777",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17218048",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "505144339190441",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15090521",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "433055733963770",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 15,
+      "target": "3",
+      "target_token_id": 236800,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "196247099857",
+      "nearest_wrong": "2",
+      "nearest_wrong_distance_squared_integer_units": "581976979404596",
+      "distance_gap_l2_diagnostic": 22.584153353078467,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "581780732304739",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "23681201",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "565521372715371",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "21698962",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "549262013126003",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "19716723",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "533002653536635",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17734484",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "516743293947267",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15752245",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "443070788326459",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 15,
+      "target": "4",
+      "target_token_id": 236812,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "187660225456",
+      "nearest_wrong": "3",
+      "nearest_wrong_distance_squared_integer_units": "596314387027901",
+      "distance_gap_l2_diagnostic": 22.875167469960797,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "596126726802445",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "23986351",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "578337593412229",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "21970638",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "560568994536957",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "19954925",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "542800395661685",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17939212",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "525031796786413",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15909062",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "457015274859515",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 15,
+      "target": "5",
+      "target_token_id": 236810,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "241632472347",
+      "nearest_wrong": "6",
+      "nearest_wrong_distance_squared_integer_units": "685657310403167",
+      "distance_gap_l2_diagnostic": 24.503228812589,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "685415677930820",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "25693496",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "664907180773484",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "23632133",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "644398683616148",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "21570770",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "623890202404412",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "19509407",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "603381721192676",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17448044",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "524555286434676",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 15,
+      "target": "6",
+      "target_token_id": 236825,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "162873092508",
+      "nearest_wrong": "7",
+      "nearest_wrong_distance_squared_integer_units": "621811027621244",
+      "distance_gap_l2_diagnostic": 23.39607582230311,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "621648154528736",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "24532562",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "603393448506752",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "22573896",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "585138742484768",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "20603494",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "566884036462784",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18622769",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "548629330440800",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16642044",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "471585585268560",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 15,
+      "target": "7",
+      "target_token_id": 236832,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "205642654204",
+      "nearest_wrong": "8",
+      "nearest_wrong_distance_squared_integer_units": "573754541598504",
+      "distance_gap_l2_diagnostic": 22.41105608117873,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "573548898944300",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "23499694",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "555502490623764",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "21529881",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "537518378989820",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "19560068",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "519534267355876",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17590255",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "501550155721932",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15620442",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "427564704194228",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 15,
+      "target": "8",
+      "target_token_id": 236828,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "163365877656",
+      "nearest_wrong": "7",
+      "nearest_wrong_distance_squared_integer_units": "569129037394492",
+      "distance_gap_l2_diagnostic": 22.365798993426868,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "568965671516836",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "23452239",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "550539325528996",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "21456256",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "532112979541156",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "19460273",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "513686636032324",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "17464290",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "495263614510564",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "15468307",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "422160505961112",
+      "radius4_both_sides_exact_certified": true
+    },
+    {
+      "prefix": "numeric_128",
+      "layer": 15,
+      "target": "9",
+      "target_token_id": 236819,
+      "binary_unit_exponent": -20,
+      "correct_distance_squared_integer_units": "130482505881",
+      "nearest_wrong": "8",
+      "nearest_wrong_distance_squared_integer_units": "599818673419524",
+      "distance_gap_l2_diagnostic": 23.012134753920186,
+      "radii": {
+        "0": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "599688190913643",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "24129971",
+          "both_sides_certified": true
+        },
+        "1": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "582757675339999",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "22261821",
+          "both_sides_certified": true
+        },
+        "2": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "565827159766355",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "20393671",
+          "both_sides_certified": true
+        },
+        "3": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "548896649212063",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "18525521",
+          "both_sides_certified": true
+        },
+        "4": {
+          "target_only_exact_clipped_box_min_squared_gap_units": "531966144342959",
+          "target_only_certified": true,
+          "both_sides_l2_lower_surplus_integer_units": "16657371",
+          "both_sides_certified": true
+        }
+      },
+      "radius4_both_sides_exact_clipped_box_min_squared_gap_units": "458584565990275",
+      "radius4_both_sides_exact_certified": true
+    }
+  ],
+  "scope": "Four fixed clean prefix states, all ten digit tokens, W8/KV8, layers 10 and 15. Final-position code perturbations only; scales/biases/old caches fixed. Apple MLX GPU, not Pixel NPU. No all-prefix guarantee.",
+  "arithmetic": "Exact dyadic integer payload values with arbitrary-precision integers; conservative integer square-root bounds.",
+  "radii": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "summary": {
+    "case_count": 80,
+    "nominal_correct": 80,
+    "radius4_target_only_certified": 80,
+    "radius4_both_sides_certified": 63,
+    "radius4_both_sides_exact_certified": 78,
+    "minimum_nominal_gap_l2_diagnostic": 6.213499599993957
+  },
+  "verification": {
+    "scalar_integer_box_exhaustive_comparisons": 100,
+    "raw_fraction_checks_per_prefix_layer": 2048,
+    "nonpositive_exact_gap_witnesses_checked": true
+  }
+}

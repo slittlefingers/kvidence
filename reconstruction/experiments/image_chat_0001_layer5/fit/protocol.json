@@ -1,0 +1,15 @@
+{
+  "seeds": [
+    17,
+    29
+  ],
+  "steps": 3000,
+  "lr": 0.08,
+  "target": "captured Pixel NPU INT8 layer 5, dequantized original units",
+  "proposal": "local MLX W8 model; not numerically identical to NPU",
+  "selection": "minimum measured Pixel replay KV error; never original image or text",
+  "observations_sha256": "af6b66b92112e54b2806d9df9c3e192a79fadf16d45ffc0746a05141b3a6265d",
+  "original_media_accessed": false,
+  "original_text_accessed": false,
+  "evaluation": "all per-position raw K+V L2 < 4; semantic content and exact text evaluated separately"
+}

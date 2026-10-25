@@ -1,0 +1,45 @@
+{
+  "test_sequence": "test_007",
+  "split": "test",
+  "points": [
+    133,
+    263,
+    391,
+    519,
+    531,
+    659,
+    787,
+    793,
+    921,
+    1049,
+    1055,
+    1183,
+    1312,
+    1440,
+    1568,
+    1580,
+    1708,
+    1836,
+    1848,
+    1976
+  ],
+  "search_points": [
+    133,
+    1055,
+    1976
+  ],
+  "rounds": 4,
+  "initial_pool_queries": 64,
+  "queries_per_round": 1572,
+  "probe_rms": 0.08713840313369006,
+  "seed": 20261022,
+  "prefix": "true replay, original per-image prefill blocks",
+  "learned_models": {
+    "ridges.pt": "2c7e139c78f09038c58a7652f651f386dbe864cf0b2d6e02f40c2ff1438f9dcf",
+    "prefix_last.pt": "7c636b390eaa9690158b3b0d231133e10cf39a1f35f0edc2fb72c3edf7f26bdc"
+  },
+  "source_sha256": "f0706c82f83f94e227e7e5a016a19fc8ed2286c571b38d92cebb9c13a1a7b361",
+  "adapter_projection": "public actual adapter matrix left inverse, RMS-normalize, phone CPU adapter",
+  "search": "full 768 paired secants, 4 dampings x 9 step factors, keep best measured; double radius after zero gain up to 4x",
+  "target_embeddings_used_for": "true prefixes, explicit controls and embedding diagnostics only; not candidate/search input"
+}

@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "observation_metadata": {
+    "schema": 1,
+    "layer_index": 4,
+    "layer_1based": 5,
+    "quantization": [
+      {
+        "width": 512,
+        "scale": 0.0011563472216948867,
+        "zero_point": 0
+      },
+      {
+        "width": 512,
+        "scale": 0.01785714365541935,
+        "zero_point": 0
+      }
+    ],
+    "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+    "source": {
+      "kind": "controlled NPU single-token decode fixture",
+      "selection": "greedy next-token; intentionally easy integration smoke"
+    },
+    "metric": "L2 of dequantized original K+V values; no LSB/RMS normalization",
+    "observed_sha256": "329d974211b2ae9454066fd605e528524873ecfd8db5eae275da2056bb5754de"
+  },
+  "config": {
+    "method": "guided",
+    "epsilon": 4.0,
+    "batch_size": 128,
+    "probability_seeds": 50,
+    "random_seeds": 150,
+    "proposals": 20,
+    "seed": 20261019,
+    "max_queries": null
+  },
+  "manifest_sha256": "7f6907a74e1257105644912558d349d9c7df240df671374505d9510d2ca415b5",
+  "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+  "model_config": {
+    "name": "Gemma 4 E2B IT / Tensor G5",
+    "model": "/path/to/litertlm/annoymous/models/gemma-4-E2B-it_Google_Tensor_G5.litertlm",
+    "device_model": "/sdcard/Android/data/com.example.annoymous/files/gemma-4-E2B-it_Google_Tensor_G5.litertlm",
+    "manifest": "/path/to/litertlm/kvidence/experiments/npu_candidate_batch/inputs/probe.json",
+    "tokenizer": "/path/to/litertlm/kvidence/experiments/kv_guided_search_gemma4_int8/model/tokenizer.json",
+    "embeddings": "/path/to/litertlm/kvidence/experiments/embedding_hnsw/assets/embeddings.npy",
+    "batch_signature": "prefill_128",
+    "mask_token_id": 1437,
+    "vocabulary": null,
+    "default_layer": 4
+  },
+  "model_config_sha256": "b80a3186e78da6deddc2aec4ba77bd9503b0842e53d4410b99daf7d9a1a7d4a3",
+  "model_dimensions": {
+    "vocab_size": 262144,
+    "embedding_dim": 1536,
+    "batch_capacity": 128,
+    "context_capacity": 4096
+  },
+  "tokenizer_sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+  "candidate_vocabulary": {
+    "kind": "full_original",
+    "count": 262144,
+    "filtered": false
+  },
+  "original_vocabulary": {
+    "start": 0,
+    "stop_exclusive": 262144,
+    "filtered": false
+  },
+  "initial_candidates": 200,
+  "prediction_candidates": 50,
+  "random_candidates": 150,
+  "probability_source": "selected NPU model's full logits",
+  "source_hashes": {
+    "kvrecon/__init__.py": "c2bde96242441ed593b00881b8275a9301f5b693a84848a185795982698456d8",
+    "kvrecon/cli.py": "e311b5aa842107398827a0dbf4673d54f40ebb4a6d718aac51cebfb804267fa2",
+    "kvrecon/common.py": "69303849c139aa018c80d48a7b32c516120fc7df0fef16dbb44f9026033ac4d9",
+    "kvrecon/config.py": "95444c73293212a0d9bfe33d9161e4b1a6cac2c955eb22ad2c99fbe21aa88485",
+    "kvrecon/engine.py": "ac291a4a3304ccb5fabf954088c087f6d69f2888335e2d6651bc427e9491e6b2",
+    "kvrecon/npu.py": "f0bd0a5d77464b75cb7bd5a43342276b260ae3ca1a63a82741fe258e5b4f25e0",
+    "kvrecon/observation.py": "0d825488c439199de47518097441462650b1dbc2f6dcf2d34b79e682dbc44d96",
+    "kvrecon/search.py": "b1af86d331d3fd4760985ba058536280b328e57cfed074c2db6002ac60af292d",
+    "kvrecon/surrogate.py": "3b894c7db7602256b489d0dc93f8714d3cfd71d476abc00aea7f3cc9bf83e4eb",
+    "native/build.sh": "cad4d08988cceeb79a73a2f517d403f2fac5a788dd003468472ef60ff9c6eb01",
+    "native/litert_support.h": "92768d645e4b1ead470f262f62c795763d22d235cd2c05e722a98ee85cb1cec5",
+    "native/worker.cc": "ffacee808978e22e5374f8f00127c60f698c17a13dbec650f50df5603c04d992",
+    "prepare_gemma3.py": "6ff3cad9539be58ff1396a4b7c13bb47db760b58e19f5d134234334b6dafb0b1",
+    "run.py": "3ab8410a34643138310239da60df3751f2034d5e23441338ea82a0478007387d",
+    "tests/device_contract.py": "4ceb1c2b8b45563780cf8d59458398de65cf3e90a5a83ad5c780867a9d92e391",
+    "tests/gemma3_assets_device.py": "20496cf638d3aa8e82bc515676f999480757dbca559f5e020200d7ef6d384dfb",
+    "tests/surrogate_preflight.py": "464b07d64e328cb485a8161bcf5921b71607039b2823ce4d28e7d99107161910",
+    "tests/test_config.py": "35ba0d867549a9f8aaa42b1654ee0e11e4474d77a4720a3c4e7a74701ef9f9b8",
+    "tests/test_core.py": "bc178286a31574603027d35c0fb59959e755ffd78489fa8e3f584c6959560e08",
+    "tests/test_models.py": "8dd08299f00f86e4dad8c2f98844160d8c2eab485ccb982e06a4f636f827943c"
+  },
+  "surrogate": {
+    "source": "/path/to/litertlm/kvidence/experiments/ciphertext_full_vocabulary/stable_surrogate.py",
+    "source_sha256": "1e5fd8d09a1e025f8625d0733668eabf075c61c4f2d6544982148ccc237bf9e4",
+    "embedding_sha256": "be74121046399c6f947cd9ecead1153200d81ba8df22aa6143c901dc3cf6cdbf",
+    "shape": [
+      262144,
+      1536
+    ],
+    "proposal_only": true,
+    "note": "Configured embedding asset is proposal-only, not asserted bit-identical to device embedding quantization. Only real NPU KV is accepted."
+  },
+  "surrogate_setup_seconds": 1.5669306670024525,
+  "candidate_quantization": "Native model KV; integer codes dequantized using each tensor's metadata; float32 used directly",
+  "stopping": "strict original-value K+V L2 < epsilon; no default query cap; threshold is not proof of identity",
+  "private_labels_allowed": false
+}

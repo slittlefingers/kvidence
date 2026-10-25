@@ -1,0 +1,96 @@
+{
+  "sample_id": "0037",
+  "sample_selection": "closest-to-1000 standalone payload length in existing 100-sample long dataset; tie by ID; no attack-result selection",
+  "target_tokens": 999,
+  "rendered_chat_tokens": 1022,
+  "user_tokens": 1013,
+  "known_prefix_tokens": 11,
+  "source_sha256": "360c1bda6218265ade811ca82bfbd72d5405ac1192c72b9179a0363cb9a9bc9b",
+  "epsilon": 4.0,
+  "strict_less_than": true,
+  "metric": "raw Euclidean L2 of concatenated K+V, 1024 dimensions",
+  "kv_dtype": "mlx.core.bfloat16",
+  "layer_1based": 5,
+  "model": {
+    "model_id": "mlx-community/gemma-4-e2b-it-8bit",
+    "model_revision": "03dcf209f3f549b4075e7191e77cf69b3d48e1b2",
+    "weight_quantization": {
+      "group_size": 64,
+      "bits": 8,
+      "mode": "affine"
+    },
+    "model_text_parameters": 4628569379,
+    "embedding_table_shape": [
+      262144,
+      1536
+    ],
+    "per_layer_embedding_table_shape": [
+      262144,
+      8960
+    ],
+    "independent_kv_producers": 15,
+    "layer_to_kv_producer_1based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      14,
+      14,
+      14,
+      14,
+      15,
+      14,
+      14,
+      14,
+      14,
+      15,
+      14,
+      14,
+      14,
+      14,
+      15,
+      14,
+      14,
+      14,
+      14,
+      15
+    ],
+    "observed_layers_1based": [
+      10,
+      15
+    ],
+    "kv_width_by_layer": {
+      "10": 1024,
+      "15": 1024
+    },
+    "text_only": true,
+    "main_embedding_only_surrogate": true,
+    "device": "Apple MLX GPU",
+    "sliding_window": 512
+  },
+  "initial_hybrid": {
+    "probability_top": 50,
+    "random_from_rest": 150
+  },
+  "seed": 20261019,
+  "no_600_query_limit": true,
+  "no_coordinate_gate": true,
+  "no_lsb_normalization": true,
+  "no_rms_normalization": true,
+  "candidate_count": 53150,
+  "native_long_prefill": true,
+  "native_sliding_window": 512,
+  "base_search_script_sha256": "b3891a8c47ad1ecb0143b1de94d33d1043c635a50bc4f84bad6fd599240425ab",
+  "trace_checkpoints": "append one JSONL record per position; final pretty JSON outside timed loop"
+}

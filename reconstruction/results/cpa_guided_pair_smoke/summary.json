@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "repetition": 1,
+      "method": "collision_plus_cpa",
+      "directory": "001_collision_plus_cpa",
+      "status": "complete",
+      "wall_seconds": 27.20438133299467,
+      "recovery_status": "complete",
+      "accepted_tokens": 3,
+      "attempted_positions": 3,
+      "total_queries": 768,
+      "online_seconds": 16.637241125004948,
+      "decoder_seconds": 0.6641890110040549,
+      "public_prefix_seconds": 1.5387886250100564,
+      "device_setup_seconds": 6.253789750000578,
+      "surrogate_setup_seconds": 2.500019036233425e-07,
+      "probability_seconds": 1.9687280830257805,
+      "ranking_seconds": 0.001101792004192248,
+      "query_transport_seconds": 11.679262915989966,
+      "evaluation": {
+        "recovered": 3,
+        "truth_tokens": 3,
+        "correct_ids": 3,
+        "exact_match": true,
+        "false_acceptances": 0,
+        "total_queries": 768,
+        "note": "Separate evaluation reads private labels; no unique-solution claim"
+      }
+    },
+    {
+      "repetition": 1,
+      "method": "guided",
+      "directory": "001_guided",
+      "status": "complete",
+      "wall_seconds": 20.811824667005567,
+      "recovery_status": "complete",
+      "accepted_tokens": 3,
+      "attempted_positions": 3,
+      "total_queries": 150,
+      "online_seconds": 8.198757207996096,
+      "decoder_seconds": 0.43193026099470444,
+      "public_prefix_seconds": 1.5213286250072997,
+      "device_setup_seconds": 6.135034541002824,
+      "surrogate_setup_seconds": 2.5058378340036143,
+      "probability_seconds": 2.025763041994651,
+      "ranking_seconds": 3.2500101951882243e-06,
+      "query_transport_seconds": 3.308241749982699,
+      "evaluation": {
+        "recovered": 3,
+        "truth_tokens": 3,
+        "correct_ids": 3,
+        "exact_match": true,
+        "false_acceptances": 0,
+        "total_queries": 150,
+        "note": "Separate evaluation reads private labels; no unique-solution claim"
+      }
+    }
+  ],
+  "metric": "CPA: separate calibrated K/V; guided: concatenated L2",
+  "epsilon": 4.0,
+  "baseline_label": "Collision+ (CPA NPU port)",
+  "accuracy_requires_independent_evaluation": true,
+  "note": "Compare accuracy/completeness before timing. CPA includes offline calibration; NPU port is not GPU reproduction."
+}

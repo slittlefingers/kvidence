@@ -1,0 +1,14 @@
+{
+  "recovered": 8,
+  "truth_tokens": 8,
+  "correct_ids": 8,
+  "exact_match": true,
+  "false_acceptances": 0,
+  "total_queries": 0,
+  "note": "Separate evaluation reads private labels; no unique-solution claim",
+  "positions_evaluated": 8,
+  "truth_in_threshold_candidates": 8,
+  "nearest_correct": 8,
+  "ambiguous_positions": 0,
+  "unresolved_positions": 0
+}

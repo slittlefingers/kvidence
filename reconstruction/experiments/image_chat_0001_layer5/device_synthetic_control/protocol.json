@@ -1,0 +1,8 @@
+{
+  "target": "synthetic native-generated; no original image or captured KV",
+  "target_seed": 999,
+  "search_seed": 17,
+  "steps": 30,
+  "source_sha256": "b2ab9a8551cf726e4092b7877ec38c456e89b94d4bcb9bf701b029f0ae30982e",
+  "purpose": "Does this finite-difference search find a known reachable native target?"
+}

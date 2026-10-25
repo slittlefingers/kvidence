@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "target_tokens": 999,
+  "same_source_observation_both_methods": true,
+  "cache_boundary_probes": 8,
+  "query_branches_preserve_prefix_cache": true,
+  "all_accepted_raw_l2_recomputed_below_4": true,
+  "initial_probability_50_and_uniform_random_150_recomputed": true,
+  "query_ids_unique_and_within_finite_pool": true,
+  "append_checkpoints_match_final_trace": true,
+  "no_600_query_cap": true,
+  "private_source_guard_negative_checks": 3
+}

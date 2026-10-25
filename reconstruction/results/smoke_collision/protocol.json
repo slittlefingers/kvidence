@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "observation_metadata": {
+    "schema": 1,
+    "layer_index": 4,
+    "layer_1based": 5,
+    "quantization": [
+      {
+        "width": 512,
+        "scale": 0.0011563472216948867,
+        "zero_point": 0
+      },
+      {
+        "width": 512,
+        "scale": 0.01785714365541935,
+        "zero_point": 0
+      }
+    ],
+    "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+    "source": {
+      "kind": "controlled NPU single-token decode fixture",
+      "selection": "greedy next-token; intentionally easy integration smoke"
+    },
+    "metric": "L2 of dequantized original K+V values; no LSB/RMS normalization",
+    "observed_sha256": "329d974211b2ae9454066fd605e528524873ecfd8db5eae275da2056bb5754de"
+  },
+  "config": {
+    "method": "collision_plus",
+    "epsilon": 4.0,
+    "batch_size": 128,
+    "probability_seeds": 50,
+    "random_seeds": 150,
+    "proposals": 20,
+    "seed": 20261019,
+    "max_queries": null
+  },
+  "manifest_sha256": "7f6907a74e1257105644912558d349d9c7df240df671374505d9510d2ca415b5",
+  "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+  "original_vocabulary": {
+    "start": 0,
+    "stop_exclusive": 262144,
+    "filtered": false
+  },
+  "source_hashes": {
+    "kvrecon/__init__.py": "c2bde96242441ed593b00881b8275a9301f5b693a84848a185795982698456d8",
+    "kvrecon/cli.py": "1f03456836d069b060fdd11946d8b79b7f873dbe643c45312092c93c62de992a",
+    "kvrecon/common.py": "f6bcfee0e3899734c6ed1bd5e3754698674ef03b224bd25dba654e6504119d68",
+    "kvrecon/engine.py": "5781b2d0199b67aa5e69c56d65d789e9f8732d2452912a0d1a1efafd183a2ba2",
+    "kvrecon/npu.py": "159aeaf6ae05c2abcf36fbc09fc3aeabfacd859f36b7d4e2f72c0e4528efa437",
+    "kvrecon/observation.py": "683adbafe8f010cb568902bcc4efb5e40b25dd1ba0314904f02c85b4ee9c0860",
+    "kvrecon/search.py": "78962687b174f100729505ba48c7c3f8d9cd2fc33c564c319a2c9e8a413e9799",
+    "kvrecon/surrogate.py": "a031c2038243d2753ed590daf047b941f5d2dfe01f50e9f3254d2c68019344fd",
+    "run.py": "3ab8410a34643138310239da60df3751f2034d5e23441338ea82a0478007387d",
+    "tests/test_core.py": "029e8615d62ee2e27b72a868243ca3a6169dec43c81f22afc38475fa427b7e28"
+  },
+  "surrogate": null,
+  "surrogate_setup_seconds": 1.2500095181167126e-07,
+  "candidate_quantization": "Native Tensor G5 INT8; dequantized using each tensor's metadata",
+  "stopping": "strict original-value K+V L2 < epsilon; no default query cap; threshold is not proof of identity",
+  "private_labels_allowed": false
+}

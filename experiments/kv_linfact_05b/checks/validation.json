@@ -1,0 +1,20 @@
+{
+  "controls": {
+    "interval_classification_cases": 100,
+    "linear_controls": {
+      "linfact_g_scalar": {
+        "queries": 200,
+        "exact_set": true
+      },
+      "linfact_g_vector": {
+        "queries": 200,
+        "exact_set": true
+      }
+    },
+    "g_design": {
+      "rank": 5,
+      "max_leverage_over_rank": 1.0263495338215887,
+      "iterations": 119
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "dataset": "plaintext_chat",
+  "dataset_directory": "/path/to/litertlm/kvidence/datasets/shadow_chat/plaintext_chat_100",
+  "manifest_sha256": "5343142d7bca9959d739cd02a47194d5a3a41f8a91aba8dbd5c207d735e98b4b",
+  "model_name": "gemma4-e2b",
+  "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+  "scope": "sample",
+  "sample_ids": [
+    "0076"
+  ],
+  "sample_fingerprints": {
+    "0076": "e5297f73cb9ff0565869d51694957c9ac9498e23166a2140beafc80a39da3fcb"
+  },
+  "methods": [
+    "guided",
+    "collision_plus",
+    "exhaustive"
+  ],
+  "layer_index": 4,
+  "target": "supplied user prompt; encrypted input recovery is not AES decryption",
+  "benchmark_length_policy": "User-prompt boundaries come from benchmark input tokenization; target token IDs are withheld from recovery.",
+  "state": "archived_results_export",
+  "created_at": "2026-10-24T06:10:23.779721+00:00",
+  "recorded_runs": 4,
+  "recorded_samples": 1,
+  "note": "Archive export only; no NPU execution. Accepted tokens are not independently verified correct tokens. Per-position timing repeats on candidate rows and must not be summed."
+}

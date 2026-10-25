@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "method": "first_v",
+  "observation_metadata": {
+    "schema": 1,
+    "layer_index": 0,
+    "layer_1based": 1,
+    "quantization": [
+      {
+        "width": 256,
+        "scale": 1.0,
+        "zero_point": 0,
+        "dtype": "float32"
+      },
+      {
+        "width": 256,
+        "scale": 1.0,
+        "zero_point": 0,
+        "dtype": "float32"
+      }
+    ],
+    "model_sha256": "1ed29548b302764ce32ebf03d7df8fff943218b76d14230e97ee4bd0224cd8d1",
+    "source": {
+      "kind": "controlled backend single-token decode fixture",
+      "selection": "explicit IDs"
+    },
+    "metric": "L2 of dequantized original K+V values; no LSB/RMS normalization",
+    "observed_sha256": "f87d1c4b7c28e792af8eae4e277e10c4d3a1d37a7bdce825d2657a2ff06a1d8c"
+  },
+  "model_sha256": "1ed29548b302764ce32ebf03d7df8fff943218b76d14230e97ee4bd0224cd8d1",
+  "manifest_sha256": "c15a1791171ce9e3bc4573859cb50a3183919e67eaaa6541932450988918cf6e",
+  "adapter": "litert_tensor_gemma",
+  "model_config": {
+    "name": "Gemma 3 1B IT / Tensor G5",
+    "model": "/path/to/litertlm/annoymous/models/Gemma3-1B-IT_q8_ekv1280_Google_Tensor_G5.litertlm",
+    "device_model": "/sdcard/Android/data/com.example.annoymous/files/Gemma3-1B-IT_q8_ekv1280_Google_Tensor_G5.litertlm",
+    "manifest": "/path/to/litertlm/kvidence/reconstruction/assets/gemma3_1b/manifest.json",
+    "tokenizer": "/path/to/litertlm/kvidence/reconstruction/assets/gemma3_1b/tokenizer.model",
+    "embeddings": "/path/to/litertlm/kvidence/reconstruction/assets/gemma3_1b/embeddings.npy",
+    "batch_signature": "prefill_128",
+    "mask_token_id": 1437,
+    "vocabulary": "/path/to/litertlm/kvidence/reconstruction/examples/contract_candidates.json",
+    "default_layer": 5,
+    "adapter": "litert_tensor_gemma",
+    "first_v_table": "/path/to/litertlm/kvidence/reconstruction/assets/first_v_gemma3_full",
+    "adapter_options": {}
+  },
+  "model_config_sha256": "4e9204a27f38678fb9239b901c18830d9c7a6745da14637e607b51a0e613784d",
+  "tokenizer_sha256": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c",
+  "candidate_vocabulary": {
+    "kind": "explicit_original_ids",
+    "count": 4,
+    "filtered": true,
+    "path": "/path/to/litertlm/kvidence/reconstruction/examples/contract_candidates.json",
+    "sha256": "d4ca12d51666c881f8d214a21197de78000364427663580927eaec2f62774e0c",
+    "ids_remapped": false
+  },
+  "v_table": "/path/to/litertlm/kvidence/reconstruction/assets/first_v_gemma3_probe",
+  "v_table_metadata_sha256": "967840aa92c08e286f563b8d3a357a79b81e4f1c987bf9d0c59541be7c34f19d",
+  "source_hashes": {
+    "kvrecon/__init__.py": "c2bde96242441ed593b00881b8275a9301f5b693a84848a185795982698456d8",
+    "kvrecon/adapters.py": "0014c92eb686029b13efeca01fe0634a9edc28004cd91fa6bb0266a975734923",
+    "kvrecon/backend.py": "ba054b13f132b6f41294fb4b9740f19126a11b0c53ec3360f33ed3756bfd7717",
+    "kvrecon/cli.py": "da49c3237c02d1f81c8da9a4f23cd38b07ee4ab8f8e0e0bc906c1110b4a32480",
+    "kvrecon/common.py": "69303849c139aa018c80d48a7b32c516120fc7df0fef16dbb44f9026033ac4d9",
+    "kvrecon/config.py": "f384a3056ba45682875abd60d6d71f920e3ed8e393b3d7defe2f3eda4bd5fa1f",
+    "kvrecon/engine.py": "ac291a4a3304ccb5fabf954088c087f6d69f2888335e2d6651bc427e9491e6b2",
+    "kvrecon/first_v.py": "cd8899a63062d79ca057db61252312e99811bf0dc3cc154e884633b45b988773",
+    "kvrecon/npu.py": "7083c1b8ad3e108a0b5ddc693608470e6a6b16fcb59772fcf4d76ecdf4dca074",
+    "kvrecon/observation.py": "37aa8d9a85a9dbad696c01823e176fed5f3b524af9bd523221081cd49720202b",
+    "kvrecon/search.py": "ae1a5731cd35ed2319c7d2666e53c922f4613e9f03e220e31d3e361daf4975de",
+    "kvrecon/surrogate.py": "3b894c7db7602256b489d0dc93f8714d3cfd71d476abc00aea7f3cc9bf83e4eb",
+    "native/build.sh": "cad4d08988cceeb79a73a2f517d403f2fac5a788dd003468472ef60ff9c6eb01",
+    "native/litert_support.h": "92768d645e4b1ead470f262f62c795763d22d235cd2c05e722a98ee85cb1cec5",
+    "native/worker.cc": "c8f2f64009921cefe086eef44eeffed4831acc4260fa4ced8ce4c2e3ef1627fb",
+    "prepare_gemma3.py": "6ff3cad9539be58ff1396a4b7c13bb47db760b58e19f5d134234334b6dafb0b1",
+    "run.py": "3ab8410a34643138310239da60df3751f2034d5e23441338ea82a0478007387d",
+    "tests/device_contract.py": "4ceb1c2b8b45563780cf8d59458398de65cf3e90a5a83ad5c780867a9d92e391",
+    "tests/gemma3_assets_device.py": "20496cf638d3aa8e82bc515676f999480757dbca559f5e020200d7ef6d384dfb",
+    "tests/support_cpu_adapter.py": "e523440130acca844ed41ef512fa27776cccfd5e0c88aa81b76ef2e39a31bad1",
+    "tests/surrogate_preflight.py": "464b07d64e328cb485a8161bcf5921b71607039b2823ce4d28e7d99107161910",
+    "tests/test_backend.py": "9cc4837e1d1f3a599271209b8eb8291a4d0262a78a4f3b79788121a87d3c2168",
+    "tests/test_config.py": "35ba0d867549a9f8aaa42b1654ee0e11e4474d77a4720a3c4e7a74701ef9f9b8",
+    "tests/test_core.py": "e3bc3c468ea24046bd108ef1d52da8feb0ff5b24021d0738c7adf5c9022940cc",
+    "tests/test_first_v.py": "51162e37b8f9010acc1fdc3183e377e9a7848b4c453d2964250588fdf061f0f0",
+    "tests/test_models.py": "8dd08299f00f86e4dad8c2f98844160d8c2eab485ccb982e06a4f636f827943c"
+  },
+  "metric": "Original-value V-only L2 < epsilon; K and RoPE excluded",
+  "epsilon": 4.0,
+  "private_labels_allowed": false,
+  "ambiguity_policy": "Keep all passing IDs; accept only a single passing ID",
+  "note": "V-only threshold is not numerically equivalent to the deep K+V threshold"
+}

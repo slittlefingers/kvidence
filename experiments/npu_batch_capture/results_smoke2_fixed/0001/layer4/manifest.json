@@ -1,0 +1,793 @@
+{
+  "backend": "NPU",
+  "step": 644,
+  "kv_positions": 643,
+  "capture_ns": 1792372029140825000,
+  "context_size": 0,
+  "ringbuffer": false,
+  "source": "Live process-owned memory; no retokenization or historical capture",
+  "format": "GHOSTKV1",
+  "byte_order": "little-endian",
+  "buffers": [
+    {
+      "name": "kv_cache_k_0",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        4096,
+        256
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        256,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 2,
+      "local": false,
+      "payload_offset": 0,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 0
+    },
+    {
+      "name": "kv_cache_v_0",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        256,
+        4096
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        4096,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 3,
+      "local": false,
+      "payload_offset": 1048576,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 0
+    },
+    {
+      "name": "kv_cache_k_1",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        4096,
+        256
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        256,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 2,
+      "local": false,
+      "payload_offset": 2097152,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 1
+    },
+    {
+      "name": "kv_cache_v_1",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        256,
+        4096
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        4096,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 3,
+      "local": false,
+      "payload_offset": 3145728,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 1
+    },
+    {
+      "name": "kv_cache_k_2",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        4096,
+        256
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        256,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 2,
+      "local": false,
+      "payload_offset": 4194304,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 2
+    },
+    {
+      "name": "kv_cache_v_2",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        256,
+        4096
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        4096,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 3,
+      "local": false,
+      "payload_offset": 5242880,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 2
+    },
+    {
+      "name": "kv_cache_k_3",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        4096,
+        256
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        256,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 2,
+      "local": false,
+      "payload_offset": 6291456,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 3
+    },
+    {
+      "name": "kv_cache_v_3",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        256,
+        4096
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        4096,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 3,
+      "local": false,
+      "payload_offset": 7340032,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 3
+    },
+    {
+      "name": "kv_cache_k_4",
+      "allocated_bytes": 2097152,
+      "packed_bytes": 2097152,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        4096,
+        512
+      ],
+      "strides": [
+        2097152,
+        2097152,
+        512,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 2,
+      "local": false,
+      "payload_offset": 8388608,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 4
+    },
+    {
+      "name": "kv_cache_v_4",
+      "allocated_bytes": 2097152,
+      "packed_bytes": 2097152,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        512,
+        4096
+      ],
+      "strides": [
+        2097152,
+        2097152,
+        4096,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 3,
+      "local": false,
+      "payload_offset": 10485760,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 4
+    },
+    {
+      "name": "kv_cache_k_5",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        4096,
+        256
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        256,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 2,
+      "local": false,
+      "payload_offset": 12582912,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 5
+    },
+    {
+      "name": "kv_cache_v_5",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        256,
+        4096
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        4096,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 3,
+      "local": false,
+      "payload_offset": 13631488,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 5
+    },
+    {
+      "name": "kv_cache_k_6",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        4096,
+        256
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        256,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 2,
+      "local": false,
+      "payload_offset": 14680064,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 6
+    },
+    {
+      "name": "kv_cache_v_6",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        256,
+        4096
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        4096,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 3,
+      "local": false,
+      "payload_offset": 15728640,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 6
+    },
+    {
+      "name": "kv_cache_k_7",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        4096,
+        256
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        256,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 2,
+      "local": false,
+      "payload_offset": 16777216,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 7
+    },
+    {
+      "name": "kv_cache_v_7",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        256,
+        4096
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        4096,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 3,
+      "local": false,
+      "payload_offset": 17825792,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 7
+    },
+    {
+      "name": "kv_cache_k_8",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        4096,
+        256
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        256,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 2,
+      "local": false,
+      "payload_offset": 18874368,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 8
+    },
+    {
+      "name": "kv_cache_v_8",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        256,
+        4096
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        4096,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 3,
+      "local": false,
+      "payload_offset": 19922944,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 8
+    },
+    {
+      "name": "kv_cache_k_9",
+      "allocated_bytes": 2097152,
+      "packed_bytes": 2097152,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        4096,
+        512
+      ],
+      "strides": [
+        2097152,
+        2097152,
+        512,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 2,
+      "local": false,
+      "payload_offset": 20971520,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 9
+    },
+    {
+      "name": "kv_cache_v_9",
+      "allocated_bytes": 2097152,
+      "packed_bytes": 2097152,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        512,
+        4096
+      ],
+      "strides": [
+        2097152,
+        2097152,
+        4096,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 3,
+      "local": false,
+      "payload_offset": 23068672,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 9
+    },
+    {
+      "name": "kv_cache_k_10",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        4096,
+        256
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        256,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 2,
+      "local": false,
+      "payload_offset": 25165824,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 10
+    },
+    {
+      "name": "kv_cache_v_10",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        256,
+        4096
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        4096,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 3,
+      "local": false,
+      "payload_offset": 26214400,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 10
+    },
+    {
+      "name": "kv_cache_k_11",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        4096,
+        256
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        256,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 2,
+      "local": false,
+      "payload_offset": 27262976,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 11
+    },
+    {
+      "name": "kv_cache_v_11",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        256,
+        4096
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        4096,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 3,
+      "local": false,
+      "payload_offset": 28311552,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 11
+    },
+    {
+      "name": "kv_cache_k_12",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        4096,
+        256
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        256,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 2,
+      "local": false,
+      "payload_offset": 29360128,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 12
+    },
+    {
+      "name": "kv_cache_v_12",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        256,
+        4096
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        4096,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 3,
+      "local": false,
+      "payload_offset": 30408704,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 12
+    },
+    {
+      "name": "kv_cache_k_13",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        4096,
+        256
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        256,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 2,
+      "local": false,
+      "payload_offset": 31457280,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 13
+    },
+    {
+      "name": "kv_cache_v_13",
+      "allocated_bytes": 1048576,
+      "packed_bytes": 1048576,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        256,
+        4096
+      ],
+      "strides": [
+        1048576,
+        1048576,
+        4096,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 3,
+      "local": false,
+      "payload_offset": 32505856,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 13
+    },
+    {
+      "name": "kv_cache_k_14",
+      "allocated_bytes": 2097152,
+      "packed_bytes": 2097152,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        4096,
+        512
+      ],
+      "strides": [
+        2097152,
+        2097152,
+        512,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 2,
+      "local": false,
+      "payload_offset": 33554432,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 14
+    },
+    {
+      "name": "kv_cache_v_14",
+      "allocated_bytes": 2097152,
+      "packed_bytes": 2097152,
+      "tensor_offset": 0,
+      "shape": [
+        1,
+        1,
+        512,
+        4096
+      ],
+      "strides": [
+        2097152,
+        2097152,
+        4096,
+        1
+      ],
+      "element_bytes": 1,
+      "dtype": "int8",
+      "sequence_axis": 3,
+      "local": false,
+      "payload_offset": 35651584,
+      "capacity": 4096,
+      "active_slots": 643,
+      "layer": 14
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "passed": true,
+  "transports": {
+    "file": {
+      "operations": 13,
+      "host_seconds": 14.803699956974015,
+      "worker_seconds": 7.694801125006052,
+      "model_seconds": 1.1880182820023037,
+      "query_rows": [
+        {
+          "op": "query",
+          "host_seconds": 1.1632960840070155,
+          "decoder_seconds": 0.12635236998903565,
+          "ok": true,
+          "payload_bytes": 131072,
+          "position": 11,
+          "seq": 4,
+          "worker_seconds": 0.5615105990145821
+        },
+        {
+          "op": "query",
+          "host_seconds": 0.8271374579926487,
+          "decoder_seconds": 0.05772572901332751,
+          "ok": true,
+          "payload_bytes": 131072,
+          "position": 11,
+          "seq": 5,
+          "worker_seconds": 0.3794079429935664
+        },
+        {
+          "op": "query",
+          "host_seconds": 0.7637347499985481,
+          "decoder_seconds": 0.05612252600258216,
+          "ok": true,
+          "payload_bytes": 131072,
+          "position": 11,
+          "seq": 6,
+          "worker_seconds": 0.3631020839966368
+        },
+        {
+          "op": "query",
+          "host_seconds": 1.7142198750079842,
+          "decoder_seconds": 0.06713744800072163,
+          "ok": true,
+          "payload_bytes": 131072,
+          "position": 11,
+          "seq": 8,
+          "worker_seconds": 1.0753210940165445
+        },
+        {
+          "op": "query",
+          "host_seconds": 1.7285051249928074,
+          "decoder_seconds": 0.06997177097946405,
+          "ok": true,
+          "payload_bytes": 17408,
+          "position": 11,
+          "seq": 9,
+          "worker_seconds": 1.0961543239827733
+        },
+        {
+          "op": "query",
+          "host_seconds": 0.9188082909968216,
+          "decoder_seconds": 0.05733054701704532,
+          "ok": true,
+          "payload_bytes": 17408,
+          "position": 12,
+          "seq": 11,
+          "worker_seconds": 0.3620421100058593
+        }
+      ]
+    },
+    "socket": {
+      "operations": 12,
+      "host_seconds": 7.387937501029228,
+      "worker_seconds": 7.189059275988257,
+      "model_seconds": 1.1485277889005374,
+      "query_rows": [
+        {
+          "op": "query",
+          "host_seconds": 0.5703565830044681,
+          "decoder_seconds": 0.11266143198008649,
+          "ok": true,
+          "payload_bytes": 131072,
+          "position": 11,
+          "seq": 4,
+          "worker_seconds": 0.5590145309979562
+        },
+        {
+          "op": "query",
+          "host_seconds": 0.32089904199528974,
+          "decoder_seconds": 0.06325979199027643,
+          "ok": true,
+          "payload_bytes": 131072,
+          "position": 11,
+          "seq": 5,
+          "worker_seconds": 0.30527734401402995
+        },
+        {
+          "op": "query",
+          "host_seconds": 0.30063875000632834,
+          "decoder_seconds": 0.05866716199670918,
+          "ok": true,
+          "payload_bytes": 131072,
+          "position": 11,
+          "seq": 6,
+          "worker_seconds": 0.2897405470139347
+        },
+        {
+          "op": "query",
+          "host_seconds": 0.9594025000114925,
+          "decoder_seconds": 0.057531327998731285,
+          "ok": true,
+          "payload_bytes": 131072,
+          "position": 11,
+          "seq": 7,
+          "worker_seconds": 0.9499880219809711
+        },
+        {
+          "op": "query",
+          "host_seconds": 0.9049296250013867,
+          "decoder_seconds": 0.06332783898687921,
+          "ok": true,
+          "payload_bytes": 17408,
+          "position": 11,
+          "seq": 8,
+          "worker_seconds": 0.8999913549923804
+        },
+        {
+          "op": "query",
+          "host_seconds": 0.28524308299529366,
+          "decoder_seconds": 0.0627404690021649,
+          "ok": true,
+          "payload_bytes": 17408,
+          "position": 12,
+          "seq": 10,
+          "worker_seconds": 0.2790944009902887
+        }
+      ]
+    }
+  },
+  "checks": [
+    "full vocabulary ranking vs stable host argsort",
+    "repeat query",
+    "retained candidate from second physical chunk",
+    "all candidate KV bytes across transports",
+    "next-prefix KV and ranking across transports"
+  ]
+}

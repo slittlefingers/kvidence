@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "observation_metadata": {
+    "schema": 1,
+    "layer_index": 4,
+    "layer_1based": 5,
+    "quantization": [
+      {
+        "width": 512,
+        "scale": 0.0011563472216948867,
+        "zero_point": 0
+      },
+      {
+        "width": 512,
+        "scale": 0.01785714365541935,
+        "zero_point": 0
+      }
+    ],
+    "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+    "source": {
+      "kind": "controlled NPU single-token decode fixture",
+      "selection": "greedy next-token; intentionally easy integration smoke"
+    },
+    "metric": "L2 of dequantized original K+V values; no LSB/RMS normalization",
+    "observed_sha256": "329d974211b2ae9454066fd605e528524873ecfd8db5eae275da2056bb5754de"
+  },
+  "config": {
+    "method": "guided",
+    "epsilon": 4.0,
+    "batch_size": 8,
+    "probability_seeds": 8,
+    "random_seeds": 0,
+    "proposals": 20,
+    "seed": 20261019,
+    "max_queries": null
+  },
+  "manifest_sha256": "7f6907a74e1257105644912558d349d9c7df240df671374505d9510d2ca415b5",
+  "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+  "model_config": {
+    "name": "Gemma 4 E2B IT / Tensor G5",
+    "model": "/path/to/litertlm/annoymous/models/gemma-4-E2B-it_Google_Tensor_G5.litertlm",
+    "device_model": "/sdcard/Android/data/com.example.annoymous/files/gemma-4-E2B-it_Google_Tensor_G5.litertlm",
+    "manifest": "/path/to/litertlm/kvidence/experiments/npu_candidate_batch/inputs/probe.json",
+    "tokenizer": "/path/to/litertlm/kvidence/experiments/kv_guided_search_gemma4_int8/model/tokenizer.json",
+    "embeddings": "/path/to/litertlm/kvidence/experiments/embedding_hnsw/assets/embeddings.npy",
+    "batch_signature": "verify",
+    "mask_token_id": 1437,
+    "vocabulary": null,
+    "adapter": "litert_tensor_gemma",
+    "adapter_options": {},
+    "default_layer": 4
+  },
+  "model_config_sha256": "cba3379c5a874fd4bfeb731e2985e89322a167f44b0c1ed29206167431991064",
+  "model_dimensions": {
+    "vocab_size": 262144,
+    "embedding_dim": 1536,
+    "batch_capacity": 4,
+    "context_capacity": 4096
+  },
+  "adapter": "litert_tensor_gemma",
+  "capabilities": {
+    "vocab_size": 262144,
+    "embedding_dim": 1536,
+    "context_capacity": 4096,
+    "batch_capacity": 4,
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "kv_dtype": "int8",
+    "kv_width": 1024
+  },
+  "tokenizer_sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+  "candidate_vocabulary": {
+    "kind": "full_original",
+    "count": 262144,
+    "filtered": false
+  },
+  "original_vocabulary": {
+    "start": 0,
+    "stop_exclusive": 262144,
+    "filtered": false
+  },
+  "initial_candidates": 8,
+  "prediction_candidates": 8,
+  "random_candidates": 0,
+  "probability_source": "selected backend model's full probability ranking",
+  "source_hashes": {
+    "kvrecon/__init__.py": "c2bde96242441ed593b00881b8275a9301f5b693a84848a185795982698456d8",
+    "kvrecon/adapters.py": "e20e7a999bfc38ebc36eff478c5bce12f2bb189f8d1d0e8420adb30b179cc999",
+    "kvrecon/backend.py": "ba054b13f132b6f41294fb4b9740f19126a11b0c53ec3360f33ed3756bfd7717",
+    "kvrecon/cli.py": "89ec9dfa00ddb0943f25e3f9faff8e1e9ebb08d530bb85c76362be1e367a5d91",
+    "kvrecon/common.py": "69303849c139aa018c80d48a7b32c516120fc7df0fef16dbb44f9026033ac4d9",
+    "kvrecon/config.py": "394c805a80c7069f7d7dba2586b31038356c619d25f3a57d8d60609d91a74ae6",
+    "kvrecon/engine.py": "ac291a4a3304ccb5fabf954088c087f6d69f2888335e2d6651bc427e9491e6b2",
+    "kvrecon/npu.py": "f0bd0a5d77464b75cb7bd5a43342276b260ae3ca1a63a82741fe258e5b4f25e0",
+    "kvrecon/observation.py": "9f2bdf3edcae8303946022641103927da9945f8d9c1e37e144e8d702b8788361",
+    "kvrecon/search.py": "ae1a5731cd35ed2319c7d2666e53c922f4613e9f03e220e31d3e361daf4975de",
+    "kvrecon/surrogate.py": "3b894c7db7602256b489d0dc93f8714d3cfd71d476abc00aea7f3cc9bf83e4eb",
+    "native/build.sh": "cad4d08988cceeb79a73a2f517d403f2fac5a788dd003468472ef60ff9c6eb01",
+    "native/litert_support.h": "92768d645e4b1ead470f262f62c795763d22d235cd2c05e722a98ee85cb1cec5",
+    "native/worker.cc": "ffacee808978e22e5374f8f00127c60f698c17a13dbec650f50df5603c04d992",
+    "prepare_gemma3.py": "6ff3cad9539be58ff1396a4b7c13bb47db760b58e19f5d134234334b6dafb0b1",
+    "run.py": "3ab8410a34643138310239da60df3751f2034d5e23441338ea82a0478007387d",
+    "tests/device_contract.py": "4ceb1c2b8b45563780cf8d59458398de65cf3e90a5a83ad5c780867a9d92e391",
+    "tests/gemma3_assets_device.py": "20496cf638d3aa8e82bc515676f999480757dbca559f5e020200d7ef6d384dfb",
+    "tests/support_cpu_adapter.py": "11b75c0d7f1bd7d4518aef1aef368721c878be8dd2f236b6093a30a13ba13d83",
+    "tests/surrogate_preflight.py": "464b07d64e328cb485a8161bcf5921b71607039b2823ce4d28e7d99107161910",
+    "tests/test_backend.py": "0af4f93447ad3860643382cb915d3aeb28a8413b12ed1e2f8e23a5e600fac5e5",
+    "tests/test_config.py": "35ba0d867549a9f8aaa42b1654ee0e11e4474d77a4720a3c4e7a74701ef9f9b8",
+    "tests/test_core.py": "bc178286a31574603027d35c0fb59959e755ffd78489fa8e3f584c6959560e08",
+    "tests/test_models.py": "8dd08299f00f86e4dad8c2f98844160d8c2eab485ccb982e06a4f636f827943c"
+  },
+  "surrogate": {
+    "source": "/path/to/litertlm/kvidence/experiments/ciphertext_full_vocabulary/stable_surrogate.py",
+    "source_sha256": "1e5fd8d09a1e025f8625d0733668eabf075c61c4f2d6544982148ccc237bf9e4",
+    "embedding_sha256": "be74121046399c6f947cd9ecead1153200d81ba8df22aa6143c901dc3cf6cdbf",
+    "shape": [
+      262144,
+      1536
+    ],
+    "proposal_only": true,
+    "note": "Configured embedding asset is proposal-only, not asserted bit-identical to device embedding quantization. Only real NPU KV is accepted."
+  },
+  "surrogate_setup_seconds": 1.5765647920052288,
+  "candidate_quantization": "Native model KV; integer codes dequantized using each tensor's metadata; float32 used directly",
+  "stopping": "strict original-value K+V L2 < epsilon; no default query cap; threshold is not proof of identity",
+  "private_labels_allowed": false
+}

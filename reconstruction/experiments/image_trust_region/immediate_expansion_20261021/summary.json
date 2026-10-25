@@ -1,0 +1,163 @@
+{
+  "records": [
+    {
+      "seed": 17,
+      "status": "expansion_exhausted",
+      "before_rmse": 6.415237597899239,
+      "best_rmse": 5.920040118107309,
+      "improvement_percent": 7.719082453845346,
+      "added_queries": 33104,
+      "added_seconds": 85.37243420799496,
+      "rounds": 7,
+      "total_queries": 136028,
+      "total_seconds": 361.17898933196557,
+      "passes_query": false,
+      "expansion_state": {
+        "initial_radius": 0.08713840313369006,
+        "patience": 1,
+        "factor": 2.0,
+        "trial_rounds": 1,
+        "max_multiplier": 4.0,
+        "radius": 0.08713840313369006,
+        "good_radius": 0.08713840313369006,
+        "stale": 3,
+        "trial_age": 1,
+        "trial": false,
+        "stopped": true,
+        "reason": "expansion_exhausted"
+      },
+      "events": [
+        {
+          "round": 5,
+          "best_rmse": 5.920040118107309,
+          "queries": 23646,
+          "event": {
+            "action": "expand",
+            "previous": 0.08713840313369006,
+            "radius": 0.17427680626738012
+          }
+        },
+        {
+          "round": 6,
+          "best_rmse": 5.920040118107309,
+          "queries": 28375,
+          "event": {
+            "action": "reject_and_expand",
+            "rejected": 0.17427680626738012,
+            "restored": 0.08713840313369006,
+            "radius": 0.34855361253476025
+          }
+        },
+        {
+          "round": 7,
+          "best_rmse": 5.920040118107309,
+          "queries": 33104,
+          "event": {
+            "action": "reject_and_stop",
+            "rejected": 0.34855361253476025,
+            "restored": 0.08713840313369006
+          }
+        }
+      ],
+      "last_improvement": {
+        "round": 4,
+        "rmse": 5.920040118107309,
+        "selected": {
+          "kind": "probe",
+          "scale": 0.25,
+          "direction": 379,
+          "sign": -1,
+          "file": "round_0004_scale_0.25_probes",
+          "index": 1147
+        }
+      },
+      "path": "/path/to/litertlm/kvidence/reconstruction/experiments/image_trust_region/results/0001_immediate_expansion_seed17_20261021",
+      "protocol_sha256": "1c7adbb46d057c893d0a5d494ad527659ae9efca3d54759ed38683b9e336ef2f",
+      "trace_sha256": "e3fb4c4da560cb265fb554817bf47c0537ccab35b2481a13342a01c602100458"
+    },
+    {
+      "seed": 29,
+      "status": "max_scale_plateau",
+      "before_rmse": 5.539718094136199,
+      "best_rmse": 5.523829768602577,
+      "improvement_percent": 0.28680747402001483,
+      "added_queries": 18917,
+      "added_seconds": 49.06607370800339,
+      "rounds": 4,
+      "total_queries": 187707,
+      "total_seconds": 544.5958545150061,
+      "passes_query": false,
+      "expansion_state": {
+        "initial_radius": 0.08713840313369006,
+        "patience": 1,
+        "factor": 2.0,
+        "trial_rounds": 1,
+        "max_multiplier": 4.0,
+        "radius": 0.34855361253476025,
+        "good_radius": 0.34855361253476025,
+        "stale": 1,
+        "trial_age": 0,
+        "trial": false,
+        "stopped": true,
+        "reason": "max_scale_plateau"
+      },
+      "events": [
+        {
+          "round": 1,
+          "best_rmse": 5.539718094136199,
+          "queries": 4730,
+          "event": {
+            "action": "expand",
+            "previous": 0.08713840313369006,
+            "radius": 0.17427680626738012
+          }
+        },
+        {
+          "round": 2,
+          "best_rmse": 5.539718094136199,
+          "queries": 9459,
+          "event": {
+            "action": "reject_and_expand",
+            "rejected": 0.17427680626738012,
+            "restored": 0.08713840313369006,
+            "radius": 0.34855361253476025
+          }
+        },
+        {
+          "round": 3,
+          "best_rmse": 5.523829768602577,
+          "queries": 14188,
+          "event": {
+            "action": "accept_expansion",
+            "radius": 0.34855361253476025
+          }
+        },
+        {
+          "round": 4,
+          "best_rmse": 5.523829768602577,
+          "queries": 18917,
+          "event": {
+            "action": "stop_at_cap",
+            "radius": 0.34855361253476025
+          }
+        }
+      ],
+      "last_improvement": {
+        "round": 3,
+        "rmse": 5.523829768602577,
+        "selected": {
+          "kind": "ridge",
+          "scale": 0.0625,
+          "damping": 0.001,
+          "factor": 0.015625,
+          "rms": 0.0003403843864395858,
+          "file": "round_0003_updates",
+          "index": 0
+        }
+      },
+      "path": "/path/to/litertlm/kvidence/reconstruction/experiments/image_trust_region/results/0001_immediate_expansion_seed29_20261021",
+      "protocol_sha256": "11d9f46cb72dd2d576c649d4a208682cbcc90dc73e9b53f08bf7b3f5d6605c0d",
+      "trace_sha256": "506346473ec80f9674ad61339194604d7d24792f4a52960e699bbd2511cf8f31"
+    }
+  ]
+}

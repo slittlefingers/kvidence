@@ -1,0 +1,21 @@
+{
+  "purpose": "Semantic diagnostic of previous full-image proposals; NOT a completed SPSA recovery",
+  "proposal_source": "fit/seed_17 and seed_29/latent.npy; previously optimized with non-equivalent MLX proxy",
+  "evaluation_adapter": "actual phone CPU vision_adapter_280",
+  "evaluation_decoder": "actual phone NPU decode",
+  "seeds": [
+    17,
+    29
+  ],
+  "question": "Describe the image briefly. Name the main visible objects and actions. Answer in English.",
+  "generation": "greedy",
+  "max_new_tokens": 256,
+  "image_acceptance": "every position raw concatenated K+V L2 < 5",
+  "inspect_description_even_if_KV_gate_fails": true,
+  "original_image_accessed": false,
+  "original_text_accessed": false,
+  "original_encoder_output_accessed": false,
+  "target_KV_imported_into_prefix": false,
+  "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+  "script_sha256": "5c0854a23031e53341ead6d06b165b9a04f6f669af75859e1d626f0ba7a3cef1"
+}

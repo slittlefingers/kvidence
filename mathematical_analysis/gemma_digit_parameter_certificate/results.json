@@ -1,0 +1,1847 @@
+{
+  "model_revision": "03dcf209f3f549b4075e7191e77cf69b3d48e1b2",
+  "candidate_digits": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "candidate_ids": [
+    236771,
+    236770,
+    236778,
+    236800,
+    236812,
+    236810,
+    236825,
+    236832,
+    236828,
+    236819
+  ],
+  "reference_dimension": 1536,
+  "scope": "Real-arithmetic reference using exactly affine-dequantized W8 embedding rows; first attention residual, BEFORE first FFN, PLE and layer scalar. All prefix effects allowed by post-attention RMSNorm range. Not a deep-KV or actual BF16/KV8 execution certificate.",
+  "square_root_bound_bits": 80,
+  "direction_dyadic_bits": 48,
+  "first_block_layer_scalar": 0.017822265625,
+  "pairs": [
+    {
+      "digits": [
+        "0",
+        "1"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "5587651171096587174703778904484471197601534099449/730750818665451459101842416358141509827966271488",
+        "distance_lower_exact": "835737037821750123754955/302231454903657293676544",
+        "distance_lower_display": 2.7652218995145925,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "44841800350096507519/147573952589676412928",
+        "support_squared_exact": "4012602833471677311982503594004357/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "79228162514264092697667482431/79228162514264337593543950336",
+        "support_sqrt_upper": "8302770126071849328285/75557863725914323419136",
+        "surplus_lower_exact": "3176730763552856596579/37778931862957161709568",
+        "hidden_l2_lower_exact": "75256787239148781285570858602936749579845360403/22835963083295322803717291613948918606692614144",
+        "hidden_l2_lower_display": 3.2955381371324637,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "12065893140636795673475707/302231454903657293676544",
+          "48263572562547182693902829/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "658085714891628889849213943320655919169414131/730750818665451459101842416358141509827966271488",
+        "ffn_witness_norm_squared_upper_exact": "13249286341052734630254930716177538895932300917/730750818665451459101842416358141509827966271488",
+        "maximum_witness_norm_squared_upper_display": 0.018131059182731418,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "0",
+        "2"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "8371961306522951600011941393409746611044525929573/730750818665451459101842416358141509827966271488",
+        "distance_lower_exact": "1022983461897292330807467/302231454903657293676544",
+        "distance_lower_display": 3.3847683465752763,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "1637598932670729973/4611686018427387904",
+        "support_squared_exact": "3657440059286817873782863358924551/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "19807040628565981761005329109/19807040628566084398385987584",
+        "support_sqrt_upper": "7926811576344472148653/75557863725914323419136",
+        "surplus_lower_exact": "5488398880094147790163/37778931862957161709568",
+        "hidden_l2_lower_exact": "130020230716966548711520913025062759471398713091/22835963083295298930510921603603234310267600896",
+        "hidden_l2_lower_display": 5.693660926088878,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "25502011136366602797078933/604462909807314587353088",
+          "51004022272733205594157867/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "1320847412155201759536361582974694340713922343/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "1975901571066657763192366543160570568231430845/91343852333181432387730302044767688728495783936",
+        "maximum_witness_norm_squared_upper_display": 0.021631467478067976,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "0",
+        "3"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "17953194889700838569869607026362695251051563349329/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "4237121061487485817511311/1208925819614629174706176",
+        "distance_lower_display": 3.5048643951025533,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "53864068309387035483/147573952589676412928",
+        "support_squared_exact": "3603926578701491305201878135983985/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "79228162514264368061179654787/79228162514264337593543950336",
+        "support_sqrt_upper": "125897723234906313811347/1208925819614629174706176",
+        "surplus_lower_exact": "94729500560342983527021/604462909807314587353088",
+        "hidden_l2_lower_exact": "748047641801350850902923395490058065921887681599/121791803110908599934835413064205286103758929920",
+        "hidden_l2_lower_display": 6.142019599793166,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "26251578385726474243466133/604462909807314587353088",
+          "52503156771452948486932267/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "110940221981790575785224680067034609841937775/91343852333181432387730302044767688728495783936",
+        "ffn_witness_norm_squared_upper_exact": "33575579837114150953266668762168138306012495795/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.022973343976837573,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "0",
+        "4"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "18279769156684662366349024294079441309866091426147/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "4275484669214083659166921/1208925819614629174706176",
+        "distance_lower_display": 3.5365980276415847,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "27022811230822446013/73786976294838206464",
+        "support_squared_exact": "3563442167455042790840856084603593/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "39614081257132107819277356039/39614081257132168796771975168",
+        "support_sqrt_upper": "125188595295643950607575/1208925819614629174706176",
+        "surplus_lower_exact": "96182274307253527130921/604462909807314587353088",
+        "hidden_l2_lower_exact": "2278559151680525489481832171250193532742343607097/365375409332725448341862122442656153070527840256",
+        "hidden_l2_lower_display": 6.236213750240587,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "27280012047281270887831187/604462909807314587353088",
+          "54560024094562541775662375/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "1874009804775587546471335193110621769744537811/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "33837743429834183206656388852416735688963249599/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.023152723586154205,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "0",
+        "5"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "2000836171763136962361539885648907648027015291661/182687704666362864775460604089535377456991567872",
+        "distance_lower_exact": "4000836084383499920806209/1208925819614629174706176",
+        "distance_lower_display": 3.3094140430046,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "51255420649682318709/147573952589676412928",
+        "support_squared_exact": "228758626356799992113812576158643/20769187434139310514121985316880384",
+        "direction_norm_squared_exact": "79228162514264288062876075061/79228162514264337593543950336",
+        "support_sqrt_upper": "63437877597960912348715/604462909807314587353088",
+        "surplus_lower_exact": "41533223892588476367317/302231454903657293676544",
+        "hidden_l2_lower_exact": "983922537503532733605293607198440429199177711269/182687704666362807670488566351095141417342730240",
+        "hidden_l2_lower_display": 5.385816956321399,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "26189946587280596905173187/604462909807314587353088",
+          "52379893174561193810346375/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "1472899128589638067916041955220499773668463861/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "7741516897408343505525957137550248249861036983/365375409332725729550921208179070754913983135744",
+        "maximum_witness_norm_squared_upper_display": 0.021187843241958857,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "0",
+        "6"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "18762232004340690086795260176756312971502159191779/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "2165769609419518224138775/604462909807314587353088",
+        "distance_lower_display": 3.582965264336737,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "423355105344668307/1152921504606846976",
+        "support_squared_exact": "3490313329172945914490769918936513/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "39614081257132153967480627925/39614081257132168796771975168",
+        "support_sqrt_upper": "7743586146377060982897/75557863725914323419136",
+        "surplus_lower_exact": "6128913945557030100879/37778931862957161709568",
+        "hidden_l2_lower_exact": "145194039765580797717161704994515404654871285503/22835963083295353822680364028967000703900844032",
+        "hidden_l2_lower_display": 6.358130779769526,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "6840398737282379886982255/151115727451828646838272",
+          "54723189898259039095858041/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "744251948407623091224265774054839632472167351/730750818665451459101842416358141509827966271488",
+        "ffn_witness_norm_squared_upper_exact": "32681066734706513022228318398725419944948391795/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.022361293275313037,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "0",
+        "7"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "17658337251150889681194967537807008704362511815261/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "2101091219530394977348535/604462909807314587353088",
+        "distance_lower_display": 3.47596384400188,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "26360062738203274651/73786976294838206464",
+        "support_squared_exact": "3510123840451321496330276943866051/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "9903520314283023671025848441/9903520314283042199192993792",
+        "support_sqrt_upper": "124248492586589991400435/1208925819614629174706176",
+        "surplus_lower_exact": "91693141364771234540557/604462909807314587353088",
+        "hidden_l2_lower_exact": "2172211542176846301065909702714581175074614009949/365375409332725387766563947417026205613188710400",
+        "hidden_l2_lower_display": 5.945149801252071,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "54957673236196751391359999/1208925819614629174706176",
+          "53669602769723390030625/1180591620717411303424"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "537744581987864899325481721543015275326857273/365375409332725729550921208179070754913983135744",
+        "ffn_witness_norm_squared_upper_exact": "8791829922814363026934457837261024387926544805/365375409332725729550921208179070754913983135744",
+        "maximum_witness_norm_squared_upper_display": 0.024062456580946762,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "0",
+        "8"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "6212577600007977412596471147758084743010200955505/730750818665451459101842416358141509827966271488",
+        "distance_lower_exact": "3524933361074497650083007/1208925819614629174706176",
+        "distance_lower_display": 2.915756536822206,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "47789808672360623851/147573952589676412928",
+        "support_squared_exact": "4099096449271165420067957519748769/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "79228162514264682026240564779/79228162514264337593543950336",
+        "support_sqrt_upper": "134268450640483088875829/1208925819614629174706176",
+        "surplus_lower_exact": "61478605681506026417867/604462909807314587353088",
+        "hidden_l2_lower_exact": "1456428854662564991651428714020971193402874522619/365375409332726523758646861184521174258131402752",
+        "hidden_l2_lower_display": 3.986116244994141,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "13617176789786702193005029/302231454903657293676544",
+          "54468707159146808772020117/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "2532661866244325601633167867079478299256415645/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "16966194747502630710715885360639807220497416693/730750818665451459101842416358141509827966271488",
+        "maximum_witness_norm_squared_upper_display": 0.02321748305186642,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "0",
+        "9"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "15074958062168958134101269941445782126262692247481/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "3882648330993802242336177/1208925819614629174706176",
+        "distance_lower_display": 3.211651424759444,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "25154839567103940429/73786976294838206464",
+        "support_squared_exact": "936065775067957626339528477563599/83076749736557242056487941267521536",
+        "direction_norm_squared_exact": "79228162514264195686870265667/79228162514264337593543950336",
+        "support_sqrt_upper": "8020346018292996498383/75557863725914323419136",
+        "surplus_lower_exact": "4858931840064221001265/37778931862957161709568",
+        "hidden_l2_lower_exact": "115108149514148950348186156966821203887339111105/22835963083295337646025611204728616779968937984",
+        "hidden_l2_lower_display": 5.040652285795266,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "27808601220198092331909473/604462909807314587353088",
+          "55617202440396184663818947/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "53114821940357538945995142118050505044553169/45671926166590716193865151022383844364247891968",
+        "ffn_witness_norm_squared_upper_exact": "34482147835467263356378726100379376516524944339/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.023593642972881638,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "1",
+        "2"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "451180545140850562316448021024587664175304768655/91343852333181432387730302044767688728495783936",
+        "distance_lower_exact": "2686798973174883621267593/1208925819614629174706176",
+        "distance_lower_display": 2.222468020437646,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "9945517211340260517/36893488147419103232",
+        "support_squared_exact": "1222260470235004501802700553886793/83076749736557242056487941267521536",
+        "direction_norm_squared_exact": "79228162514264139510363642079/79228162514264337593543950336",
+        "support_sqrt_upper": "146636399257174833127107/1208925819614629174706176",
+        "surplus_lower_exact": "16310954733423995183421/604462909807314587353088",
+        "hidden_l2_lower_exact": "128802233218722502047405358863374924876778033199/121791803110908424267401608594127193307728576512",
+        "hidden_l2_lower_display": 1.0575607711582207,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "10781477385162381334368071/302231454903657293676544",
+          "43125909540649525337472285/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "77127785653939186547943515741375376143071203/91343852333181432387730302044767688728495783936",
+        "ffn_witness_norm_squared_upper_exact": "5742334165377040403290620552764523787675193845/365375409332725729550921208179070754913983135744",
+        "maximum_witness_norm_squared_upper_display": 0.01571625790543511,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "1",
+        "3"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "6747074953652815805046042513903473712071798076855/730750818665451459101842416358141509827966271488",
+        "distance_lower_exact": "3673438431130380550411773/1208925819614629174706176",
+        "distance_lower_display": 3.038597051638261,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "47626593655018241059/147573952589676412928",
+        "support_squared_exact": "58572385664085115805184165073087/5192296858534827628530496329220096",
+        "direction_norm_squared_exact": "79228162514264088226617405763/79228162514264337593543950336",
+        "support_sqrt_upper": "64200196437950872012357/604462909807314587353088",
+        "surplus_lower_exact": "33339067367526485676475/302231454903657293676544",
+        "hidden_l2_lower_exact": "789802877982499346125679304636276921392648644075/182687704666362577274968551932646385951275220992",
+        "hidden_l2_lower_display": 4.323240468891402,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "46390856332552802070786245/1208925819614629174706176",
+          "23195428166276401035393123/604462909807314587353088"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "1150328481567623101165617212295251724024923009/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "25945516490955362383943291234133251423655943161/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.01775264278070799,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "1",
+        "4"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "737125112699000841471097922217207834917652620093/91343852333181432387730302044767688728495783936",
+        "distance_lower_exact": "26829997071750082642593/9444732965739290427392",
+        "distance_lower_display": 2.84073643681359,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "22624113622976845781/73786976294838206464",
+        "support_squared_exact": "3871340077732532897607253053078219/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "79228162514264367117660724807/79228162514264337593543950336",
+        "support_sqrt_upper": "130484994241363456748683/1208925819614629174706176",
+        "surplus_lower_exact": "54851744558062863889269/604462909807314587353088",
+        "hidden_l2_lower_exact": "1299438440696042968053616284810318323880479537733/365375409332725797628899760160646710241135689728",
+        "hidden_l2_lower_display": 3.556447444203124,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "49385546959807522097447519/1208925819614629174706176",
+          "1543298342493985065545235/37778931862957161709568"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "594184388935161751029339298763362482211518403/730750818665451459101842416358141509827966271488",
+        "ffn_witness_norm_squared_upper_exact": "25207588497160512479594498113074624594358121713/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.017247731958204567,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "1",
+        "5"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "5005381820912024137573263278877500158983248078739/730750818665451459101842416358141509827966271488",
+        "distance_lower_exact": "3163979083657799447549923/1208925819614629174706176",
+        "distance_lower_display": 2.617182156525026,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "340813948350452673/1152921504606846976",
+        "support_squared_exact": "1059855937740038130677619730495935/83076749736557242056487941267521536",
+        "direction_norm_squared_exact": "79228162514264330965191071669/79228162514264337593543950336",
+        "support_sqrt_upper": "68273682405817491859241/604462909807314587353088",
+        "surplus_lower_exact": "21068649270563573651671/302231454903657293676544",
+        "hidden_l2_lower_exact": "499116536334278624882305976986339631031011739847/182687704666362857133490060933503573507235119104",
+        "hidden_l2_lower_display": 2.732075140173228,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "48982927484705233590746159/1208925819614629174706176",
+          "3061432967794077099421635/75557863725914323419136"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "621726368808307100068182706287351222232876467/730750818665451459101842416358141509827966271488",
+        "ffn_witness_norm_squared_upper_exact": "12993372896752361258124332654899781954046128509/730750818665451459101842416358141509827966271488",
+        "maximum_witness_norm_squared_upper_display": 0.017780853014276156,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "1",
+        "6"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "2907916033828438625053178011459014131318567089771/365375409332725729550921208179070754913983135744",
+        "distance_lower_exact": "3410522560446383339568563/1208925819614629174706176",
+        "distance_lower_display": 2.8211181406759596,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "45331148691894497481/147573952589676412928",
+        "support_squared_exact": "3939770923195366770028302429887439/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "39614081257131976189756395039/39614081257132168796771975168",
+        "support_sqrt_upper": "32908296601416078128787/302231454903657293676544",
+        "surplus_lower_exact": "13510799659083887291757/151115727451828646838272",
+        "hidden_l2_lower_exact": "320070994696847915694587552256737825351573948349/91343852333181210326960154068610088808317190144",
+        "hidden_l2_lower_display": 3.504023385496959,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "6312548042425924091017443/151115727451828646838272",
+          "50500384339407392728139545/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "158237875146164641391417978791715986954103311/182687704666362864775460604089535377456991567872",
+        "ffn_witness_norm_squared_upper_exact": "25184883787890586012937557951653432110136910705/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.017232196765708037,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "1",
+        "7"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "762135225775696946830266138817023240821852892119/91343852333181432387730302044767688728495783936",
+        "distance_lower_exact": "3492014262916340258699175/1208925819614629174706176",
+        "distance_lower_display": 2.8885264970430478,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "45973020380834465907/147573952589676412928",
+        "support_squared_exact": "1932606504823022978291754820441315/166153499473114484112975882535043072",
+        "direction_norm_squared_exact": "19807040628565992027117589791/19807040628566084398385987584",
+        "support_sqrt_upper": "65190847884782845331681/604462909807314587353088",
+        "surplus_lower_exact": "28961897855166140845855/302231454903657293676544",
+        "hidden_l2_lower_exact": "686107683387859875836813695235457680480948686735/182687704666362438788173755764273579020563513344",
+        "hidden_l2_lower_display": 3.755631418331516,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "25198747498793767995439247/604462909807314587353088",
+          "50397494997587535990878495/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "1439582094163230390538557960251753217876320757/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "27354322461526270195655469048223546561402507909/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.01871658694237432,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "1",
+        "8"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "8462167874972077157210539447048994685280999646977/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "1454490277981609366694679/604462909807314587353088",
+        "distance_lower_display": 2.4062523181865023,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "44327746066592824395/147573952589676412928",
+        "support_squared_exact": "647290227746220302657263145337549/41538374868278621028243970633760768",
+        "direction_norm_squared_exact": "39614081257132079670538761313/39614081257132168796771975168",
+        "support_sqrt_upper": "150912226882011857196557/1208925819614629174706176",
+        "surplus_lower_exact": "30654221006752351525363/604462909807314587353088",
+        "hidden_l2_lower_exact": "66018076157667271529525804716187701925393012681/33215946302975028957156162325525702499039707136",
+        "hidden_l2_lower_display": 1.9875416330304665,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "51352274374488976569254535/1208925819614629174706176",
+          "6419034296811122071156817/151115727451828646838272"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "1775636443945008806368713857707037006453241823/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "3510908801412205323711148891044205589182186387/182687704666362864775460604089535377456991567872",
+        "maximum_witness_norm_squared_upper_display": 0.01921809028048206,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "1",
+        "9"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "13063814524792210112856723526689438297323424855329/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "3614389924287667404527377/1208925819614629174706176",
+        "distance_lower_display": 2.989753271577764,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "23580637141384991541/73786976294838206464",
+        "support_squared_exact": "3796823701598588240585906798719469/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "39614081257132132601535517751/39614081257132168796771975168",
+        "support_sqrt_upper": "129223090947758426534897/1208925819614629174706176",
+        "surplus_lower_exact": "63949488514467424168975/604462909807314587353088",
+        "hidden_l2_lower_exact": "1514964096549124426644453025886905071490598216575/365375409332725562629855355528221795640737267712",
+        "hidden_l2_lower_display": 4.146321996096725,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "52100281131184067105825381/1208925819614629174706176",
+          "26050140565592033552912691/604462909807314587353088"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "22854379035608175218107221810077687581751829/22835963083295358096932575511191922182123945984",
+        "ffn_witness_norm_squared_upper_exact": "28903634190788724857579159016993392347180421995/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.0197766690453899,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "2",
+        "3"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "613454728414220852625080098000705470516570278767/91343852333181432387730302044767688728495783936",
+        "distance_lower_exact": "3132934032919865620897811/1208925819614629174706176",
+        "distance_lower_display": 2.5915022924388817,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "20637955639506531789/73786976294838206464",
+        "support_squared_exact": "3870884520203747754838025869870197/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "79228162514264384645300756153/79228162514264337593543950336",
+        "support_sqrt_upper": "65238658322670488937567/604462909807314587353088",
+        "surplus_lower_exact": "19294407976748265270177/302231454903657293676544",
+        "hidden_l2_lower_exact": "152361580094743143063712568638562832366332536763/60895901555454306340814332365174372472750866432",
+        "hidden_l2_lower_display": 2.5020005649476498,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "11006605872943489141072357/302231454903657293676544",
+          "44026423491773956564289429/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "1383957983514917761361716968851523777330031357/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "9765378333189083316186915692261492188509031027/730750818665451459101842416358141509827966271488",
+        "maximum_witness_norm_squared_upper_display": 0.013363485997899126,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "2",
+        "4"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "318083864207846824685190787655768728711810540281/45671926166590716193865151022383844364247891968",
+        "distance_lower_exact": "1595202467921478172348013/604462909807314587353088",
+        "distance_lower_display": 2.6390411091227794,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "42480728818128779599/147573952589676412928",
+        "support_squared_exact": "494221562880616950811598148332703/41538374868278621028243970633760768",
+        "direction_norm_squared_exact": "39614081257132132538380568157/39614081257132168796771975168",
+        "support_sqrt_upper": "65933442505900805309333/604462909807314587353088",
+        "surplus_lower_exact": "21067090113626935309419/302231454903657293676544",
+        "hidden_l2_lower_exact": "166359866629683440685740756486353845813418458761/60895901555454260389767428974020696459674910720",
+        "hidden_l2_lower_display": 2.731872956642073,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "24040930987356339193667159/604462909807314587353088",
+          "48081861974712678387334319/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "1609563521778074275817497887826544462922775079/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "11575298760217109000441725498752197524408891635/730750818665451459101842416358141509827966271488",
+        "maximum_witness_norm_squared_upper_display": 0.015840281617962103,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "2",
+        "5"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "11076269789657083712057082220632377171863858890851/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "1664051515853481901455989/604462909807314587353088",
+        "distance_lower_display": 2.7529423044069548,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "22461579131137948057/73786976294838206464",
+        "support_squared_exact": "4063183277278084502315364521018557/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "39614081257132198725868093303/39614081257132168796771975168",
+        "support_sqrt_upper": "33419744385438711213273/302231454903657293676544",
+        "surplus_lower_exact": "12581569675131806407463/151115727451828646838272",
+        "hidden_l2_lower_exact": "298057526007323629391811839982381494149119879191/91343852333181466893628868024797146560359038976",
+        "hidden_l2_lower_display": 3.2630277615196617,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "24541018283554938018194709/604462909807314587353088",
+          "49082036567109876036389419/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "703219070419490694373384640569646427224639995/730750818665451459101842416358141509827966271488",
+        "ffn_witness_norm_squared_upper_exact": "26775266507933767497408028883609050443697915599/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.01832038078098403,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "2",
+        "6"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "358276243876625834359652352571032076864546006549/45671926166590716193865151022383844364247891968",
+        "distance_lower_exact": "3385976934955704434606095/1208925819614629174706176",
+        "distance_lower_display": 2.800814475147083,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "11327596311173108497/36893488147419103232",
+        "support_squared_exact": "1996718761186339265643222454401315/166153499473114484112975882535043072",
+        "direction_norm_squared_exact": "39614081257132194300399573869/39614081257132168796771975168",
+        "support_sqrt_upper": "66263345754992934778871/604462909807314587353088",
+        "surplus_lower_exact": "26532323226137170028553/302231454903657293676544",
+        "hidden_l2_lower_exact": "628551033313436646684202075991875637044218615321/182687704666362923582822033733272775936494796800",
+        "hidden_l2_lower_display": 3.4405765536402164,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "12631158708833861096470589/302231454903657293676544",
+          "50524634835335444385882357/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "1442242346711697987953102561063790002317360179/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "26385531875548736531831852452737530768962217983/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.018053713524218726,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "2",
+        "7"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "5300367229863888091909016130335918194296078490207/730750818665451459101842416358141509827966271488",
+        "distance_lower_exact": "1627938455511124058646695/604462909807314587353088",
+        "distance_lower_display": 2.693198257656643,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "44834140963507084667/147573952589676412928",
+        "support_squared_exact": "2114322005865429858197552399754101/166153499473114484112975882535043072",
+        "direction_norm_squared_exact": "79228162514264176987528379721/79228162514264337593543950336",
+        "support_sqrt_upper": "68186826151562681499607/604462909807314587353088",
+        "surplus_lower_exact": "23633494541699827898409/302231454903657293676544",
+        "hidden_l2_lower_exact": "559877749429769939934905280729001524989146822713/182687704666362679609331616532938462112188989440",
+        "hidden_l2_lower_display": 3.0646712128342664,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "12721641939987829563127323/302231454903657293676544",
+          "50886567759951318252509293/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "127545991661285587565517735463903137331625183/91343852333181432387730302044767688728495783936",
+        "ffn_witness_norm_squared_upper_exact": "13734981615666932731387134220027610596101175045/730750818665451459101842416358141509827966271488",
+        "maximum_witness_norm_squared_upper_display": 0.01879571156793327,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "2",
+        "8"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "8758639923074124346419079867593647787494060791491/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "369937493095838006751607/151115727451828646838272",
+        "distance_lower_display": 2.448040977162774,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "45125178821723278101/147573952589676412928",
+        "support_squared_exact": "324041469076219571753308110126581/20769187434139310514121985316880384",
+        "direction_norm_squared_exact": "79228162514264433540000476073/79228162514264337593543950336",
+        "support_sqrt_upper": "151004606685951521981807/1208925819614629174706176",
+        "surplus_lower_exact": "33828125767827025119889/604462909807314587353088",
+        "hidden_l2_lower_exact": "801388676943243967436655992235443663432354295073/365375409332725950788387334439726527817940205568",
+        "hidden_l2_lower_display": 2.1933295357966096,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "51273897458989137291548263/1208925819614629174706176",
+          "6409237182373642161443533/151115727451828646838272"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "2583358395137308284637107624016471544702217179/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "14358505109783571444021999548892716088212038085/730750818665451459101842416358141509827966271488",
+        "maximum_witness_norm_squared_upper_display": 0.019648975742519295,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "2",
+        "9"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "3051710231741374912324041996169593024413115286411/365375409332725729550921208179070754913983135744",
+        "distance_lower_exact": "3493828977921715567912099/1208925819614629174706176",
+        "distance_lower_display": 2.8900275941128033,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "48139866850003054015/147573952589676412928",
+        "support_squared_exact": "529219542433614629006980486942431/41538374868278621028243970633760768",
+        "direction_norm_squared_exact": "79228162514264619625496202829/79228162514264337593543950336",
+        "support_sqrt_upper": "136456063616336642459103/1208925819614629174706176",
+        "surplus_lower_exact": "60724831001275866786337/604462909807314587353088",
+        "hidden_l2_lower_exact": "1438571924076198453972739951559599956408706047409/365375409332726379872326940491211877430312566784",
+        "hidden_l2_lower_display": 3.9372434141186927,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "53670971824183393145705839/1208925819614629174706176",
+          "3354435739011462071606615/75557863725914323419136"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "787820523620288291690087451107766045127908027/730750818665451459101842416358141509827966271488",
+        "ffn_witness_norm_squared_upper_exact": "31698163822764087603972311752932926791491304591/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.021688763811892477,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "3",
+        "4"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "2297694275245858771609890744802120973610004680037/365375409332725729550921208179070754913983135744",
+        "distance_lower_exact": "3031629446516086847998839/1208925819614629174706176",
+        "distance_lower_display": 2.507705102602973,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "38862199593446363831/147573952589676412928",
+        "support_squared_exact": "229035032265304045202781302855319/20769187434139310514121985316880384",
+        "direction_norm_squared_exact": "79228162514264216826467218767/79228162514264337593543950336",
+        "support_sqrt_upper": "63476191586295172934317/604462909807314587353088",
+        "surplus_lower_exact": "16113593181082980191571/302231454903657293676544",
+        "hidden_l2_lower_exact": "381731202278761647667499098410196860214513254147/182687704666362725540500908250806049748805484544",
+        "hidden_l2_lower_display": 2.0895287013206842,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "45915968579555037314214657/1208925819614629174706176",
+          "22957984289777518657107329/604462909807314587353088"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "21876345762572915969068203242128560123571749/45671926166590716193865151022383844364247891968",
+        "ffn_witness_norm_squared_upper_exact": "15994480577536827627247040865737872487942522441/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.010943867710437242,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "3",
+        "5"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "10126618357948482119853710340292238542634809878859/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "3182234805596293851185211/1208925819614629174706176",
+        "distance_lower_display": 2.632282935780707,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "10391017007947678575/36893488147419103232",
+        "support_squared_exact": "951110629364878204384067449469817/83076749736557242056487941267521536",
+        "direction_norm_squared_exact": "9903520314283021820031735711/9903520314283042199192993792",
+        "support_sqrt_upper": "129352677361578136577731/1208925819614629174706176",
+        "surplus_lower_exact": "40893745296636629195069/604462909807314587353088",
+        "hidden_l2_lower_exact": "968773282429201341115986106666655730381047048333/365375409332725353621749234186087337540651581440",
+        "hidden_l2_lower_display": 2.6514463143495184,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "47517625564194231173400587/1208925819614629174706176",
+          "11879406391048557793350147/302231454903657293676544"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "1142934739132223713012161544472761378868909209/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "20383211098417535318517524282494183264594893963/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.013946758989365753,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "3",
+        "6"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "1279960895617400135656032318179451300398693298183/182687704666362864775460604089535377456991567872",
+        "distance_lower_exact": "3199951119148416161513595/1208925819614629174706176",
+        "distance_lower_display": 2.6469375268769335,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "42943523725513199771/147573952589676412928",
+        "support_squared_exact": "4016317541815825326787926169311233/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "79228162514264508894990507439/79228162514264337593543950336",
+        "support_sqrt_upper": "16613224848872699096695/151115727451828646838272",
+        "surplus_lower_exact": "5373859298590059186057/75557863725914323419136",
+        "hidden_l2_lower_exact": "42435595584311823500374062502115368656274034483/15223975388863588522715181402577171698287640576",
+        "hidden_l2_lower_display": 2.787418824609613,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "24558706788474153238033293/604462909807314587353088",
+          "49117413576948306476066587/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "598478651963828089909883804215083056925276893/730750818665451459101842416358141509827966271488",
+        "ffn_witness_norm_squared_upper_exact": "21167182676417512734853953693407032472427084243/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.014483174110618521,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "3",
+        "7"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "10411470768961614719695538498343565122242646375389/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "3226681076425374692889945/1208925819614629174706176",
+        "distance_lower_display": 2.669048029310804,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "42564607626865190081/147573952589676412928",
+        "support_squared_exact": "1940325379913679150904391456293621/166153499473114484112975882535043072",
+        "direction_norm_squared_exact": "4951760157141525592348045247/4951760157141521099596496896",
+        "support_sqrt_upper": "130641810057392422140145/1208925819614629174706176",
+        "surplus_lower_exact": "43702822782247396431631/604462909807314587353088",
+        "hidden_l2_lower_exact": "94120032673735644707760687393589923278478917597/33215946302975081391290669098119775128070914048",
+        "hidden_l2_lower_display": 2.8335797455605087,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "49242224230356216912277625/1208925819614629174706176",
+          "24621112115178108456138813/604462909807314587353088"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "530196220419640350017978857711855556094136553/730750818665451459101842416358141509827966271488",
+        "ffn_witness_norm_squared_upper_exact": "2873957122421478427745301087265311241689795583/182687704666362864775460604089535377456991567872",
+        "maximum_witness_norm_squared_upper_display": 0.015731530086658545,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "3",
+        "8"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "10520153449740363953460164317411633887141775020147/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "1621739301624984048214305/604462909807314587353088",
+        "distance_lower_display": 2.6829426178389473,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "45673529739172216879/147573952589676412928",
+        "support_squared_exact": "2211039276639605134467766784061419/166153499473114484112975882535043072",
+        "direction_norm_squared_exact": "39614081257132162029952015269/39614081257132168796771975168",
+        "support_sqrt_upper": "139457904591591560675141/1208925819614629174706176",
+        "surplus_lower_exact": "47620873220057839661243/604462909807314587353088",
+        "hidden_l2_lower_exact": "1128139018006126087127574838954815617869690172651/365375409332725698344472328376300262743408115712",
+        "hidden_l2_lower_display": 3.087616159134554,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "51101630898405330008789175/1208925819614629174706176",
+          "6387703862300666251098647/151115727451828646838272"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "1371364180200539918171778138562338518390747611/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "26367872658043269936652614966861567011195513567/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.018041630597279475,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "3",
+        "9"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "571577068920558911231132213612620532788705575819/91343852333181432387730302044767688728495783936",
+        "distance_lower_exact": "3024108645986275172948585/1208925819614629174706176",
+        "distance_lower_display": 2.5014840422138342,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "44611427182246058575/147573952589676412928",
+        "support_squared_exact": "4853073069436430779394308397705743/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "79228162514264185368912285705/79228162514264337593543950336",
+        "support_sqrt_upper": "146095999538548880571311/1208925819614629174706176",
+        "surplus_lower_exact": "36632406199930975351889/604462909807314587353088",
+        "hidden_l2_lower_exact": "867822111674025724141841769695286555374120719073/365375409332725378544818558031473744124917579776",
+        "hidden_l2_lower_display": 2.3751519382733073,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "52547495357548904538805363/1208925819614629174706176",
+          "13136873839387226134701341/302231454903657293676544"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "25134912808592904687255877302764970223682007/22835963083295358096932575511191922182123945984",
+        "ffn_witness_norm_squared_upper_exact": "13085829849358630495114170446908578177794597715/730750818665451459101842416358141509827966271488",
+        "maximum_witness_norm_squared_upper_display": 0.017907376242502052,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "4",
+        "5"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "4053043471016475608422740639481485874832843353569/730750818665451459101842416358141509827966271488",
+        "distance_lower_exact": "2847119060038225942129027/1208925819614629174706176",
+        "distance_lower_display": 2.35508168809382,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "38557083265939860513/147573952589676412928",
+        "support_squared_exact": "2044967777052265213964326037713755/166153499473114484112975882535043072",
+        "direction_norm_squared_exact": "39614081257132090805924009203/39614081257132168796771975168",
+        "support_sqrt_upper": "67059165656846706467493/604462909807314587353088",
+        "surplus_lower_exact": "11905740871798127863131/302231454903657293676544",
+        "hidden_l2_lower_exact": "282047134114468175578706220737829222079306589067/182687704666362684940809177870589060509375397888",
+        "hidden_l2_lower_display": 1.5438758433664859,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "23254151072267476237504445/604462909807314587353088",
+          "46508302144534952475008891/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "7279301393209120721628707108408215352812341/11417981541647679048466287755595961091061972992",
+        "ffn_witness_norm_squared_upper_exact": "2066899128541740653923375448416013749428675533/182687704666362864775460604089535377456991567872",
+        "maximum_witness_norm_squared_upper_display": 0.011313838182577515,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "4",
+        "6"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "1027613457777794076769764080299204324787451736293/182687704666362864775460604089535377456991567872",
+        "distance_lower_exact": "2867212524774254088316517/1208925819614629174706176",
+        "distance_lower_display": 2.3717026125624807,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "39731109720474364771/147573952589676412928",
+        "support_squared_exact": "4282141323481902728770465796922389/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "79228162514264473552571027071/79228162514264337593543950336",
+        "support_sqrt_upper": "34308396118692512559595/302231454903657293676544",
+        "surplus_lower_exact": "6376260235073236965909/151115727451828646838272",
+        "hidden_l2_lower_exact": "151053676124469339184735744905113110542664170213/91343852333181510762773359335902759577739853824",
+        "hidden_l2_lower_display": 1.6536819092487265,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "48726948060585930301594595/1208925819614629174706176",
+          "12181737015146482575398649/302231454903657293676544"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "68133529432047065744473497100829422173259767/91343852333181432387730302044767688728495783936",
+        "ffn_witness_norm_squared_upper_exact": "18144139827445782187682942466225570205740396725/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.012414724256198498,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "4",
+        "7"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "13571364311979090350173913892834504020058561412713/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "3683933266493720071900205/1208925819614629174706176",
+        "distance_lower_display": 3.0472781759827514,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "1446988051001542431/4611686018427387904",
+        "support_squared_exact": "3523106023449356878063165796514523/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "79228162514264166019045131081/79228162514264337593543950336",
+        "support_sqrt_upper": "124478046878479464794427/1208925819614629174706176",
+        "surplus_lower_exact": "65181570942394704721605/604462909807314587353088",
+        "hidden_l2_lower_exact": "1544152143016089184995357280901052517616479054485/365375409332725333927062846748982634421625552896",
+        "hidden_l2_lower_display": 4.226207083383444,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "24815965533820777939330577/604462909807314587353088",
+          "49631931067641555878661155/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "891837226113013691709047292363825183424657601/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "2792879985288754379222875955681448387347749889/182687704666362864775460604089535377456991567872",
+        "maximum_witness_norm_squared_upper_display": 0.015287728259486912,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "4",
+        "8"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "4883060548352927955022576529068925753930637228389/730750818665451459101842416358141509827966271488",
+        "distance_lower_exact": "3125079374464888037405259/1208925819614629174706176",
+        "distance_lower_display": 2.5850050712466985,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "42126482528843152469/147573952589676412928",
+        "support_squared_exact": "126636146954703105926060853267075/10384593717069655257060992658440192",
+        "direction_norm_squared_exact": "39614081257132250986480235843/39614081257132168796771975168",
+        "support_sqrt_upper": "66750380630752087380551/604462909807314587353088",
+        "surplus_lower_exact": "19524655588318688875961/302231454903657293676544",
+        "hidden_l2_lower_exact": "462539308771770451039897311423483423305720178377/182687704666363054292024908176603478725446598656",
+        "hidden_l2_lower_display": 2.5318579026239987,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "49810318247898241539605701/1208925819614629174706176",
+          "24905159123949120769802851/604462909807314587353088"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "517962342402719249413559920121788758456350681/730750818665451459101842416358141509827966271488",
+        "ffn_witness_norm_squared_upper_exact": "21662570375693388282984998250536665215560783083/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.014822132129290733,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "4",
+        "9"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "7015816315832894820945604632912887553407922885669/730750818665451459101842416358141509827966271488",
+        "distance_lower_exact": "3745882089930993762524763/1208925819614629174706176",
+        "distance_lower_display": 3.098521041700535,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "46989824346165810291/147573952589676412928",
+        "support_squared_exact": "3509286397876358265085694864771837/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "39614081257132055206340856513/39614081257132168796771975168",
+        "support_sqrt_upper": "124233670148816102109755/1208925819614629174706176",
+        "surplus_lower_exact": "68236650373079056842181/604462909807314587353088",
+        "hidden_l2_lower_exact": "1616527008822020612103407645489410897388191424917/365375409332725205707518480674015313792342163456",
+        "hidden_l2_lower_display": 4.424290654300568,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "26616275332496276467301295/604462909807314587353088",
+          "53232550664992552934602591/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "363175354595323017600678289479743417820015261/365375409332725729550921208179070754913983135744",
+        "ffn_witness_norm_squared_upper_exact": "6484130624411859336398082740484365800705898091/365375409332725729550921208179070754913983135744",
+        "maximum_witness_norm_squared_upper_display": 0.017746488840761437,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "5",
+        "6"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "8401574138801536332352055010628108506460721703393/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "724636725314895988519519/302231454903657293676544",
+        "distance_lower_display": 2.397621801297583,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "39342133741029075343/147573952589676412928",
+        "support_squared_exact": "4108417139140038191774202251442649/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "19807040628566094760547380077/19807040628566084398385987584",
+        "support_sqrt_upper": "134421016455592694243009/1208925819614629174706176",
+        "surplus_lower_exact": "26724363347662398361919/604462909807314587353088",
+        "hidden_l2_lower_exact": "633100465935432255506094347129540792869960868783/365375409332725825124990885654652675670696525824",
+        "hidden_l2_lower_display": 1.7327396692942327,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "46598438299275340088810573/1208925819614629174706176",
+          "23299219149637670044405287/604462909807314587353088"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "797363238259152376557231476804411741040087651/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "16860675973586866699507853049730831423356099185/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.011536542651008602,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "5",
+        "7"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "12781953128343477162287828221485691206906398534531/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "1787592873695201686756963/604462909807314587353088",
+        "distance_lower_display": 2.957324336517248,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "44254954508559639375/147573952589676412928",
+        "support_squared_exact": "213562978703670796241803426920311/20769187434139310514121985316880384",
+        "direction_norm_squared_exact": "79228162514264259075560450599/79228162514264337593543950336",
+        "support_sqrt_upper": "30647347575094605535599/302231454903657293676544",
+        "surplus_lower_exact": "14669725841670465184401/151115727451828646838272",
+        "hidden_l2_lower_exact": "347525968895307655323649953752661019322941703457/91343852333181387125194533775860190095928721408",
+        "hidden_l2_lower_display": 3.804590675984289,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "11800260062046261058131173/302231454903657293676544",
+          "47201040248185044232524693/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "490070040523463021049930476030603340786186323/730750818665451459101842416358141509827966271488",
+        "ffn_witness_norm_squared_upper_exact": "18676804694036741983593557956811958434169850329/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.012779188347777451,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "5",
+        "8"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "5079410142908789113380324433217091533808668047745/730750818665451459101842416358141509827966271488",
+        "distance_lower_exact": "3187290430101652695444875/1208925819614629174706176",
+        "distance_lower_display": 2.636464850355888,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "10595251257124404017/36893488147419103232",
+        "support_squared_exact": "30804107566907709583205777937249/2596148429267413814265248164610048",
+        "direction_norm_squared_exact": "79228162514264464484798724677/79228162514264337593543950336",
+        "support_sqrt_upper": "8230367483056597345265/75557863725914323419136",
+        "surplus_lower_exact": "2619169804238792368143/37778931862957161709568",
+        "hidden_l2_lower_exact": "20682720630307528251725022971962788162869135317/7611987694431792127963212291735307629379977216",
+        "hidden_l2_lower_display": 2.717124811622731,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "24347244758196586854713499/604462909807314587353088",
+          "48694489516393173709426999/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "1305897558653248277866078335593572188032801261/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "5100870245076173362474888973339813661866872889/365375409332725729550921208179070754913983135744",
+        "maximum_witness_norm_squared_upper_display": 0.0139606282053621,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "5",
+        "9"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "3335327973299369042339802176083059400101545965873/365375409332725729550921208179070754913983135744",
+        "distance_lower_exact": "1826288031308141996809935/604462909807314587353088",
+        "distance_lower_display": 3.021340104871464,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "45419959816653546773/147573952589676412928",
+        "support_squared_exact": "3448373744044219642170823761366627/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "19807040628566078523973041839/19807040628566084398385987584",
+        "support_sqrt_upper": "61575376803508718147825/604462909807314587353088",
+        "surplus_lower_exact": "31444700900997745643279/302231454903657293676544",
+        "hidden_l2_lower_exact": "744925315250337585887661261209325601123267442303/182687704666362837684512557282611436144600023040",
+        "hidden_l2_lower_display": 4.077588673035072,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "51078880905250216344223789/1208925819614629174706176",
+          "25539440452625108172111895/604462909807314587353088"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "1103601793097106558820458102736518837807438027/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "11803906897983294229657731834846749866879965099/730750818665451459101842416358141509827966271488",
+        "maximum_witness_norm_squared_upper_display": 0.016153121688649515,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "6",
+        "7"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "5780147154716611517011283167675369658240962691583/730750818665451459101842416358141509827966271488",
+        "distance_lower_exact": "3400043280523532252470103/1208925819614629174706176",
+        "distance_lower_display": 2.812449883490261,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "20848760226045430467/73786976294838206464",
+        "support_squared_exact": "3354060913211061732570288473898197/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "39614081257132155703785259557/39614081257132168796771975168",
+        "support_sqrt_upper": "121454995357861696286947/1208925819614629174706176",
+        "surplus_lower_exact": "49338048413902470098717/604462909807314587353088",
+        "hidden_l2_lower_exact": "1168818917511043390690385640340535038103472041069/365375409332725669170177580924207406143164645376",
+        "hidden_l2_lower_display": 3.1989534261367587,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "22605161353829008180629355/604462909807314587353088",
+          "45210322707658016361258711/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "477876606773696673605314830924843686363851551/730750818665451459101842416358141509827966271488",
+        "ffn_witness_norm_squared_upper_exact": "15392213459922255794045536193550808106427133847/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.010531779826146892,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "6",
+        "8"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "2602457760767835487930270936133796170606565409929/365375409332725729550921208179070754913983135744",
+        "distance_lower_exact": "1613213488899666834152105/604462909807314587353088",
+        "distance_lower_display": 2.668837843853667,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "20899825516932116017/73786976294838206464",
+        "support_squared_exact": "3743010168930908754255190710255411/332306998946228968225951765070086144",
+        "direction_norm_squared_exact": "19807040628566049420994937253/19807040628566084398385987584",
+        "support_sqrt_upper": "128304063904824842084589/1208925819614629174706176",
+        "surplus_lower_exact": "42907306729883052326675/604462909807314587353088",
+        "hidden_l2_lower_exact": "1016474575253055791424226060666132272927088225475/365375409332725406941430970770044390360767004672",
+        "hidden_l2_lower_display": 2.7820005104049397,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "23786535886880655965658003/604462909807314587353088",
+          "47573071773761311931316007/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "1327547958847751815777877095678432195587310759/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "8752283906688866323907606321547406325647282491/730750818665451459101842416358141509827966271488",
+        "maximum_witness_norm_squared_upper_display": 0.011977111325955,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "6",
+        "9"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "12857628495747481350265076134035765935042266426951/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "896438386607923871313335/302231454903657293676544",
+        "distance_lower_display": 2.9660658150015613,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "2761640383350570895/9223372036854775808",
+        "support_squared_exact": "423294601962629345688131246574573/41538374868278621028243970633760768",
+        "direction_norm_squared_exact": "79228162514264200766148185587/79228162514264337593543950336",
+        "support_sqrt_upper": "30509583308617133461845/302231454903657293676544",
+        "surplus_lower_exact": "14737132732198620081835/151115727451828646838272",
+        "hidden_l2_lower_exact": "349122838884143755574569595806137178336343685595/91343852333181353512106877278620760022724902912",
+        "hidden_l2_lower_display": 3.8220726405396217,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "50336566903600893857661707/1208925819614629174706176",
+          "12584141725900223464415427/302231454903657293676544"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "233832575307314237973066333950457031297696059/365375409332725729550921208179070754913983135744",
+        "ffn_witness_norm_squared_upper_exact": "20946597593170366147957906023254886939471965301/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.014332243671943136,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "7",
+        "8"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "7562835604471224374050462265083841320495987856337/1461501637330902918203684832716283019655932542976",
+        "distance_lower_exact": "2750061018317816229986911/1208925819614629174706176",
+        "distance_lower_display": 2.274797157690334,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "18281049484020832507/73786976294838206464",
+        "support_squared_exact": "1970910755967218643429270326354843/166153499473114484112975882535043072",
+        "direction_norm_squared_exact": "79228162514264250367893848151/79228162514264337593543950336",
+        "support_sqrt_upper": "16458429806237377196597/151115727451828646838272",
+        "surplus_lower_exact": "2261364865399955290571/75557863725914323419136",
+        "hidden_l2_lower_exact": "53571758896922690334374334556596050095601297147/45671926166590691052783245023496711630300905472",
+        "hidden_l2_lower_display": 1.1729691167724556,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "44755373599017908945761957/1208925819614629174706176",
+          "22377686799508954472880979/604462909807314587353088"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "647100629885954824814866799930371797562645823/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "14758980420492043640509145974355384953531086721/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.0100985041983572,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "7",
+        "9"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "5557433373077827329396493532507044065778702037231/730750818665451459101842416358141509827966271488",
+        "distance_lower_exact": "3333896630994376624959155/1208925819614629174706176",
+        "distance_lower_display": 2.757734657414404,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "42008395974467731995/147573952589676412928",
+        "support_squared_exact": "1770342590062335044272639705635429/166153499473114484112975882535043072",
+        "direction_norm_squared_exact": "79228162514264020350596721531/79228162514264337593543950336",
+        "support_sqrt_upper": "62394106499261897609439/604462909807314587353088",
+        "surplus_lower_exact": "23639088456448017516321/302231454903657293676544",
+        "hidden_l2_lower_exact": "186670089777526529224355842159111617833582538299/60895901555454166339748219882915264233922887680",
+        "hidden_l2_lower_display": 3.0653966032104396,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "24262167527017908642249443/604462909807314587353088",
+          "48524335054035817284498887/1208925819614629174706176"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "1256623811078906383617344675189272483870193653/1461501637330902918203684832716283019655932542976",
+        "ffn_witness_norm_squared_upper_exact": "18598859187573837019687694467315294915315546711/1461501637330902918203684832716283019655932542976",
+        "maximum_witness_norm_squared_upper_display": 0.012725855868037468,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    },
+    {
+      "digits": [
+        "8",
+        "9"
+      ],
+      "embedding_over_gamma_metric": {
+        "squared_distance_lower_exact": "64745753769627715600345901987373345962228912877/11417981541647679048466287755595961091061972992",
+        "distance_lower_exact": "2878794275823186987053223/1208925819614629174706176",
+        "distance_lower_display": 2.3812828124895735,
+        "greater_than_two_certified": true
+      },
+      "after_attention_residual": {
+        "dot_exact": "37796662686362387821/147573952589676412928",
+        "support_squared_exact": "1922095795419433303693982653969287/166153499473114484112975882535043072",
+        "direction_norm_squared_exact": "79228162514264468572336368895/79228162514264337593543950336",
+        "support_sqrt_upper": "8126666515173646593441/75557863725914323419136",
+        "surplus_lower_exact": "1549279132535124688735/37778931862957161709568",
+        "hidden_l2_lower_exact": "36702439938866698066714844230921281581659218895/22835963083295376972965886644977522984412512256",
+        "hidden_l2_lower_display": 1.6072210226033654,
+        "positive_certified": true,
+        "embedding_input_distance_interval_exact": [
+          "46016864692906214406941613/1208925819614629174706176",
+          "23008432346453107203470807/604462909807314587353088"
+        ]
+      },
+      "after_ffn_norm_only_relaxation": {
+        "inside_relaxed_minkowski_sum": true,
+        "attention_witness_norm_squared_upper_exact": "94521819560391567429137119378311758915702899/91343852333181432387730302044767688728495783936",
+        "ffn_witness_norm_squared_upper_exact": "513848994764409469536863719581317046222831251/45671926166590716193865151022383844364247891968",
+        "maximum_witness_norm_squared_upper_display": 0.011250871988409655,
+        "coordinate_decomposition_exact": true,
+        "actual_prefix_counterexample": false
+      }
+    }
+  ],
+  "parameter_read_hashes": {
+    "language_model.model.embed_tokens.weight[236771]": {
+      "shape": [
+        1,
+        384
+      ],
+      "dtype": "uint32",
+      "sha256": "d5fa474eb35f7276cf5777ce1e2ab3d96f76aec17b8341b207a6b523339820fb"
+    },
+    "language_model.model.embed_tokens.scales[236771]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "38be1c1624626f3bbb9357eb558caba415508a10ee2bc734777605f734d72375"
+    },
+    "language_model.model.embed_tokens.biases[236771]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "7bce6b8f587a339083f545b4161895cc8f5cb8358af7fff9485fd60dbaf0e31f"
+    },
+    "language_model.model.embed_tokens.weight[236770]": {
+      "shape": [
+        1,
+        384
+      ],
+      "dtype": "uint32",
+      "sha256": "a9c1ec2fec1f167bdc40dbb854bfe0ada65fa728325904dd9837078de1f6ebac"
+    },
+    "language_model.model.embed_tokens.scales[236770]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "89afad002734dd75834b8738437d2d117ed71cfc408fc09a25fb1fd1063fdbd8"
+    },
+    "language_model.model.embed_tokens.biases[236770]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "0631d578f58968611f6dc5cc122c64cb989b2a705132b79bdb07553247620a1b"
+    },
+    "language_model.model.embed_tokens.weight[236778]": {
+      "shape": [
+        1,
+        384
+      ],
+      "dtype": "uint32",
+      "sha256": "214715be3b906a1b44837bd5f99f0f91501268c9d28211bbd0d9d7074b298ed3"
+    },
+    "language_model.model.embed_tokens.scales[236778]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "64449316a2ca6932f44d9022861c8286331742aa2c5494350ffca7d380e863e4"
+    },
+    "language_model.model.embed_tokens.biases[236778]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "5f71251271cd4efe650d176d99e10fa9c28165c2b1445fad25177ca02f489998"
+    },
+    "language_model.model.embed_tokens.weight[236800]": {
+      "shape": [
+        1,
+        384
+      ],
+      "dtype": "uint32",
+      "sha256": "8252f0a9cb20ffeff58dd7a276503e50cb65173756e1ae57aaea693205868cc2"
+    },
+    "language_model.model.embed_tokens.scales[236800]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "96a39483d28c011d24bb2a67096591ad31be0a85795537271a47b8c401cd6135"
+    },
+    "language_model.model.embed_tokens.biases[236800]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "344b8f42d4ecad6415e53fcc6a2cd0b18b1b4e696a5d1418806cd70209dd700f"
+    },
+    "language_model.model.embed_tokens.weight[236812]": {
+      "shape": [
+        1,
+        384
+      ],
+      "dtype": "uint32",
+      "sha256": "cfe7414d40d61f7a20dd1fd13e516d7919f8009e1d53f292d16a38f64f5e037d"
+    },
+    "language_model.model.embed_tokens.scales[236812]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "b5e3356d146242143028b19b99aec04eb013dbe58955281e256b734b93548d71"
+    },
+    "language_model.model.embed_tokens.biases[236812]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "0fac2487de5a2b7469ee24fa2a0de4b45dc5be4726b704eec201bba01d6aa2f8"
+    },
+    "language_model.model.embed_tokens.weight[236810]": {
+      "shape": [
+        1,
+        384
+      ],
+      "dtype": "uint32",
+      "sha256": "d629b155dcd9526bcf63688552ef05dcf7e4c3f050fa0637d70bc64ce9c99d9c"
+    },
+    "language_model.model.embed_tokens.scales[236810]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "d595f95f49c3b5b6b02cdee0f78fd90e9eaa21aea3562ab4e81a45c4a1cc8904"
+    },
+    "language_model.model.embed_tokens.biases[236810]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "45ee0bc0ada0c935d72b643f1ac56493adb623a2d8e540c5af9b9e89629980b6"
+    },
+    "language_model.model.embed_tokens.weight[236825]": {
+      "shape": [
+        1,
+        384
+      ],
+      "dtype": "uint32",
+      "sha256": "c236a92dc1af9916cb414e151bfdb3e50cf95ee1a7b2ff84a661f5fc2c122bee"
+    },
+    "language_model.model.embed_tokens.scales[236825]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "357a9a19bcbc1cd1736df7b2c59e29028113f09f4af4a1f9985e95f65aea229b"
+    },
+    "language_model.model.embed_tokens.biases[236825]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "80f93648b9bd93f5163280cd80938849ffa2b8756dbb57481f887856738beb06"
+    },
+    "language_model.model.embed_tokens.weight[236832]": {
+      "shape": [
+        1,
+        384
+      ],
+      "dtype": "uint32",
+      "sha256": "cf60f83fe4163c8700924526466d4de32cc0174d807235718f2d255707bab3e7"
+    },
+    "language_model.model.embed_tokens.scales[236832]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "646ad72cce0c95229c34d2c38a2635f69c2c3d6ffa38d2d0b4f219206048f9e9"
+    },
+    "language_model.model.embed_tokens.biases[236832]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "e15695d5bb587d773c175c3dfc0a9dc45ac87647c90ec1fd22f77a2f0c7aab78"
+    },
+    "language_model.model.embed_tokens.weight[236828]": {
+      "shape": [
+        1,
+        384
+      ],
+      "dtype": "uint32",
+      "sha256": "df6a11929bebdc9f899a0b2426afecbe9a0884e1dcd9c0fc41c2ef49ff022d74"
+    },
+    "language_model.model.embed_tokens.scales[236828]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "d8be389e88e36e44dda27a0028ab89392599834573db86dc954b7c601b1d7c53"
+    },
+    "language_model.model.embed_tokens.biases[236828]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "84df87682878eff93928b874a8e9f06d363bfcf091340ce7ce3d49824c8e5ef3"
+    },
+    "language_model.model.embed_tokens.weight[236819]": {
+      "shape": [
+        1,
+        384
+      ],
+      "dtype": "uint32",
+      "sha256": "e0c14441d023d42ce10f80461381c3bf3eb64e752e2d12d77019784e667cadb5"
+    },
+    "language_model.model.embed_tokens.scales[236819]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "50f928d9e3240413ac208e653cc55f537404266670a2dff7dde73d47e6534710"
+    },
+    "language_model.model.embed_tokens.biases[236819]": {
+      "shape": [
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "sha256": "68f46a3e1bafa1069e554dc1e60bcb4dd8ed048f5deb41bb637a8a7c235d2865"
+    },
+    "language_model.model.layers.0.post_attention_layernorm.weight": {
+      "shape": [
+        1536
+      ],
+      "dtype": "float32",
+      "sha256": "86509ab40b5dc51fb01dd400c7e59707a3cd551894b8fdbd499d40f13398c7d7"
+    },
+    "language_model.model.layers.0.post_feedforward_layernorm.weight": {
+      "shape": [
+        1536
+      ],
+      "dtype": "float32",
+      "sha256": "b5bbe1bf1410bad7b903fffd6de401e52725ddffdb1198837506bb3fb307b324"
+    },
+    "language_model.model.layers.0.layer_scalar": {
+      "shape": [
+        1
+      ],
+      "dtype": "float32",
+      "sha256": "25fdc44513fb25e1165ef239d84ceec9ab2e60bc224affff8623d49e809483bc"
+    }
+  },
+  "summary": {
+    "pair_count": 45,
+    "positive_all_prefix_attention_residual_certificates": 45,
+    "minimum_certified_hidden_l2_lower_exact": "128802233218722502047405358863374924876778033199/121791803110908424267401608594127193307728576512",
+    "minimum_certified_hidden_l2_lower_display": 1.0575607711582207,
+    "minimum_embedding_over_gamma_distance_lower_exact": "2686798973174883621267593/1208925819614629174706176",
+    "minimum_embedding_over_gamma_distance_lower_display": 2.222468020437646,
+    "ffn_relaxation_allows_zero_difference_pairs": 45,
+    "target_layer10_kv_certificate": "not obtained",
+    "target_layer15_kv_certificate": "not obtained",
+    "actual_quantized_execution_certificate": "not obtained",
+    "actual_collisions_found": false
+  },
+  "verification": {
+    "sqrt_rational_enclosures_checked": 200,
+    "positive_decisions_use_exact_arithmetic": true,
+    "relaxation_primal_decompositions_checked_coordinatewise": true,
+    "model_forward_evaluations": 0,
+    "sampled_prefixes": 0
+  }
+}

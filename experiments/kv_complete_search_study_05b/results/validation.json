@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "cohort": "previous",
+  "fresh_target_ids_disjoint": false,
+  "controls": {
+    "exhaustively_enumerated_audit_settings": 216,
+    "singleton_5_percent_failure_is_tight": true,
+    "empty_group_not_excluded": true,
+    "exact_threshold_and_zero_delta": true,
+    "duplicate_queries_rejected": true,
+    "black_box_indistinguishability_witness": true
+  },
+  "refitted_snapshots": 384,
+  "independently_checked_local_decisions": 12288,
+  "independently_checked_empirical_runs": 7680,
+  "independently_checked_audits": 15360,
+  "frozen_inputs_unchanged": true,
+  "oracle_local_false_exclusions": 0,
+  "oracle_refinement_monotone": true,
+  "empirical_omissions_preserved_in_results": 602,
+  "audit_omissions_preserved_in_results": 12,
+  "every_analytic_audit_failure_probability_within_delta": true,
+  "source_sha256": "a367fec1071eeb7b18e761fa19c20cf8b71200aed6cbce01067bb944b65c41be",
+  "local_sha256": "c177d7b92798a0c4c91c68252c4c0c13c05a8422916011215232cc7d46ebb349",
+  "empirical_sha256": "3ce61f4344af6f87a09462aa5447ec1e90b4ec4a8f21d25b7249ce57aff9475b"
+}

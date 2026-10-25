@@ -1,0 +1,18 @@
+{
+  "position": 1976,
+  "seed": 20261023,
+  "warm_start_sha256": "ce47139cef58c1af8c63be310f57060a8a85a6085f9c7c293fa280bd605444ee",
+  "source_sha256": "e528c58b3d6c424300d2dbb6c22b9c6a0ed1fc72fcefd76b7d223ebb5c3b064e",
+  "target": "original INT8 KV, LSB RMSE",
+  "prefix": "true prefix, exact original prefill blocks; current true embedding/latent not used",
+  "fine_anchor_scales": [
+    0.0013615375489639072,
+    0.021784600783422516
+  ],
+  "main_scale": 0.08713840313369006,
+  "expanded_main": "2x after first flat round; 4x after second, capped",
+  "per_round": "four scales of full 768 paired probes, fine line search, 128 tiny random jitters",
+  "plateau_rounds": 8,
+  "max_rounds": 60,
+  "epsilon": 0.125
+}

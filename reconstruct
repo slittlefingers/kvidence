@@ -1,0 +1,3 @@
+#!/bin/bash
+cd "$(dirname "$0")/.." || exit 1
+exec kvidence/reconstruction/experiments/fixed_prefix_image_inverse/.venv/bin/python kvidence/reconstruction/terminal.py "$@"

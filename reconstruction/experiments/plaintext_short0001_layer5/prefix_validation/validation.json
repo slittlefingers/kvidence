@@ -1,0 +1,36 @@
+{
+  "rows": [
+    {
+      "position": 1,
+      "public_token_id": 105,
+      "l2": 0.0,
+      "kv_l2": [
+        0.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "position": 2,
+      "public_token_id": 2364,
+      "l2": 0.0,
+      "kv_l2": [
+        0.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "position": 3,
+      "public_token_id": 107,
+      "l2": 0.0,
+      "kv_l2": [
+        0.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    }
+  ],
+  "passed": true,
+  "note": "Only public prefix inspected; finite alignment check, not a target recovery or accuracy result"
+}

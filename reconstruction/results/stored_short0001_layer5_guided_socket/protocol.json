@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "observation_metadata": {
+    "schema": 1,
+    "layer_index": 4,
+    "layer_1based": 5,
+    "quantization": [
+      {
+        "width": 512,
+        "scale": 0.0011563472216948867,
+        "zero_point": 0,
+        "dtype": "int8"
+      },
+      {
+        "width": 512,
+        "scale": 0.01785714365541935,
+        "zero_point": 0,
+        "dtype": "int8"
+      }
+    ],
+    "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+    "source": {
+      "kind": "GHOSTKV1 runtime capture",
+      "snapshot_sha256": "670da264e9df78e24284191bb6f66a845688955d2d6167fd3eb1515376b8534d",
+      "note": "Only selected target-layer rows imported; no target-prefix cache supplied to recovery"
+    },
+    "metric": "L2 of dequantized original K+V values; no LSB/RMS normalization",
+    "observed_sha256": "723632c996f36c44dab904f43c6e1a8bc112bfb7888429cadd23576246d29046"
+  },
+  "config": {
+    "method": "guided",
+    "epsilon": 4.0,
+    "batch_size": 256,
+    "probability_seeds": 50,
+    "random_seeds": 150,
+    "proposals": 20,
+    "seed": 20261019,
+    "max_queries": null,
+    "kv_thresholds": null,
+    "k_width": null,
+    "stop_partition": 1
+  },
+  "manifest_sha256": "7f6907a74e1257105644912558d349d9c7df240df671374505d9510d2ca415b5",
+  "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+  "model_config": {
+    "name": "Gemma 4 E2B IT / Tensor G5",
+    "model": "/path/to/litertlm/annoymous/models/gemma-4-E2B-it_Google_Tensor_G5.litertlm",
+    "device_model": "/sdcard/Android/data/com.example.annoymous/files/gemma-4-E2B-it_Google_Tensor_G5.litertlm",
+    "manifest": "/path/to/litertlm/kvidence/experiments/npu_candidate_batch/inputs/probe.json",
+    "tokenizer": "/path/to/litertlm/kvidence/experiments/kv_guided_search_gemma4_int8/model/tokenizer.json",
+    "embeddings": "/path/to/litertlm/kvidence/experiments/embedding_hnsw/assets/embeddings.npy",
+    "batch_signature": "prefill_128",
+    "mask_token_id": 1437,
+    "vocabulary": null,
+    "adapter": "litert_tensor_gemma",
+    "first_v_table": "/path/to/litertlm/kvidence/reconstruction/assets/first_v_gemma4_full",
+    "adapter_options": {},
+    "default_layer": 4
+  },
+  "model_config_sha256": "26573347deccfb2c91fc142f8ba4c80e6733546d9afcbcc51bce2622c93834fb",
+  "model_dimensions": {
+    "vocab_size": 262144,
+    "embedding_dim": 1536,
+    "batch_capacity": 128,
+    "context_capacity": 4096
+  },
+  "adapter": "litert_tensor_gemma",
+  "capabilities": {
+    "vocab_size": 262144,
+    "embedding_dim": 1536,
+    "context_capacity": 4096,
+    "batch_capacity": 128,
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "kv_dtype": "int8",
+    "kv_width": 1024
+  },
+  "tokenizer_sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+  "candidate_vocabulary": {
+    "kind": "full_original",
+    "count": 262144,
+    "filtered": false
+  },
+  "original_vocabulary": {
+    "start": 0,
+    "stop_exclusive": 262144,
+    "filtered": false
+  },
+  "max_positions": null,
+  "metric": "original_value_kv_l2",
+  "implementation": "kv_guided_ridge",
+  "calibration": null,
+  "calibration_sha256": null,
+  "selection_policy": "minimum distance across complete accepting stage",
+  "initial_candidates": 200,
+  "prediction_candidates": 50,
+  "random_candidates": 150,
+  "probability_source": "selected backend model's full probability ranking",
+  "source_hashes": {
+    "experiments/stored_short0001_layer5/check_prefix.py": "0fd04ed7604858d57a586f7116e76beaa8d0bf7f9b714fae90e7197535e3b212",
+    "experiments/stored_short0001_layer5/prepare.py": "c324a31ea6f083a8271d51261649cf0af661c0b3476e109120d566bdeba3e556",
+    "experiments/stored_short0001_layer5/report.py": "21389b3d60f88c5b1e99834ac33fd85883686ee079c1cdb67ad5e13165222913",
+    "experiments/transport_validation.py": "951c3b98c569ee64218a435477a3c5ed8585ed972f8cb720eb55d2c6d9364cd1",
+    "kvrecon/__init__.py": "c2bde96242441ed593b00881b8275a9301f5b693a84848a185795982698456d8",
+    "kvrecon/adapters.py": "0014c92eb686029b13efeca01fe0634a9edc28004cd91fa6bb0266a975734923",
+    "kvrecon/backend.py": "5045ed5a3aa415f643d5139ffb360c114bfcf3c5d32d080ebac3f89953640ac9",
+    "kvrecon/cli.py": "1fd9a2c9a00a0b8e0f1b73ed74925155e6ef8f36c5cf8d80dd96b0ad86049ca4",
+    "kvrecon/common.py": "69303849c139aa018c80d48a7b32c516120fc7df0fef16dbb44f9026033ac4d9",
+    "kvrecon/comparison.py": "76a785c13bc7ac7b415ca5229818612625e0e2d5388268bcbbbf294cf2b8310a",
+    "kvrecon/config.py": "f384a3056ba45682875abd60d6d71f920e3ed8e393b3d7defe2f3eda4bd5fa1f",
+    "kvrecon/cpa.py": "22fd59158f5ba4b9c1ae1f6f29664a8ad50dff9a1efe4ae535600c711b9a8d28",
+    "kvrecon/engine.py": "dcbfab2e4a0160dfcbb5318ec399e79e530c50d14a950f5a392b8080a8955fb7",
+    "kvrecon/first_v.py": "cd8899a63062d79ca057db61252312e99811bf0dc3cc154e884633b45b988773",
+    "kvrecon/npu.py": "87657949b84fda9ce45502b6c8602c827700ad6047214383238227c3551dc8fa",
+    "kvrecon/observation.py": "37aa8d9a85a9dbad696c01823e176fed5f3b524af9bd523221081cd49720202b",
+    "kvrecon/search.py": "247713202629e48b1584514a1021a3760d02c2669182892c8ea2cc37c0f38e82",
+    "kvrecon/surrogate.py": "3b894c7db7602256b489d0dc93f8714d3cfd71d476abc00aea7f3cc9bf83e4eb",
+    "kvrecon/transport.py": "0161df5ccd31800347b2415fad6ad2d0750cff2c76fee9240e3700291f49cf61",
+    "native/build.sh": "cad4d08988cceeb79a73a2f517d403f2fac5a788dd003468472ef60ff9c6eb01",
+    "native/litert_support.h": "92768d645e4b1ead470f262f62c795763d22d235cd2c05e722a98ee85cb1cec5",
+    "native/socket_rpc.h": "86ed357c69ca6f171f3d409b453bcba7c835f36cb53ab803e5ac0bb37139dba7",
+    "native/worker.cc": "7745497c2b847f7bd61dcb713adcf354bf4c0535fb2aebc08b693be3a7fea5bb",
+    "prepare_gemma3.py": "6ff3cad9539be58ff1396a4b7c13bb47db760b58e19f5d134234334b6dafb0b1",
+    "run.py": "3ab8410a34643138310239da60df3751f2034d5e23441338ea82a0478007387d",
+    "tests/device_contract.py": "4ceb1c2b8b45563780cf8d59458398de65cf3e90a5a83ad5c780867a9d92e391",
+    "tests/gemma3_assets_device.py": "20496cf638d3aa8e82bc515676f999480757dbca559f5e020200d7ef6d384dfb",
+    "tests/support_cpu_adapter.py": "e523440130acca844ed41ef512fa27776cccfd5e0c88aa81b76ef2e39a31bad1",
+    "tests/surrogate_preflight.py": "464b07d64e328cb485a8161bcf5921b71607039b2823ce4d28e7d99107161910",
+    "tests/test_backend.py": "f19e5b27063307bddc94b8b9cc84e6e7fd356b60d52b851210b6a988b5dca2e7",
+    "tests/test_comparison.py": "f91a37b5cf599131d9ed074de918105f74637d0643e3736df41123dbaa599c2d",
+    "tests/test_config.py": "60b49363f81c94b805435e4298ab5f53ed115e28b46e72b35b76443cd1d5e509",
+    "tests/test_core.py": "e3bc3c468ea24046bd108ef1d52da8feb0ff5b24021d0738c7adf5c9022940cc",
+    "tests/test_cpa.py": "a7f18bc586f3a40759464f159f0b91f4ad9a4a17d418ca82280e2a079bdf6ff1",
+    "tests/test_first_v.py": "51162e37b8f9010acc1fdc3183e377e9a7848b4c453d2964250588fdf061f0f0",
+    "tests/test_models.py": "8dd08299f00f86e4dad8c2f98844160d8c2eab485ccb982e06a4f636f827943c",
+    "tests/test_transport.py": "a8504a86e12b0f8777b128f9b3d18e7a120dcc6471e7cab1c5e8d16715363da5"
+  },
+  "surrogate": {
+    "source": "/path/to/litertlm/kvidence/experiments/ciphertext_full_vocabulary/stable_surrogate.py",
+    "source_sha256": "1e5fd8d09a1e025f8625d0733668eabf075c61c4f2d6544982148ccc237bf9e4",
+    "embedding_sha256": "be74121046399c6f947cd9ecead1153200d81ba8df22aa6143c901dc3cf6cdbf",
+    "shape": [
+      262144,
+      1536
+    ],
+    "proposal_only": true,
+    "note": "Configured embedding asset is proposal-only, not asserted bit-identical to device embedding quantization. Only real NPU KV is accepted."
+  },
+  "surrogate_setup_seconds": 1.834392790988204,
+  "candidate_quantization": "Native model KV; integer codes dequantized using each tensor's metadata; float32 used directly",
+  "stopping": "strict original-value K+V L2 < epsilon; no default query cap; threshold is not proof of identity",
+  "private_labels_allowed": false
+}

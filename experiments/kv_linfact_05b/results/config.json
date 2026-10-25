@@ -1,0 +1,47 @@
+{
+  "seeds": [
+    20261019,
+    20261020
+  ],
+  "trials_per_seed": 8,
+  "layers": [
+    12,
+    24
+  ],
+  "epsilons": [
+    0.1,
+    0.25
+  ],
+  "methods": [
+    "random",
+    "kv_surrogate_full",
+    "kv_surrogate_pca",
+    "linfact_g_scalar",
+    "linfact_g_vector"
+  ],
+  "budgets": [
+    200,
+    220,
+    240,
+    300,
+    400,
+    600
+  ],
+  "initial_queries": 200,
+  "known_correct_prefix": true,
+  "target_distribution": "uniform",
+  "candidate_count": 10000,
+  "distance": "Linf(KV-target)/maxabs(target)",
+  "observation_noise": null,
+  "dtype": "float32",
+  "weights_quantized": false,
+  "kv_quantized": false,
+  "calibration_count": 50,
+  "calibration_inflation": 1.5,
+  "pca_dimension": 32,
+  "certified_confidence_bounds": false,
+  "paper_reproduction": false,
+  "benchmark_type": "hidden_table_replay",
+  "threads": 4,
+  "source_sha256": "19ec7d237285ffd305416d05b6c088c3490e2ca09b2868c80505c24366d4c410"
+}

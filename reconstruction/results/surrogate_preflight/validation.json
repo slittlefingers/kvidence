@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "source": "/path/to/litertlm/kvidence/experiments/npu_candidate_batch/results_prefill128_retry",
+  "anchors": 96,
+  "original_vocabulary_scores": 262144,
+  "finite_full_vocabulary": true,
+  "target_held_out_of_fit": true,
+  "checked_direct_float64": 84,
+  "maximum_absolute_squared_l2_error": 0.021564998917824596,
+  "fit_and_score_seconds": 0.09503358400252182,
+  "note": "Numerical compatibility check only; does not measure search success or prove embedding quantization equivalence"
+}

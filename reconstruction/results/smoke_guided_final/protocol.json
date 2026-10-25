@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "observation_metadata": {
+    "schema": 1,
+    "layer_index": 4,
+    "layer_1based": 5,
+    "quantization": [
+      {
+        "width": 512,
+        "scale": 0.0011563472216948867,
+        "zero_point": 0
+      },
+      {
+        "width": 512,
+        "scale": 0.01785714365541935,
+        "zero_point": 0
+      }
+    ],
+    "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+    "source": {
+      "kind": "controlled NPU single-token decode fixture",
+      "selection": "greedy next-token; intentionally easy integration smoke"
+    },
+    "metric": "L2 of dequantized original K+V values; no LSB/RMS normalization",
+    "observed_sha256": "329d974211b2ae9454066fd605e528524873ecfd8db5eae275da2056bb5754de"
+  },
+  "config": {
+    "method": "guided",
+    "epsilon": 4.0,
+    "batch_size": 128,
+    "probability_seeds": 50,
+    "random_seeds": 150,
+    "proposals": 20,
+    "seed": 20261019,
+    "max_queries": null
+  },
+  "manifest_sha256": "7f6907a74e1257105644912558d349d9c7df240df671374505d9510d2ca415b5",
+  "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+  "original_vocabulary": {
+    "start": 0,
+    "stop_exclusive": 262144,
+    "filtered": false
+  },
+  "source_hashes": {
+    "kvrecon/__init__.py": "c2bde96242441ed593b00881b8275a9301f5b693a84848a185795982698456d8",
+    "kvrecon/cli.py": "7665f4d13a33f399839639218da86882b02b7c556b4a2f61d6ed815ae9833f73",
+    "kvrecon/common.py": "bd0384c0871095802945999bfea1d8dbc4ab4ed5fd8b8a7be542f9e8ab842090",
+    "kvrecon/engine.py": "5781b2d0199b67aa5e69c56d65d789e9f8732d2452912a0d1a1efafd183a2ba2",
+    "kvrecon/npu.py": "e45d68d51279a2ed2bee30c1f5b53f0ee10d9fb2f2417556231489de24fb0dcf",
+    "kvrecon/observation.py": "683adbafe8f010cb568902bcc4efb5e40b25dd1ba0314904f02c85b4ee9c0860",
+    "kvrecon/search.py": "38b4c336e3c49b33463114aa8064e60c84836aba285531df5284019b4bbdd29c",
+    "kvrecon/surrogate.py": "a031c2038243d2753ed590daf047b941f5d2dfe01f50e9f3254d2c68019344fd",
+    "native/build.sh": "cad4d08988cceeb79a73a2f517d403f2fac5a788dd003468472ef60ff9c6eb01",
+    "native/litert_support.h": "99e976c564c7e691cc7b675497cd653fc8553a45187b20fe4e939ab33a28303f",
+    "native/worker.cc": "95ebf468e0c1d99737f9064f2a547be27ca65132385128547771034630af2b87",
+    "run.py": "3ab8410a34643138310239da60df3751f2034d5e23441338ea82a0478007387d",
+    "tests/device_contract.py": "4ceb1c2b8b45563780cf8d59458398de65cf3e90a5a83ad5c780867a9d92e391",
+    "tests/surrogate_preflight.py": "464b07d64e328cb485a8161bcf5921b71607039b2823ce4d28e7d99107161910",
+    "tests/test_core.py": "bc178286a31574603027d35c0fb59959e755ffd78489fa8e3f584c6959560e08"
+  },
+  "surrogate": {
+    "source": "/path/to/litertlm/kvidence/experiments/ciphertext_full_vocabulary/stable_surrogate.py",
+    "source_sha256": "1e5fd8d09a1e025f8625d0733668eabf075c61c4f2d6544982148ccc237bf9e4",
+    "embedding_sha256": "be74121046399c6f947cd9ecead1153200d81ba8df22aa6143c901dc3cf6cdbf",
+    "shape": [
+      262144,
+      1536
+    ],
+    "proposal_only": true,
+    "note": "Default asset is Gemma 4 E2B MLX 8-bit embeddings; not asserted bit-identical to the Tensor G5 embedding quantization. Only real NPU KV is accepted."
+  },
+  "surrogate_setup_seconds": 1.4402926250040764,
+  "candidate_quantization": "Native Tensor G5 INT8; dequantized using each tensor's metadata",
+  "stopping": "strict original-value K+V L2 < epsilon; no default query cap; threshold is not proof of identity",
+  "private_labels_allowed": false
+}

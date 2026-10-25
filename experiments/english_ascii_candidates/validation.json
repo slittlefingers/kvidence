@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "candidates": 150354,
+  "unique_ids": true,
+  "all_retained_rows_rechecked": true,
+  "all_printable_ascii_and_tab_lf_cr_characters_covered": 98,
+  "english_and_code_probes": [
+    {
+      "text": "Hello, world!\nHow should I save this encrypted message?",
+      "token_count": 13,
+      "missing_token_ids": []
+    },
+    {
+      "text": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
+      "token_count": 17,
+      "missing_token_ids": []
+    },
+    {
+      "text": "file_01.txt: key=\"abc-123\"; value=(42) [ok] {done} #tag @home $5 100%",
+      "token_count": 37,
+      "missing_token_ids": []
+    },
+    {
+      "text": "https://example.com/path?q=a+b&n=10\\backup\tcolumn\r\nnext line",
+      "token_count": 26,
+      "missing_token_ids": []
+    }
+  ],
+  "non_ascii_rejection_probes": [
+    "中文",
+    "Привет",
+    "ภาษาไทย",
+    "こんにちは",
+    "مرحبا",
+    "é",
+    "“hello”",
+    "🙂"
+  ],
+  "all_previous_base64_candidates_retained": true,
+  "tokenizer_unchanged": true,
+  "candidate_pool_sha256": "15e0bd0991a7a196481d27f2d09c3cfa2ccd1f445f60f4817fe971578af32492",
+  "builder_sha256": "5253cd5d5ce143fd909e31faa0068c3bb1a2d9796dcd84d85babb6a7df943747"
+}

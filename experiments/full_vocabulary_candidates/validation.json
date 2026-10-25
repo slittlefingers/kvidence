@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "all_original_rows_present": true,
+  "original_ids_preserved": true,
+  "all_special_ids_included": true,
+  "no_language_or_alphabet_or_probability_filter": true,
+  "count": 262144,
+  "candidate_pool_sha256": "a7b7eedec3e0a14003deae2ef074dbcd9dccb417dbe0f370b5627968787b9f01",
+  "builder_sha256": "cc71d6be59ac73967bddc1ff538aa96d4e66838e332e4eefc339b4993f6d4a3d",
+  "model_inference_run": false
+}

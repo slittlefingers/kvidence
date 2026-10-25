@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "full_original_vocabulary": true,
+  "special_ids_included": 24,
+  "all_candidate_ids_original": true,
+  "accepted_raw_l2_recomputed": true,
+  "own_recovered_prefix": true,
+  "source_observation_unchanged": true,
+  "frozen_code_unchanged": true,
+  "negative_read_guard_checks": 3,
+  "complete_exact_recovery_both_methods": true
+}

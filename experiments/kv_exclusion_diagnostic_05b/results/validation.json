@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "controls": {
+    "perfect_proxy_can_classify_all": true,
+    "interval_matching_is_not_actual_query_verification": true,
+    "honest_radius_protects_badly_predicted_match": true,
+    "threshold_equality_and_exhaustive_fallback": true
+  },
+  "independently_refitted_snapshots": 384,
+  "independently_checked_classifications": 2304,
+  "all_intervals_cover_stored_table": true,
+  "false_exclusions": 0,
+  "false_inclusions": 0,
+  "hypothetical_fallback_always_recovers_all": true,
+  "frozen_inputs_unchanged": true,
+  "source_sha256": "f703b7f755c53e7831d0f3575efaac43cf7411c584fa81f02f0439dd5b708a81",
+  "diagnostic_json_sha256": "ec19a843d7bff7a33875fdf3ef75c3532c5a92dcab3301d4b9db32ab2d539c32"
+}

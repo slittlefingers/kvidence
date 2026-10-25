@@ -1,0 +1,26 @@
+{
+  "sample_id": "0001",
+  "reused_observation": "/path/to/litertlm/kvidence/experiments/ciphertext_collision_comparison/results/observed/target.npz",
+  "reused_observation_sha256": "6c9d79d23bbe852acd6fda8b4591a4c34a62b6a2bc4bb2a8c32c56f84170e35c",
+  "metric": "Euclidean L2 of raw concatenated K+V, 1024 coordinates",
+  "formula": "sqrt(sum((candidate_KV_j-observed_KV_j)**2)) < 4",
+  "epsilon": 4.0,
+  "strict_less_than": true,
+  "kv_dtype": "BF16",
+  "weights": "8-bit affine",
+  "no_lsb_normalization": true,
+  "no_rms_normalization": true,
+  "no_coordinate_gate": true,
+  "no_CPA_threshold": true,
+  "no_600_query_limit": true,
+  "termination": "first measured match, or complete finite candidate pool exhausted",
+  "initial_hybrid": {
+    "probability_top": 50,
+    "uniform_without_replacement_from_rest": 150
+  },
+  "proposal_batch": 20,
+  "seed": 20261019,
+  "candidate_forward_layer_1based": 5,
+  "model_probability_logits": "full 35-layer original model, both methods",
+  "scope": "One existing 109-token ciphertext; own recovered prefix; local MLX GPU"
+}

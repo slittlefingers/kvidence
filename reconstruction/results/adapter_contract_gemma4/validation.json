@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "repeat_query",
+      "maximum_absolute_error": 0.0
+    },
+    {
+      "name": "candidate_permutation",
+      "maximum_absolute_error": 0.0
+    },
+    {
+      "name": "batch_vs_fresh_single_queries",
+      "maximum_absolute_error": 0.0
+    },
+    {
+      "name": "commit_vs_query",
+      "maximum_absolute_error": 0.0
+    },
+    {
+      "name": "commit_vs_prefix_replay",
+      "maximum_absolute_error": 0.0
+    }
+  ],
+  "atol": 0.0,
+  "rtol": 0.0,
+  "physical_batch_capacity": 128,
+  "candidate_ids": [
+    0,
+    1,
+    1437,
+    9307
+  ],
+  "note": "Finite adapter contract test, not recovery accuracy or uniqueness proof",
+  "adapter": "litert_tensor_gemma",
+  "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+  "layer": 4,
+  "capabilities": {
+    "vocab_size": 262144,
+    "embedding_dim": 1536,
+    "context_capacity": 4096,
+    "batch_capacity": 128,
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "kv_dtype": "int8",
+    "kv_width": 1024
+  }
+}

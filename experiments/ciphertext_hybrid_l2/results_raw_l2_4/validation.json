@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "samples": 1,
+  "target_tokens": 109,
+  "all_accepted_vectors_recomputed_and_raw_l2_strictly_below_4": true,
+  "all_queried_token_ids_unique_and_in_shared_pool": true,
+  "hybrid_probability_top50_and_seeded_random150_recomputed": true,
+  "original_observed_kv_sha256_unchanged": true,
+  "baseline_candidate_order_matches_previous_unpruned_run": true,
+  "private_source_guard_negative_checks": 3,
+  "correct_tokens": {
+    "collision_plus_l2": 109,
+    "hybrid_50_150": 109
+  },
+  "finite_pool_is_only_exhaustion_limit": true
+}

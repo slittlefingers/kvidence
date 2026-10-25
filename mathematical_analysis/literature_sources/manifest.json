@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-17",
+  "sources": [
+    {
+      "file": "behrmann2019_invertible_residual_networks.pdf",
+      "url": "https://proceedings.mlr.press/v97/behrmann19a/behrmann19a.pdf",
+      "bytes": 1423956,
+      "sha256": "de222efa455672461a931fb026710bd75beb905d583a4e57bc9e6a2d6b0af2a4"
+    },
+    {
+      "file": "behrmann2019_invertible_residual_networks_supplement.pdf",
+      "url": "https://proceedings.mlr.press/v97/behrmann19a/behrmann19a-supp.pdf",
+      "bytes": 823019,
+      "sha256": "4e98604b01a9962337275666cc2424232cd5dd43c55fbe0fd39b3f98d83e37a3"
+    },
+    {
+      "file": "puthawala2022_globally_injective_relu_networks.pdf",
+      "url": "https://www.jmlr.org/papers/volume23/21-0282/21-0282.pdf",
+      "bytes": 2850035,
+      "sha256": "8770fba9550aba9d7a64c244baf24533d357fc3bc40a6aff8319c672fc8ab069"
+    },
+    {
+      "file": "paulsen2020_reludiff.pdf",
+      "url": "https://chaowang-vt.github.io/pubDOC/PaulsenWW20_ICSE_ReluDiff.pdf",
+      "bytes": 1362064,
+      "sha256": "3d0d24474fbaf4cf464ce75e3968e7ca8540184ffee1366f4da5c3e3eb422668"
+    },
+    {
+      "file": "zhang2023_qebverif.pdf",
+      "url": "https://faculty.sist.shanghaitech.edu.cn/faculty/songfu/publications/CAV23a.pdf",
+      "bytes": 851954,
+      "sha256": "616c0f3d794d3df6ce4d8c7cb31a579173feb2851c2901ea0c3cfc1f9da88cb5"
+    },
+    {
+      "file": "shi2020_transformer_verification.pdf",
+      "url": "https://arxiv.org/pdf/2002.06622",
+      "bytes": 1346281,
+      "sha256": "b42c6ec0a14aa58821157a75f776ad350acc79fda36cabf4dc8cdfd946cfddea"
+    }
+  ]
+}

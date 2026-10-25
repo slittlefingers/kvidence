@@ -1,0 +1,8 @@
+{
+  "source": "kvcloak/src/config.py BITTER_LESSON_TEXT; paper Appendix B",
+  "commit": "6b40f36edb2f337557543e7e60b10022308883d4",
+  "text_tokens": 113,
+  "bos": 2,
+  "pilot_positions": 8,
+  "note": "No chat template, no added outer quote characters. Pilot uses the first eight text tokens."
+}

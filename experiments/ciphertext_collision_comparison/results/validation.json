@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "diagnostic_positions": 109,
+  "methods": [
+    "collision_plus",
+    "kv_guided_200"
+  ],
+  "same_candidate_pool": true,
+  "pool_contains_all_actual_tokens": true,
+  "all_queries_unique_and_within_budget": true,
+  "original_200_random_candidates_recomputed": true,
+  "probability_candidate_order_replayed": true,
+  "every_acceptance_passes_shared_independent_thresholds": true,
+  "private_source_guard_negative_checks": 2,
+  "sequential": {
+    "collision_plus": {
+      "attempted": 1,
+      "accepted": 0,
+      "total_queries": 600
+    },
+    "kv_guided_200": {
+      "attempted": 50,
+      "accepted": 49,
+      "total_queries": 13540
+    },
+    "secondary_unpruned_probability": {
+      "attempted": 109,
+      "accepted": 109,
+      "total_queries": 57920
+    }
+  },
+  "note": "This audit verifies recorded experiment integrity, not global uniqueness or NPU behavior"
+}

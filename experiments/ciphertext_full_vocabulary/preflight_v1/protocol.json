@@ -1,0 +1,119 @@
+{
+  "sample_id": "0037",
+  "target_tokens": 999,
+  "rendered_chat_tokens": 1022,
+  "known_prefix_tokens": 11,
+  "layer_1based": 5,
+  "metric": "raw Euclidean L2 of concatenated K+V, 1024 coordinates",
+  "epsilon": 4.0,
+  "strict_less_than": true,
+  "kv_dtype": "mlx.core.bfloat16",
+  "model": {
+    "model_id": "mlx-community/gemma-4-e2b-it-8bit",
+    "model_revision": "03dcf209f3f549b4075e7191e77cf69b3d48e1b2",
+    "weight_quantization": {
+      "group_size": 64,
+      "bits": 8,
+      "mode": "affine"
+    },
+    "model_text_parameters": 4628569379,
+    "embedding_table_shape": [
+      262144,
+      1536
+    ],
+    "per_layer_embedding_table_shape": [
+      262144,
+      8960
+    ],
+    "independent_kv_producers": 15,
+    "layer_to_kv_producer_1based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      14,
+      14,
+      14,
+      14,
+      15,
+      14,
+      14,
+      14,
+      14,
+      15,
+      14,
+      14,
+      14,
+      14,
+      15,
+      14,
+      14,
+      14,
+      14,
+      15
+    ],
+    "observed_layers_1based": [
+      10,
+      15
+    ],
+    "kv_width_by_layer": {
+      "10": 1024,
+      "15": 1024
+    },
+    "text_only": true,
+    "main_embedding_only_surrogate": true,
+    "device": "Apple MLX GPU",
+    "sliding_window": 512
+  },
+  "candidate_count": 262144,
+  "original_embedding_rows": [
+    262144,
+    1536
+  ],
+  "candidate_rule": "Every original token ID 0..262143, including all 24 special IDs",
+  "language_filter": false,
+  "alphabet_filter": false,
+  "special_tokens_excluded": false,
+  "no_600_query_limit": true,
+  "no_lsb_normalization": true,
+  "no_rms_normalization": true,
+  "no_coordinate_gate": true,
+  "methods": [
+    "collision_plus_l2",
+    "staged_fast"
+  ],
+  "collision_plus_policy": "Full-model probability order, batches of 20; first real raw L2<4 candidate in order",
+  "fast_policy": "Check probability top50, then uniform random150 from all remaining IDs, then global standardized ridge proposals20",
+  "ridge": 0.01,
+  "max_regression_anchors": 512,
+  "query_budget": null,
+  "oracle_microbatch": 64,
+  "fast_surrogate": "Same previously tested factorized ridge; no trust region; no change to old method code",
+  "seed": 20261019,
+  "own_recovered_prefix": true,
+  "true_previous_tokens_used": false,
+  "independent_KV8_quantization": false,
+  "native_sliding_cache": true,
+  "native_window": 512,
+  "candidate_pool_sha256": "a7b7eedec3e0a14003deae2ef074dbcd9dccb417dbe0f370b5627968787b9f01",
+  "source_observation_sha256": "68dbe09b94d11fd5ae766878d7605ba44ec48fa90fc78775363f5ef5655ea3aa",
+  "reused_observation_source": "/path/to/litertlm/kvidence/experiments/ciphertext_hybrid_l2_long/results/observed/target.npz",
+  "frozen_scripts": {
+    "experiment.py": "f16f03927e040dff2499e5a084819cec19c10b2d413125f83dde96726bd53902",
+    "../ciphertext_adaptive_trust/adaptive.py": "8f29f07f9c0db498ae3c82aed90ef38492525c780b565c6b1b3508ba43ac5830",
+    "../ciphertext_hybrid_l2/run.py": "b3891a8c47ad1ecb0143b1de94d33d1043c635a50bc4f84bad6fd599240425ab",
+    "../kv_guided_search_gemma4_int8/runtime.py": "bfd6ff49d496d090ac12b51e1b21d01c4327f2d4ae991c9fcebfc73c262dfd6b"
+  },
+  "timing": "Loop plus method-specific embedding extraction and surrogate setup; common model loading and initial public prefix excluded"
+}

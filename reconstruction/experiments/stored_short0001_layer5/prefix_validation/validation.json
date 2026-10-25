@@ -1,0 +1,106 @@
+{
+  "rows": [
+    {
+      "position": 1,
+      "public_token_id": 105,
+      "l2": 0.0,
+      "kv_l2": [
+        0.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "position": 2,
+      "public_token_id": 2364,
+      "l2": 0.0,
+      "kv_l2": [
+        0.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "position": 3,
+      "public_token_id": 107,
+      "l2": 0.0,
+      "kv_l2": [
+        0.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "position": 4,
+      "public_token_id": 2094,
+      "l2": 0.0,
+      "kv_l2": [
+        0.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "position": 5,
+      "public_token_id": 563,
+      "l2": 0.0,
+      "kv_l2": [
+        0.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "position": 6,
+      "public_token_id": 614,
+      "l2": 0.0,
+      "kv_l2": [
+        0.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "position": 7,
+      "public_token_id": 48970,
+      "l2": 0.0,
+      "kv_l2": [
+        0.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "position": 8,
+      "public_token_id": 3618,
+      "l2": 0.0,
+      "kv_l2": [
+        0.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "position": 9,
+      "public_token_id": 236761,
+      "l2": 0.0,
+      "kv_l2": [
+        0.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "position": 10,
+      "public_token_id": 108,
+      "l2": 0.0,
+      "kv_l2": [
+        0.0,
+        0.0
+      ],
+      "maximum_absolute_difference": 0.0
+    }
+  ],
+  "passed": true,
+  "note": "Only public prefix inspected; finite alignment check, not a target recovery or accuracy result"
+}

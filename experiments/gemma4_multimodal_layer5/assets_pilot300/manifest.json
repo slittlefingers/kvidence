@@ -1,0 +1,38 @@
+[
+  {
+    "id": "image01",
+    "modality": "image",
+    "file": "image01.png",
+    "truth": [
+      "red",
+      "square",
+      "42"
+    ],
+    "question": "State the shape, its color, and the number in the image. Answer briefly."
+  },
+  {
+    "id": "image02",
+    "modality": "image",
+    "file": "image02.png",
+    "truth": [
+      "blue",
+      "circle",
+      "57"
+    ],
+    "question": "State the shape, its color, and the number in the image. Answer briefly."
+  },
+  {
+    "id": "audio01",
+    "modality": "audio",
+    "file": "audio01.wav",
+    "truth": "The secret number is forty two.",
+    "question": "Transcribe the audio exactly."
+  },
+  {
+    "id": "audio02",
+    "modality": "audio",
+    "file": "audio02.wav",
+    "truth": "The blue door has number fifty seven.",
+    "question": "Transcribe the audio exactly."
+  }
+]

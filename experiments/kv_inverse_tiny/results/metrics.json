@@ -1,0 +1,216 @@
+{
+  "model_id": "roneneldan/TinyStories-1M",
+  "model_revision": "77f1b168e219585646439073245fe87e56b3023e",
+  "pretrained_parameters": 3745984,
+  "original_vocab_size": 50257,
+  "candidate_classes": 126,
+  "seed": 20261016,
+  "device": "cpu",
+  "dtype": "float32",
+  "sequence_length": 16,
+  "long_test_length": 32,
+  "train_sequences": 2048,
+  "validation_sequences": 256,
+  "test_sequences": 384,
+  "long_test_sequences": 96,
+  "all_splits_sequence_disjoint": true,
+  "model_frozen": true,
+  "kv_extraction_seconds": 0.7683716249994177,
+  "majority_baseline": {
+    "all": {
+      "sequences": 384,
+      "tokens": 6144,
+      "token_accuracy": 0.0480143241584301,
+      "exact_sequence_accuracy": 0.0
+    },
+    "alnum": {
+      "sequences": 128,
+      "tokens": 2048,
+      "token_accuracy": 0.01953125,
+      "exact_sequence_accuracy": 0.0
+    },
+    "digits": {
+      "sequences": 128,
+      "tokens": 2048,
+      "token_accuracy": 0.099609375,
+      "exact_sequence_accuracy": 0.0
+    },
+    "mixed": {
+      "sequences": 128,
+      "tokens": 2048,
+      "token_accuracy": 0.02490234375,
+      "exact_sequence_accuracy": 0.0
+    }
+  },
+  "layers": {
+    "4": {
+      "feature_width": 128,
+      "inverter_parameters": 131198,
+      "best_epoch_by_validation": 3,
+      "train_seconds": 2.6237328330025775,
+      "test": {
+        "all": {
+          "sequences": 384,
+          "tokens": 6144,
+          "token_accuracy": 1.0,
+          "exact_sequence_accuracy": 1.0
+        },
+        "alnum": {
+          "sequences": 128,
+          "tokens": 2048,
+          "token_accuracy": 1.0,
+          "exact_sequence_accuracy": 1.0
+        },
+        "digits": {
+          "sequences": 128,
+          "tokens": 2048,
+          "token_accuracy": 1.0,
+          "exact_sequence_accuracy": 1.0
+        },
+        "mixed": {
+          "sequences": 128,
+          "tokens": 2048,
+          "token_accuracy": 1.0,
+          "exact_sequence_accuracy": 1.0
+        }
+      },
+      "long_test": {
+        "all": {
+          "sequences": 96,
+          "tokens": 3072,
+          "token_accuracy": 0.9996744990348816,
+          "exact_sequence_accuracy": 0.9895833134651184
+        },
+        "alnum": {
+          "sequences": 32,
+          "tokens": 1024,
+          "token_accuracy": 1.0,
+          "exact_sequence_accuracy": 1.0
+        },
+        "digits": {
+          "sequences": 32,
+          "tokens": 1024,
+          "token_accuracy": 0.9990234375,
+          "exact_sequence_accuracy": 0.96875
+        },
+        "mixed": {
+          "sequences": 32,
+          "tokens": 1024,
+          "token_accuracy": 1.0,
+          "exact_sequence_accuracy": 1.0
+        }
+      },
+      "shuffled_kv_control": {
+        "all": {
+          "sequences": 384,
+          "tokens": 6144,
+          "token_accuracy": 0.02262369729578495,
+          "exact_sequence_accuracy": 0.0
+        },
+        "alnum": {
+          "sequences": 128,
+          "tokens": 2048,
+          "token_accuracy": 0.01123046875,
+          "exact_sequence_accuracy": 0.0
+        },
+        "digits": {
+          "sequences": 128,
+          "tokens": 2048,
+          "token_accuracy": 0.04833984375,
+          "exact_sequence_accuracy": 0.0
+        },
+        "mixed": {
+          "sequences": 128,
+          "tokens": 2048,
+          "token_accuracy": 0.00830078125,
+          "exact_sequence_accuracy": 0.0
+        }
+      }
+    },
+    "8": {
+      "feature_width": 128,
+      "inverter_parameters": 131198,
+      "best_epoch_by_validation": 10,
+      "train_seconds": 2.6417221250012517,
+      "test": {
+        "all": {
+          "sequences": 384,
+          "tokens": 6144,
+          "token_accuracy": 1.0,
+          "exact_sequence_accuracy": 1.0
+        },
+        "alnum": {
+          "sequences": 128,
+          "tokens": 2048,
+          "token_accuracy": 1.0,
+          "exact_sequence_accuracy": 1.0
+        },
+        "digits": {
+          "sequences": 128,
+          "tokens": 2048,
+          "token_accuracy": 1.0,
+          "exact_sequence_accuracy": 1.0
+        },
+        "mixed": {
+          "sequences": 128,
+          "tokens": 2048,
+          "token_accuracy": 1.0,
+          "exact_sequence_accuracy": 1.0
+        }
+      },
+      "long_test": {
+        "all": {
+          "sequences": 96,
+          "tokens": 3072,
+          "token_accuracy": 1.0,
+          "exact_sequence_accuracy": 1.0
+        },
+        "alnum": {
+          "sequences": 32,
+          "tokens": 1024,
+          "token_accuracy": 1.0,
+          "exact_sequence_accuracy": 1.0
+        },
+        "digits": {
+          "sequences": 32,
+          "tokens": 1024,
+          "token_accuracy": 1.0,
+          "exact_sequence_accuracy": 1.0
+        },
+        "mixed": {
+          "sequences": 32,
+          "tokens": 1024,
+          "token_accuracy": 1.0,
+          "exact_sequence_accuracy": 1.0
+        }
+      },
+      "shuffled_kv_control": {
+        "all": {
+          "sequences": 384,
+          "tokens": 6144,
+          "token_accuracy": 0.02294921875,
+          "exact_sequence_accuracy": 0.0
+        },
+        "alnum": {
+          "sequences": 128,
+          "tokens": 2048,
+          "token_accuracy": 0.00830078125,
+          "exact_sequence_accuracy": 0.0
+        },
+        "digits": {
+          "sequences": 128,
+          "tokens": 2048,
+          "token_accuracy": 0.04833984375,
+          "exact_sequence_accuracy": 0.0
+        },
+        "mixed": {
+          "sequences": 128,
+          "tokens": 2048,
+          "token_accuracy": 0.01220703125,
+          "exact_sequence_accuracy": 0.0
+        }
+      }
+    }
+  },
+  "model_weights_sha256": "07f9609ea882b8163ff3b23d40e2b82cb715d409631beb15c84b164f3877dae7"
+}

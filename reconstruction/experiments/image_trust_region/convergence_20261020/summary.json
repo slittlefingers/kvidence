@@ -1,0 +1,115 @@
+[
+  {
+    "run": "kvidence/reconstruction/experiments/image_trust_region/results/0001_rounds300_seed29_20261020",
+    "initial_rmse": 57.96381380600745,
+    "final_rmse": 37.10367390417693,
+    "reduction_percent": 35.98821149285478,
+    "rounds": 300,
+    "queries": 9901,
+    "seconds": 132.45114466699306,
+    "first_round_at_final_best": 136,
+    "unchanged_tail_rounds": 164,
+    "passes_query": false,
+    "final_radius": 0.01,
+    "windows": [
+      {
+        "rounds": 25,
+        "absolute_improvement": 0.0,
+        "relative_improvement": 0.0,
+        "seconds": 10.971392540988745
+      },
+      {
+        "rounds": 50,
+        "absolute_improvement": 0.0,
+        "relative_improvement": 0.0,
+        "seconds": 21.98763562500244
+      },
+      {
+        "rounds": 100,
+        "absolute_improvement": 0.0,
+        "relative_improvement": 0.0,
+        "seconds": 44.19415983298677
+      }
+    ],
+    "milestones": [
+      {
+        "round": 0,
+        "queries": 1,
+        "elapsed_seconds": null,
+        "rmse": 57.96381380600745,
+        "radius": 2.0
+      },
+      {
+        "round": 1,
+        "queries": 34,
+        "elapsed_seconds": 0.750779624999268,
+        "rmse": 55.10952340850445,
+        "radius": 4.0
+      },
+      {
+        "round": 2,
+        "queries": 67,
+        "elapsed_seconds": 1.1914064169977792,
+        "rmse": 54.68141930480133,
+        "radius": 2.0
+      },
+      {
+        "round": 5,
+        "queries": 166,
+        "elapsed_seconds": 2.5307250840123743,
+        "rmse": 45.43800506940748,
+        "radius": 16.0
+      },
+      {
+        "round": 10,
+        "queries": 331,
+        "elapsed_seconds": 4.724314749997575,
+        "rmse": 39.634548829745746,
+        "radius": 4.0
+      },
+      {
+        "round": 20,
+        "queries": 661,
+        "elapsed_seconds": 9.190279542002827,
+        "rmse": 37.706773678611114,
+        "radius": 0.01
+      },
+      {
+        "round": 30,
+        "queries": 991,
+        "elapsed_seconds": 13.692401917011011,
+        "rmse": 37.706773678611114,
+        "radius": 0.01
+      },
+      {
+        "round": 50,
+        "queries": 1651,
+        "elapsed_seconds": 22.374864750017878,
+        "rmse": 37.19676880288125,
+        "radius": 0.01
+      },
+      {
+        "round": 100,
+        "queries": 3301,
+        "elapsed_seconds": 43.850239334016806,
+        "rmse": 37.19676880288125,
+        "radius": 0.01
+      },
+      {
+        "round": 200,
+        "queries": 6601,
+        "elapsed_seconds": 88.25341979201767,
+        "rmse": 37.10367390417693,
+        "radius": 0.01
+      },
+      {
+        "round": 300,
+        "queries": 9901,
+        "elapsed_seconds": 132.44757962500444,
+        "rmse": 37.10367390417693,
+        "radius": 0.01
+      }
+    ],
+    "caveat": "Finite-run plateau or budget exhaustion, not a global convergence guarantee."
+  }
+]

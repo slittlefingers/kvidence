@@ -1,0 +1,6 @@
+numpy>=2.0
+scipy>=1.13
+# Guided mode additionally reuses the existing experiment environment's torch
+# and mlx packages. CPA threshold optimization additionally uses SciPy.
+# Optional text decoding / Gemma 3 asset extraction additionally needs
+# tokenizers (Gemma 4 JSON) or sentencepiece (Gemma 3 .model).

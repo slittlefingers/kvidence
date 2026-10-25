@@ -1,0 +1,134 @@
+[
+  {
+    "name": "0001_joint300_seed29_20261020",
+    "seed": 29,
+    "solver_msg": null,
+    "initial_rmse": 57.96381380600745,
+    "best_rmse": 15.487646286637618,
+    "seconds": 172.63740145799238,
+    "total_seconds": 172.63740145799238,
+    "queries": 45001,
+    "total_queries": 45001,
+    "passes": false,
+    "repeat_exact": true,
+    "status": "iteration_limit",
+    "seconds_to_threshold": {
+      "30": 11.341066332999617,
+      "25": 14.244192207988817,
+      "20": 17.722341457993025,
+      "16": 57.36006725000334,
+      "12": null,
+      "10": null
+    }
+  },
+  {
+    "name": "0001_dfbgn173_seed29_20261021_retry",
+    "seed": 29,
+    "solver_msg": "Success: delta has reached rhoend",
+    "initial_rmse": 57.96381380600745,
+    "best_rmse": 55.21477949788444,
+    "seconds": 18.162218334007775,
+    "total_seconds": 18.162218334007775,
+    "queries": 114,
+    "total_queries": 114,
+    "passes": false,
+    "repeat_exact": true,
+    "status": "solver_exit",
+    "seconds_to_threshold": {
+      "30": null,
+      "25": null,
+      "20": null,
+      "16": null,
+      "12": null,
+      "10": null
+    }
+  },
+  {
+    "name": "0001_joint300_seed17_20261020",
+    "seed": 17,
+    "solver_msg": null,
+    "initial_rmse": 65.02700010140019,
+    "best_rmse": 13.180870667846643,
+    "seconds": 173.0350829999952,
+    "total_seconds": 173.0350829999952,
+    "queries": 45001,
+    "total_queries": 45001,
+    "passes": false,
+    "repeat_exact": true,
+    "status": "iteration_limit",
+    "seconds_to_threshold": {
+      "30": 6.646003583009588,
+      "25": 9.508557541004848,
+      "20": 12.35833137499867,
+      "16": 33.17835100000957,
+      "12": null,
+      "10": null
+    }
+  },
+  {
+    "name": "0001_dfbgn173_seed17_20261021",
+    "seed": 17,
+    "solver_msg": "Success: delta has reached rhoend",
+    "initial_rmse": 65.02700010140019,
+    "best_rmse": 62.28254357663149,
+    "seconds": 22.55564000000595,
+    "total_seconds": 22.55564000000595,
+    "queries": 116,
+    "total_queries": 116,
+    "passes": false,
+    "repeat_exact": true,
+    "status": "solver_exit",
+    "seconds_to_threshold": {
+      "30": null,
+      "25": null,
+      "20": null,
+      "16": null,
+      "12": null,
+      "10": null
+    }
+  },
+  {
+    "name": "0001_dfbgn_radius173_seed17_20261021_retry",
+    "seed": 17,
+    "solver_msg": "Success: delta has reached rhoend",
+    "initial_rmse": 65.02700010140019,
+    "best_rmse": 59.03380586049827,
+    "seconds": 25.76604908402078,
+    "total_seconds": 25.76604908402078,
+    "queries": 130,
+    "total_queries": 130,
+    "passes": false,
+    "repeat_exact": true,
+    "status": "solver_exit",
+    "seconds_to_threshold": {
+      "30": null,
+      "25": null,
+      "20": null,
+      "16": null,
+      "12": null,
+      "10": null
+    }
+  },
+  {
+    "name": "0001_dfbgn_warm173_seed17_20261021",
+    "seed": 17,
+    "solver_msg": "Success: delta has reached rhoend",
+    "initial_rmse": 13.180870667846643,
+    "best_rmse": 13.180870667846643,
+    "seconds": 23.11067945798277,
+    "total_seconds": 196.14576245797798,
+    "queries": 118,
+    "total_queries": 45119,
+    "passes": false,
+    "repeat_exact": true,
+    "status": "solver_exit",
+    "seconds_to_threshold": {
+      "30": 0.305502749979496,
+      "25": 0.305502749979496,
+      "20": 0.305502749979496,
+      "16": 0.305502749979496,
+      "12": null,
+      "10": null
+    }
+  }
+]

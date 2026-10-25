@@ -1,0 +1,14 @@
+{
+  "name": "Gemma 3 1B IT / Tensor G5",
+  "model": "../../../annoymous/models/Gemma3-1B-IT_q8_ekv1280_Google_Tensor_G5.litertlm",
+  "device_model": "/sdcard/Android/data/com.example.annoymous/files/Gemma3-1B-IT_q8_ekv1280_Google_Tensor_G5.litertlm",
+  "manifest": "../assets/gemma3_1b/manifest.json",
+  "tokenizer": "../assets/gemma3_1b/tokenizer.model",
+  "embeddings": "../assets/gemma3_1b/embeddings.npy",
+  "batch_signature": "prefill_128",
+  "mask_token_id": 1437,
+  "vocabulary": null,
+  "default_layer": 5,
+  "adapter": "litert_tensor_gemma",
+  "first_v_table": "../assets/first_v_gemma3_full"
+}

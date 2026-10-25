@@ -1,0 +1,9 @@
+{
+  "recovered": 21,
+  "truth_tokens": 21,
+  "correct_ids": 20,
+  "exact_match": false,
+  "false_acceptances": 1,
+  "total_queries": 22784,
+  "note": "Separate evaluation reads private labels; no unique-solution claim"
+}

@@ -1,0 +1,340 @@
+{
+  "schema": 2,
+  "observation_metadata": {
+    "schema": 1,
+    "layer_index": 4,
+    "layer_1based": 5,
+    "quantization": [
+      {
+        "width": 512,
+        "scale": 0.0011563472216948867,
+        "zero_point": 0,
+        "dtype": "int8"
+      },
+      {
+        "width": 512,
+        "scale": 0.01785714365541935,
+        "zero_point": 0,
+        "dtype": "int8"
+      }
+    ],
+    "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+    "source": {
+      "kind": "GHOSTKV1 runtime capture",
+      "snapshot_sha256": "00b2c178266026394b3ff4d145fae1628c6901efd23700a135d68bb34ca16fca",
+      "note": "Only selected target-layer rows imported; no target-prefix cache supplied to recovery"
+    },
+    "metric": "L2 of dequantized original K+V values; no LSB/RMS normalization",
+    "observed_sha256": "9ff7f44cf44179b83762904f4d165ec689fb9403a2bb24dda15dfcc400a666f7"
+  },
+  "config": {
+    "method": "collision_plus_cpa",
+    "epsilon": 4.0,
+    "batch_size": 256,
+    "probability_seeds": 50,
+    "random_seeds": 150,
+    "proposals": 20,
+    "seed": 20261019,
+    "max_queries": null,
+    "kv_thresholds": [
+      0.37839773297309875,
+      10.247016906738281
+    ],
+    "k_width": 512,
+    "stop_partition": 1,
+    "distance_space": "original"
+  },
+  "manifest_sha256": "7f6907a74e1257105644912558d349d9c7df240df671374505d9510d2ca415b5",
+  "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+  "model_config": {
+    "name": "Gemma 4 E2B IT / Tensor G5",
+    "model": "/path/to/litertlm/annoymous/models/gemma-4-E2B-it_Google_Tensor_G5.litertlm",
+    "device_model": "/sdcard/Android/data/com.example.annoymous/files/gemma-4-E2B-it_Google_Tensor_G5.litertlm",
+    "manifest": "/path/to/litertlm/kvidence/experiments/npu_candidate_batch/inputs/probe.json",
+    "tokenizer": "/path/to/litertlm/kvidence/experiments/kv_guided_search_gemma4_int8/model/tokenizer.json",
+    "embeddings": "/path/to/litertlm/kvidence/experiments/embedding_hnsw/assets/embeddings.npy",
+    "batch_signature": "prefill_128",
+    "mask_token_id": 1437,
+    "vocabulary": null,
+    "adapter": "litert_tensor_gemma",
+    "first_v_table": "/path/to/litertlm/kvidence/reconstruction/assets/first_v_gemma4_full",
+    "media": {
+      "image": {
+        "start": "<|image>",
+        "end": "<image|>",
+        "soft": "<|image|>",
+        "handler": "kvrecon.media.image:recover"
+      },
+      "audio": {
+        "start": "<|audio>",
+        "end": "<audio|>",
+        "soft": "<|audio|>",
+        "handler": "kvrecon.media.audio:recover"
+      }
+    },
+    "adapter_options": {},
+    "default_layer": 4
+  },
+  "model_config_sha256": "8f83fc3cb7f06b915f26869d2e9346fb4193bdb77cd140c5576940742e943d7d",
+  "model_dimensions": {
+    "vocab_size": 262144,
+    "embedding_dim": 1536,
+    "batch_capacity": 128,
+    "context_capacity": 4096
+  },
+  "adapter": "litert_tensor_gemma",
+  "media_rules": {
+    "image": {
+      "handler": "kvrecon.media.image:recover",
+      "start": 255999,
+      "end": 258882,
+      "soft": 258880
+    },
+    "audio": {
+      "handler": "kvrecon.media.audio:recover",
+      "start": 256000,
+      "end": 258883,
+      "soft": 258881
+    }
+  },
+  "media_boundary_policy": "Known spans; dispatch only after accepted start token",
+  "capabilities": {
+    "vocab_size": 262144,
+    "embedding_dim": 1536,
+    "context_capacity": 4096,
+    "batch_capacity": 128,
+    "layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "kv_dtype": "int8",
+    "kv_width": 1024
+  },
+  "tokenizer_sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+  "candidate_vocabulary": {
+    "kind": "full_original",
+    "count": 262144,
+    "filtered": false
+  },
+  "original_vocabulary": {
+    "start": 0,
+    "stop_exclusive": 262144,
+    "filtered": false
+  },
+  "max_positions": null,
+  "metric": "separate_k_v_l2_float32",
+  "distance_space": "original",
+  "implementation": "collision_plus_cpa_npu_port",
+  "calibration": {
+    "schema": 1,
+    "identity": {
+      "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+      "manifest_sha256": "7f6907a74e1257105644912558d349d9c7df240df671374505d9510d2ca415b5",
+      "adapter": "litert_tensor_gemma",
+      "batch_signature": "prefill_128",
+      "layer_index": 4,
+      "quantization": [
+        {
+          "width": 512,
+          "scale": 0.0011563472216948867,
+          "zero_point": 0,
+          "dtype": "int8"
+        },
+        {
+          "width": 512,
+          "scale": 0.01785714365541935,
+          "zero_point": 0,
+          "dtype": "int8"
+        }
+      ],
+      "observation_sha256": "686da317f43830f7a7ac5aab505053bd721e09562f6d819e1d0c2968f2cbc89a",
+      "observation_metadata_sha256": "d4e489289b48e5c385e4dcd81e5fe3e275e765cf8a9603d3f15f47f294fb33f2",
+      "runtime": {
+        "runtime_sha256": "ce88d0add27860ebdd50295a5a2cfcce7c35ffb2c76dcf43827f35fd82f932a9",
+        "test_apk_sha256": "ad958e4119c2686e9a92c6a42b6f9e3a3c5d48d9fcf854badc2c27cac70ae0b7",
+        "batch_signature": "prefill_128",
+        "native_mode": "optimized_v2"
+      }
+    },
+    "metric": "separate K/V Frobenius norms, original values, float32 accumulation",
+    "k_width": 512,
+    "statistics": {
+      "target_mean": [
+        0.0,
+        0.0
+      ],
+      "target_std": [
+        0.0,
+        0.0
+      ],
+      "target_max": [
+        0.0,
+        0.0
+      ],
+      "others_mean": [
+        1.3737106760372049,
+        30.050988587466154
+      ],
+      "others_std": [
+        0.12024095824674966,
+        1.5725862981863887
+      ],
+      "others_min": [
+        0.7567954659461975,
+        20.494033813476562
+      ],
+      "target_count": 8,
+      "others_count": 8184,
+      "std_ddof": 1
+    },
+    "fit": {
+      "rank": 8,
+      "thresholds": [
+        0.37839773297309875,
+        10.247016906738281
+      ],
+      "effective_thresholds": [
+        0.38218171030282977,
+        10.349487075805664
+      ],
+      "branches": [
+        "separated_midpoint",
+        "separated_midpoint"
+      ],
+      "strict_inequality": true,
+      "upstream_commit": "6b40f36edb2f337557543e7e60b10022308883d4",
+      "note": "Rank is an assumed probability rank, not sequence length. Gaussian fit is not a uniqueness proof."
+    },
+    "coverage": {
+      "positions": 8,
+      "candidates": 1024,
+      "full_vocabulary": false
+    },
+    "calibration_protocol_sha256": "b48316dc3dc033f8dd739057f825770bb4c07706fa2395b0f7c50a61393bef76",
+    "source_observation_sha256": "686da317f43830f7a7ac5aab505053bd721e09562f6d819e1d0c2968f2cbc89a",
+    "seconds_this_invocation": 13.95477545898757,
+    "scope": "pilot candidate subset; not benchmark calibration",
+    "checkpoint_hashes": [
+      "6de1547094096c1d1a63e6b6d665ec9909e13b6db3ff0aab4c353e5e00359ba5",
+      "8a66567726069fbfb67569caa39b4d2ef8e282f8c557c31f3cb7e3c0e8338017",
+      "15a8151ef35549bd80c93b8fb23d56b97a4374dbfc6991607aad9a5bcbc3d184",
+      "40e2a5af26a0127f2dd88f0f67b6d6deb933635b071d3301d83e9811b49f277a",
+      "3e4aeee15b8c60dbb3469891e2e1ab0950cad2c748cdbe45d9d8ee125a9152f7",
+      "b217c7977edf732f1df56bd71deb58542baa3a79bd02591b67e8221c873ec54b",
+      "4aaa5f3289179bf5a6aa91ee48862fcf31d6023fabf92f8e9e286ab60f626ef9",
+      "d9d2b2a0efa7f4c3b165e0fda753b7c23a5703384961cb01c55ae9873f74b04e"
+    ]
+  },
+  "calibration_sha256": "2671a37cd9697055b3145454f6920b511aa44d07f6dd6d159571a85459301021",
+  "selection_policy": "first passing ID in model-probability order",
+  "initial_candidates": 200,
+  "prediction_candidates": 50,
+  "random_candidates": 150,
+  "probability_source": "selected backend model's full probability ranking",
+  "source_hashes": {
+    "experiments/image_chat_0001_layer5/check_full_proposal_content.py": "5c0854a23031e53341ead6d06b165b9a04f6f669af75859e1d626f0ba7a3cef1",
+    "experiments/image_chat_0001_layer5/check_proposal_prefix.py": "9412e4e85c4c85d16b1132d13e9f6ed02e7de82e159cfb5585372de0457ac980",
+    "experiments/image_chat_0001_layer5/device_adapter/source_snapshot.py": "465f813cfb3426245d8186b00b41a001ed8d2532d05dbc126f0123c6e994e950",
+    "experiments/image_chat_0001_layer5/device_adapter_test.py": "b2ab9a8551cf726e4092b7877ec38c456e89b94d4bcb9bf701b029f0ae30982e",
+    "experiments/image_chat_0001_layer5/direct_spsa.py": "f3306eaa0e5c5c3bef1ed0ad05f661b6556a73202a5b7a2bceefa1e978b1bffe",
+    "experiments/image_chat_0001_layer5/fit_image.py": "b88b27b04be1c4771b650b27955c1385c26a502266f563462bb512ee7f236992",
+    "experiments/image_chat_0001_layer5/pixel_recover.py": "dc15feb76d2325500280675c05703653c2d602d355af760f4b6d591f93e4cd6b",
+    "experiments/image_chat_0001_layer5/plot_spsa.py": "1b9abe98dd99966be1f9a781f643ea5f4cc41a1437a1cfa8092e07ba18e96731",
+    "experiments/image_chat_0001_layer5/prepare.py": "a2e178ef163c26723bd930d31ec160f09e4b680cf1fcb47ce5627358d11d374e",
+    "experiments/image_chat_0001_layer5/probe_spsa_radius.py": "3f55bb669b3ef0eed1681c3a48ed5d0516d50b3aa59067a1e14be098f422cccc",
+    "experiments/image_chat_0001_layer5/run_direct_spsa.py": "b15189a35cc1fdedc396732c58586e1f599fe34465efe878a5b0b5e1d4fab46b",
+    "experiments/image_chat_0001_layer5/run_real_spsa.py": "2ca143b04def4eb934dd3fdf030edbad288de68d70de51410baf771246e78ce9",
+    "experiments/image_chat_0001_layer5/run_spsa_device.py": "4207ab48e3ff9d4d31d63d9f15815ef7694285d5b2fb825a6d91c72a709a3f4e",
+    "experiments/image_chat_0001_layer5/spsa_adam.py": "d21920925bd48e753488a3bc202018fa70ace2416486bd1fceda8e3b5d5d5aab",
+    "experiments/image_chat_0001_layer5/summarize_direct_spsa.py": "edfdfd28ef2b754ea67042d5c55868ef0c8a25a5202316af98da572a2052bbdd",
+    "experiments/image_chat_0001_layer5/summarize_real_spsa.py": "b082d9ce0303588ea66736d191f6d555921be28bc40ad0f7c518633b15885a8c",
+    "experiments/image_chat_0001_layer5/summarize_spsa.py": "5b39fbcd48d65075e7b7d87902dbc7e6a6f5cfa6b6050d57c39af6057ef612cb",
+    "experiments/image_chat_0001_layer5/synthetic_device_control.py": "3b5d4ffba135466032fe82b3fe97707f84f0a362b95a68671416833040bb32cc",
+    "experiments/image_chat_0001_layer5/test_direct_spsa.py": "60c0770c5f5dfe869a80c80c43877943f8982bfd8058859b5abdac75ee245c85",
+    "experiments/image_chat_0001_layer5/test_spsa.py": "c20e7f897756622a9b2da564479b778d16f23eb2c597e4c1990906d49c154e1f",
+    "experiments/image_chat_0001_layer5/verify_worker.py": "8793bc5dd1e5154bbfb5e523a015e7f45fd8989dc39fcd310eb178edfa398e59",
+    "experiments/native_validation.py": "14252362338d2e3427aec38d15772754b092721b452fea8f28bb771da06fd3ea",
+    "experiments/plaintext_pilot0046_layer5/check_prefix.py": "57f8bd8b067a88962cc7fa65b4ffc6e3934a9e6b380d9a7e8db2c1e046552521",
+    "experiments/plaintext_pilot0046_layer5/prepare.py": "8fef1f0cccd86413129e971d1f82b17da212051a4d3c7ba0318a1a7073cfa971",
+    "experiments/plaintext_short0001_layer5/check_prefix.py": "57f8bd8b067a88962cc7fa65b4ffc6e3934a9e6b380d9a7e8db2c1e046552521",
+    "experiments/plaintext_short0001_layer5/prepare.py": "dee874d799ad2766787e1756c06f58abe39201da0e31c5b386d71601e0d74d3c",
+    "experiments/plaintext_short100_validation/check_prefix.py": "57f8bd8b067a88962cc7fa65b4ffc6e3934a9e6b380d9a7e8db2c1e046552521",
+    "experiments/stored_short0001_layer5/check_prefix.py": "0fd04ed7604858d57a586f7116e76beaa8d0bf7f9b714fae90e7197535e3b212",
+    "experiments/stored_short0001_layer5/prepare.py": "7a2dffc465e34cde9fd322b0c5e3ad8a404bc334e50c52c3be8617733efb9d43",
+    "experiments/stored_short0001_layer5/report.py": "28be53c1dc28d1dc5b2e06df87bbace22958a69e451daeb56f1b3a2df3979ff5",
+    "experiments/transport_validation.py": "951c3b98c569ee64218a435477a3c5ed8585ed972f8cb720eb55d2c6d9364cd1",
+    "kvrecon/__init__.py": "c2bde96242441ed593b00881b8275a9301f5b693a84848a185795982698456d8",
+    "kvrecon/adapters.py": "0014c92eb686029b13efeca01fe0634a9edc28004cd91fa6bb0266a975734923",
+    "kvrecon/backend.py": "5045ed5a3aa415f643d5139ffb360c114bfcf3c5d32d080ebac3f89953640ac9",
+    "kvrecon/cli.py": "9125d0b063cf5a25faffcc754b919ff7e84de178cfc3d5786451ed98e25ebabf",
+    "kvrecon/common.py": "a7feafb3f86d845f6a0b16e338894e4b310f0ea9c2f8555c87cc866bda682489",
+    "kvrecon/comparison.py": "9789c0acae9314d6c56c7b1e8d9d07cd065cb50a46068661cde24082d6a37bec",
+    "kvrecon/config.py": "331e45d44b6b72a6d8113f4265d665ef3240aaa2c619a44a9c1c31d273602576",
+    "kvrecon/cpa.py": "22fd59158f5ba4b9c1ae1f6f29664a8ad50dff9a1efe4ae535600c711b9a8d28",
+    "kvrecon/dashboard.py": "8eb531721fedd5cb9e828d545dd191db7e38d239bda8293cb188acb562b2a503",
+    "kvrecon/engine.py": "7b10f18d3db245002b5ae19e913b3e8a4004cfe1a7012ad45160d270e740c23e",
+    "kvrecon/events.py": "eb8aafb2ac95e8f18996ebc13b8337e85faab71f3e8140594d60a8839a27a34c",
+    "kvrecon/first_v.py": "203e3f227300127686b55a3e0d7420fc277ff752e633be4d798576e90905574c",
+    "kvrecon/media/__init__.py": "f3a96d38ccbc5d4ff8e66c548880eea95f21cadb38cda94b4774655c3788ef0f",
+    "kvrecon/media/audio.py": "7c263e13da78d9a2eaae2fd447b76d6ab503c8b885841651d21c75ba56709295",
+    "kvrecon/media/gemma4.py": "a694c9be3c6a7ba57d8b0c4ca7bde435042e10ee0f97958fd25a2c5b4b36d6d7",
+    "kvrecon/media/image.py": "3ddafbc9b7bb99df27e5e75343de2b2a23c89d911694a3535fc45adde0499267",
+    "kvrecon/media/pilot.py": "098a8419507c488cbe8ea49166d6497c88b9770bc5ac370195af5355f0c31512",
+    "kvrecon/media/solver.py": "304388265a3514d58bee95fbba636c01bc823b49145333d7ddc15725627d6c7c",
+    "kvrecon/npu.py": "d4b0d7585cc5ec981e592c4f6f104053ffb7575de817f7391f5647441b224c5f",
+    "kvrecon/observation.py": "d7e3b8f1918497abe25e54258731631c96cb365db43453fefef1403956cd6f1c",
+    "kvrecon/search.py": "6f7bee1a84d22bb67213afb887b56fb619df8fd62210926173799f159c07ae06",
+    "kvrecon/surrogate.py": "22204c3ad4b6e1dd5281b030826667a47adf60e3be61fc794157c8cfa1841f82",
+    "kvrecon/transport.py": "49ee0bff81c76f4281534272331ed7e87fe8a745c797b6ff16df6d7f633db3ef",
+    "monitor_attack.py": "5ce26bcfa42b812ed7e7f894b0c02b7470cda9067992f5be8a9fbcb2b9de1483",
+    "native/build.sh": "cad4d08988cceeb79a73a2f517d403f2fac5a788dd003468472ef60ff9c6eb01",
+    "native/float_ranking.h": "d87d145f0be3e368a2564144ff83c9cd60b3bf130167afb3a2bea954516f8eb3",
+    "native/litert_support.h": "2d54dbcd05b866a7c82a2eae031fb225ed58c89f701daafdec047b29ba8b6949",
+    "native/socket_rpc.h": "0aa5a447fba4513773bc5bc9bd5b5c89c2c5f4bf92a02cb44d590978a14f997d",
+    "native/tensor_copy.h": "bd2f453aa50237fbed3e1a76951002c4445ebc0e6d7ef4ea70b9beacf0118778",
+    "native/worker.cc": "92b4f6cd71bdba40002bc3bb72c7b052ba13c8f82e6f2a6cca21f3cd2aa590e9",
+    "prepare_gemma3.py": "6ff3cad9539be58ff1396a4b7c13bb47db760b58e19f5d134234334b6dafb0b1",
+    "run.py": "3ab8410a34643138310239da60df3751f2034d5e23441338ea82a0478007387d",
+    "run_plaintext21_lsb.sh": "329913da3e5cfbd52e1023f81d03afdcd94b2f5ee057b8110106a1d04204c95b",
+    "tests/device_contract.py": "4ceb1c2b8b45563780cf8d59458398de65cf3e90a5a83ad5c780867a9d92e391",
+    "tests/float_ranking_test.cc": "839d008bf9542237f416c6718c130aed4ffd8831658ceb81cf51d369c77da4bd",
+    "tests/gemma3_assets_device.py": "20496cf638d3aa8e82bc515676f999480757dbca559f5e020200d7ef6d384dfb",
+    "tests/support_cpu_adapter.py": "3bec71afe33f745b105177a412c2229bb4595f0f6c0dce598193049a4de1ac44",
+    "tests/surrogate_preflight.py": "464b07d64e328cb485a8161bcf5921b71607039b2823ce4d28e7d99107161910",
+    "tests/tensor_copy_test.cc": "036473a2576ee58090d04dcc773fd5e827f56927e0a96a89ee7d24a079f91bb3",
+    "tests/test_backend.py": "f19e5b27063307bddc94b8b9cc84e6e7fd356b60d52b851210b6a988b5dca2e7",
+    "tests/test_comparison.py": "f91a37b5cf599131d9ed074de918105f74637d0643e3736df41123dbaa599c2d",
+    "tests/test_config.py": "60b49363f81c94b805435e4298ab5f53ed115e28b46e72b35b76443cd1d5e509",
+    "tests/test_core.py": "e3bc3c468ea24046bd108ef1d52da8feb0ff5b24021d0738c7adf5c9022940cc",
+    "tests/test_cpa.py": "a7f18bc586f3a40759464f159f0b91f4ad9a4a17d418ca82280e2a079bdf6ff1",
+    "tests/test_events.py": "70c7ca67053bc721c523bc0d653c3e09df7722681ce401d29ebe44bd5f89c2ba",
+    "tests/test_first_v.py": "51162e37b8f9010acc1fdc3183e377e9a7848b4c453d2964250588fdf061f0f0",
+    "tests/test_gemma_media.py": "51fd2a78cf46a1a99bd2edcc59049bcd05e0cc2918b85dbef15b0777dc64e437",
+    "tests/test_lsb.py": "4817f6c6a81e1d19cf3fdd5a61a85df99e3554e386e02d3aa5ceda1c287e25e5",
+    "tests/test_media.py": "d1862bc5c433cd755e624874c4e2407995f73641e110a8e595f47992c9ca92ff",
+    "tests/test_models.py": "8dd08299f00f86e4dad8c2f98844160d8c2eab485ccb982e06a4f636f827943c",
+    "tests/test_native_copy.py": "3459e753b03cf141c5600d35e164089f63deafc8840cc4b57e1386141d09bf19",
+    "tests/test_selection.py": "f05f4274f1b3d73e9e1ae53f435a1fb332c38b32e394eaa20f929981393601fb",
+    "tests/test_transport.py": "a8504a86e12b0f8777b128f9b3d18e7a120dcc6471e7cab1c5e8d16715363da5",
+    "tests/test_vision_rpc.py": "25489cd272e050c0eeb6e27be526e088f6003244644da2d0a9bf98a0bc320ede"
+  },
+  "surrogate": null,
+  "surrogate_setup_seconds": 3.7500285543501377e-07,
+  "candidate_quantization": "Original-value KV; integer codes dequantized, floating KV used directly",
+  "stopping": "K < tau_K + .01*tau_K AND V < tau_V + .01*tau_V; epsilon unused",
+  "live_events": true,
+  "private_labels_allowed": false
+}

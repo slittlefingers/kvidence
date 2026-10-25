@@ -1,0 +1,78 @@
+{
+  "optimizer": "full_basis_multiscale_measured_line_search",
+  "observation": {
+    "dataset": "image_chat_100",
+    "sample": "0001",
+    "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+    "snapshot_sha256": "ffe191a90dcfb0bbe7198d3267d8d7e4bf737ff1161a7bab2b35b69c6b81944b",
+    "observation_sha256": "a57f6a6caaf2cb76cb9d94f7eabc83dd7f1052feab0a4708b4dfe70d7835e3c9",
+    "layer_index": 4,
+    "quantization": [
+      {
+        "width": 512,
+        "scale": 0.0011563472216948867,
+        "zero_point": 0,
+        "dtype": "int8"
+      },
+      {
+        "width": 512,
+        "scale": 0.01785714365541935,
+        "zero_point": 0,
+        "dtype": "int8"
+      }
+    ],
+    "public_prefix": [
+      2,
+      105,
+      2364,
+      109,
+      255999
+    ],
+    "media_start": 5,
+    "media_end": 265,
+    "image_dimensions": [
+      640,
+      427
+    ],
+    "boundary_source": "known Gemma capture template and public image dimensions; no pixel or text reads",
+    "original_media_accessed": false,
+    "original_text_accessed": false
+  },
+  "warm_run": "kvidence/reconstruction/experiments/image_trust_region/results/0001_geometry768_plateau_seed17_20261021",
+  "seed": 17,
+  "rounds": 5,
+  "directions": 768,
+  "geometry": true,
+  "scale_factors": [
+    0.25,
+    1.0,
+    4.0
+  ],
+  "step_factors": [
+    0.015625,
+    0.03125,
+    0.0625,
+    0.125,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "probe_rms": 0.08713840313369006,
+  "lr": 0.005103736145473058,
+  "epsilon": 0.125,
+  "adam_scale_selection": "gradient at scale of measured winning candidate; nominal scale if no improvement",
+  "adam_offset": 51,
+  "restored_state": "checkpoint",
+  "restore_seconds": 0.013119874987751245,
+  "candidates_per_round": 4729,
+  "query_budget": 23646,
+  "distance_space": "lsb",
+  "distance_metric": "rmse",
+  "original_media_accessed": false,
+  "original_text_accessed": false,
+  "source_sha256": "8f4c4ac30a42a11f839c832041019ad9c4e8d65bb0c1c4b4c9e3e7cf56a81833",
+  "geometry_source_sha256": "b53eadb6fe8739254895e61958ba05e2c1b1f84eb7741cdaad1338060dc00f63",
+  "checkpoint_source_sha256": "966c1539e2c15cecfa6e0cdbe0e0610bdbd0203de7c49b371f1fd8d77d92bfeb"
+}

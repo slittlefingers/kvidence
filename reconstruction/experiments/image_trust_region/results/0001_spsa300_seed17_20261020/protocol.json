@@ -1,0 +1,60 @@
+{
+  "optimizer": "averaged_spsa_adam",
+  "seed": 17,
+  "steps": 300,
+  "directions": 16,
+  "lr": 0.05,
+  "perturbation": 0.1,
+  "perturbation_schedule": "c=.1*(1+(step-1)/100)^(-.101), with .1 configurable",
+  "lr_schedule": "cosine to 0.1 * initial lr",
+  "query_budget": 9901,
+  "distance_space": "lsb",
+  "distance_metric": "rmse",
+  "epsilon": 0.125,
+  "loss": "0.5 * MSE",
+  "initial_sha256": "25333e32bae5975f66847440e544169426d78faebff5960a4d6b409e16bca680",
+  "reference_run": "kvidence/reconstruction/experiments/image_trust_region/results/0001_rounds300_seed17_20261020",
+  "observation": {
+    "dataset": "image_chat_100",
+    "sample": "0001",
+    "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+    "snapshot_sha256": "ffe191a90dcfb0bbe7198d3267d8d7e4bf737ff1161a7bab2b35b69c6b81944b",
+    "observation_sha256": "a57f6a6caaf2cb76cb9d94f7eabc83dd7f1052feab0a4708b4dfe70d7835e3c9",
+    "layer_index": 4,
+    "quantization": [
+      {
+        "width": 512,
+        "scale": 0.0011563472216948867,
+        "zero_point": 0,
+        "dtype": "int8"
+      },
+      {
+        "width": 512,
+        "scale": 0.01785714365541935,
+        "zero_point": 0,
+        "dtype": "int8"
+      }
+    ],
+    "public_prefix": [
+      2,
+      105,
+      2364,
+      109,
+      255999
+    ],
+    "media_start": 5,
+    "media_end": 265,
+    "image_dimensions": [
+      640,
+      427
+    ],
+    "boundary_source": "known Gemma capture template and public image dimensions; no pixel or text reads",
+    "original_media_accessed": false,
+    "original_text_accessed": false
+  },
+  "update_projection": "none; same unconstrained float input space as trust-region",
+  "no_model_gradients": true,
+  "original_media_accessed": false,
+  "original_text_accessed": false,
+  "source_sha256": "02d283c82243cb853ff0969ba30232a2a9bf899de622277b1b2c8e0dfdddee79"
+}

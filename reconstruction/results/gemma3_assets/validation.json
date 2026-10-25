@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "token_ids": [
+    0,
+    1,
+    2,
+    1437,
+    9307,
+    21029,
+    236746,
+    262143
+  ],
+  "maximum_absolute_error": 0.0,
+  "embeddings_sha256": "e80991b974e07e7fdd4451e597b28ecf409df8db8e99de86ca000b18f407d543",
+  "note": "Sampled extraction validation against native embedder; not an exhaustive numerical comparison"
+}

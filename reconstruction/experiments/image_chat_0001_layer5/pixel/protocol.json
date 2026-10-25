@@ -1,0 +1,16 @@
+{
+  "target_sha256": "af6b66b92112e54b2806d9df9c3e192a79fadf16d45ffc0746a05141b3a6265d",
+  "seeds": [
+    17,
+    29
+  ],
+  "selection": "minimum NPU measured media KV squared error, before private evaluation",
+  "original_image_accessed": false,
+  "original_text_accessed": false,
+  "target_kv_imported_into_cache": false,
+  "epsilon": 4.0,
+  "distance": "raw concatenated K+V L2, separately for each position",
+  "text_method": "existing guided 50 probability + 150 random; then 20 proposals; full vocabulary; no query cap",
+  "media_gate_policy": "report media gate separately; downstream text diagnostic also attempted if media gate fails",
+  "image_evaluation": "fixed-question semantic description of recovered latent, not pixel reconstruction"
+}

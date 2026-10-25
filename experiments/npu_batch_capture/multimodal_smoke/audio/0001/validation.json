@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "buffer_count": 30,
+  "exported_layer_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "uncompressed_bytes": 37757547,
+  "gzip_sha256": "cc2bca4be57340647b0aa8854341193a6ed4dded75ed945f2122dac56b6f9f57",
+  "gzip_crc_checked": true,
+  "all_buffer_ranges_checked": true,
+  "note": "All exported allocations verified; this does not prove all historical token positions remain after sliding-window eviction."
+}

@@ -1,0 +1,5 @@
+mlx-lm==0.32.1
+mlx==0.32.4
+transformers==5.20.0
+torch==2.6.0
+numpy==2.2.6

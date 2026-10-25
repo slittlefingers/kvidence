@@ -1,0 +1,68 @@
+{
+  "observation": {
+    "dataset": "image_chat_100",
+    "sample": "0001",
+    "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+    "snapshot_sha256": "ffe191a90dcfb0bbe7198d3267d8d7e4bf737ff1161a7bab2b35b69c6b81944b",
+    "observation_sha256": "a57f6a6caaf2cb76cb9d94f7eabc83dd7f1052feab0a4708b4dfe70d7835e3c9",
+    "layer_index": 4,
+    "quantization": [
+      {
+        "width": 512,
+        "scale": 0.0011563472216948867,
+        "zero_point": 0,
+        "dtype": "int8"
+      },
+      {
+        "width": 512,
+        "scale": 0.01785714365541935,
+        "zero_point": 0,
+        "dtype": "int8"
+      }
+    ],
+    "public_prefix": [
+      2,
+      105,
+      2364,
+      109,
+      255999
+    ],
+    "media_start": 5,
+    "media_end": 265,
+    "image_dimensions": [
+      640,
+      427
+    ],
+    "boundary_source": "known Gemma capture template and public image dimensions; no pixel or text reads",
+    "original_media_accessed": false,
+    "original_text_accessed": false
+  },
+  "optimizer": {
+    "directions": 16,
+    "max_queries": 67,
+    "radius": 2.0,
+    "min_radius": 0.01,
+    "max_radius": 16.0,
+    "ridge": 0.01,
+    "damping": 0.001,
+    "seed": 29,
+    "epsilon": 0.125,
+    "metric": "rmse",
+    "batch_size": 128
+  },
+  "distance_space": "lsb",
+  "requested_positions": 1,
+  "adapter": "phone CPU vision_adapter_280",
+  "decoder": "phone NPU",
+  "original_media_accessed": false,
+  "original_text_accessed": false,
+  "target_cache_used_as_prefix": false,
+  "input_dtype": "float32",
+  "input_width": 768,
+  "output_kind": "adapter representations, not pixels",
+  "source_sha256": {
+    "image.py": "f9a4255131c3636cf8ca0c22fd72b1ec54378a9ca345eab1777844609431641f",
+    "image_trust.py": "dcf5940c347af6930b3748a0d8adc099dbc9580aca0492c5f98ea2ad4d021152",
+    "image_experiment.py": "04a4f45e909b88474aa18e179fd3141eb7b62652ef1da4603df663b8644efdc5"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "controlled_labeled_test": true,
+  "checks": [
+    {
+      "kind": "padding",
+      "valid_candidates": 1,
+      "max_lsb": 0
+    },
+    {
+      "kind": "padding",
+      "valid_candidates": 4,
+      "max_lsb": 0
+    },
+    {
+      "kind": "padding",
+      "valid_candidates": 22,
+      "max_lsb": 0
+    },
+    {
+      "kind": "padding",
+      "valid_candidates": 50,
+      "max_lsb": 0
+    },
+    {
+      "kind": "padding",
+      "valid_candidates": 72,
+      "max_lsb": 0
+    },
+    {
+      "kind": "padding",
+      "valid_candidates": 128,
+      "max_lsb": 0
+    },
+    {
+      "kind": "all_128_rows_permuted",
+      "max_lsb": 0
+    },
+    {
+      "kind": "commit_then_query_equals_fresh_prefix_replay",
+      "max_lsb": 0
+    }
+  ],
+  "passed": true
+}

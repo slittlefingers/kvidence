@@ -1,0 +1,113 @@
+"""Build the single fixed-epsilon report from saved results and audited traces."""
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+import sys
+import numpy as np
+import run as experiment
+
+ROOT, OUT = experiment.ROOT, experiment.OUT
+evaluation = json.loads((OUT / "evaluation.json").read_text())
+protocol = json.loads((OUT / "protocol.json").read_text())
+assert evaluation["validation_passed"]
+assert protocol["epsilon"] == 4 and protocol["strict_less_than"]
+assert protocol["no_600_query_limit"] and protocol["no_coordinate_gate"]
+assert protocol["no_lsb_normalization"] and protocol["no_rms_normalization"]
+assert hashlib.sha256((OUT / "observed/target.npz").read_bytes()).hexdigest() == protocol["reused_observation_sha256"]
+
+baseline = evaluation["methods"]["collision_plus_l2"]
+hybrid = evaluation["methods"]["hybrid_50_150"]
+old_trace = json.loads((experiment.exp.ROOT / "results/sequential_unpruned/collision_plus/trace.json").read_text())
+new_trace = json.loads((OUT / "collision_plus_l2/trace.json").read_text())
+baseline_same_order = all(a["queried_token_ids"] == b["queried_token_ids"]
+                          for a, b in zip(old_trace, new_trace)) and len(old_trace)==len(new_trace)
+
+# Exercise the recovery guard in a child so reporting can hash private fixtures.
+guard_code = """
+import run as experiment
+experiment.install_guard()
+denied = 0
+for path in (experiment.OUT / 'private_eval/truth.json',
+             experiment.exp.ROOT / 'results/private_eval/truth.json',
+             experiment.exp.DATASET / 'prompts/encrypted/0001.txt'):
+    try:
+        path.read_bytes()
+    except PermissionError:
+        denied += 1
+    else:
+        raise AssertionError('Recovery guard allowed a private source file')
+print(denied)
+"""
+guard_check = subprocess.run([sys.executable, "-c", guard_code], cwd=ROOT,
+                             check=True, capture_output=True, text=True)
+denied = int(guard_check.stdout.strip())
+assert denied == 3
+experiment.exp.dump(OUT / "validation.json", dict(
+    passed=True, samples=1, target_tokens=109,
+    all_accepted_vectors_recomputed_and_raw_l2_strictly_below_4=True,
+    all_queried_token_ids_unique_and_in_shared_pool=True,
+    hybrid_probability_top50_and_seeded_random150_recomputed=True,
+    original_observed_kv_sha256_unchanged=True,
+    baseline_candidate_order_matches_previous_unpruned_run=baseline_same_order,
+    private_source_guard_negative_checks=denied,
+    correct_tokens={name:r["correct_tokens"] for name,r in evaluation["methods"].items()},
+    finite_pool_is_only_exhaustion_limit=True))
+
+query_reduction = 1-hybrid["total_queries"]/baseline["total_queries"]
+speedup = baseline["seconds"]/hybrid["seconds"]
+names = {"collision_plus_l2":"Collision+ 概率排序，统一 L2 验收", "hybrid_50_150":"概率前 50 + 随机 150，再做 KV 引导"}
+lines = [
+    "# 单条密文：混合初始候选与概率排序，固定原始 L2 < 4", "",
+    "按照确认后的要求，只运行一个停止阈值：候选与观测 KV 的原始 L2 距离严格小于 4，就接受该候选并继续下一个 token。两种方法都没有 600 次查询上限。", "",
+    "## 结果", "",
+    "| 方法 | 正确 token | 误接受 | 完整密文一致 | 候选查询总数 | 恢复循环时间 | 单位置最多查询 |",
+    "|---|---:|---:|---|---:|---:|---:|",
+]
+for method, label in names.items():
+    r=evaluation["methods"][method]
+    lines.append(f"| {label} | {r['correct_tokens']}/{r['target_tokens']} | {r['incorrect_acceptances']} | {'是' if r['exact_ciphertext_text'] else '否'} | {r['total_queries']:,} | {r['seconds']:.3f} s | {r['maximum_queries_at_one_position']:,} |")
+lines += ["", f"本条样本的混合方案减少 **{query_reduction:.1%}** 候选查询，恢复循环耗时约为概率基线的 **1/{speedup:.2f}**。两种方法均从公开前缀开始，使用自己恢复出的 token 推进，没有喂入真实前序 token。", "",
+          "| 方法 | 候选前向时间 | 拟合及排序时间 | 接受候选中的最大原始 L2 |",
+          "|---|---:|---:|---:|"]
+for method,label in names.items():
+    r=evaluation["methods"][method]
+    lines.append(f"| {label} | {r['forward_seconds']:.3f} s | {r['fitting_and_ranking_seconds']:.3f} s | {r['accepted_l2_max']:.6f} |")
+lines += ["", "恢复循环时间包含候选前向、概率排序、代理拟合、接受后推进及逐位置轨迹写盘；不含模型加载和最初的公开前缀准备。单次测量受批处理与记录开销影响，不能直接视为稳定的算法加速倍数或 NPU 延迟。", "",
+          "## 唯一的接受和停止条件", "",
+          "```text", "D(t) = sqrt(sum_j((candidate_KV[j] - observed_KV[j])**2))",
+          "接受条件：D(t) < 4", "```", "",
+          "K 与 V 拼接为 1,024 维，在原始数值上算完整 L2。没有除以量化步长，没有除以 sqrt(1024)，没有逐维最大误差门槛，也没有额外 CPA 的 K/V 独立阈值。实际缓存为 BF16，转成 FP32 读取后使用 FP64 累加距离。", "",
+          "每个位置找到符合条件的候选就停止该位置的搜索。若完整候选池耗尽仍没有匹配，则记录未解决并停止顺序恢复。阈值通过是本实验的接受规则；本次再用真实 token ID 和完整字符串核对正确性，不把距离规则本身当作唯一性证明。", "",
+          "## 两种候选选择方式", "",
+          "共同候选池为 53,150 个 Base64 字符片段 token，与上一轮完全相同；概率前 50 名指这个候选池内部的条件概率排名。使用 Gemma 全部 35 层的 next-token logits 排序。", "",
+          "1. **概率基线**：按模型概率顺序，每批查询 20 个候选，接受批内概率顺序中第一个满足 L2 < 4 的候选。保留 Collision+ 的概率搜索思路，按照本次要求将原 CPA 验收改成同一 L2 条件。",
+          "2. **混合方案**：每位置初始 200 个，前 50 个来自概率排序；其余 150 个从剩余候选中均匀无放回抽样，seed=20261019+位置。全部初始候选均计入成本。若没有候选通过阈值，用这些实际查询的 embedding→KV 数据拟合 ridge=0.01 的代理，每次提出 20 个未查询候选并继续拟合。批内多个候选通过时选择真实 L2 最小者。", "",
+          "200 是初始观测数，不是查询上限。后续查询不在 600 截断；最多只能查询完整有限词表。拟合样本数不超过 embedding 维度时原样调用旧 dual-ridge 排序函数；超过时提供同一目标的 primal 求解形式。本次混合方案单位置最多 260 次查询，没有触发 primal 分支。", "",
+          "两种方法的候选前向都执行到第 5 层，微批上限 64。混合初始 200 次会分成 64/64/64/8，后续和概率基线的逻辑批为 20。接受候选后，两边都执行完整模型以取得下一位置的条件概率。", "",
+          "## 数据、模型与校验", "",
+          "- 固定使用短版数据集 `0001`，109 个密文 token；相同输入及第 5 层观测直接复用上一轮，未根据本轮结果挑选样本。",
+          "- Gemma 4 E2B IT，MLX 8-bit affine 权重；本轮目标 KV 为 BF16。revision `03dcf209f3f549b4075e7191e77cf69b3d48e1b2`。Apple MLX GPU，没有测量手机 NPU。",
+          "- 输入模板：`This is an encrypted message.` + 完整 Base64 密文 + `How do I save it?`，使用相同聊天模板、11 个已知前缀 token 和原位置编号。",
+          "- 恢复进程的读取 guard 拒绝原始数据集、旧实验真值和本轮真值。验证阶段逐条重算初始 50+150、查询唯一性及所有接受向量的 L2，并将恢复 ID 与完整密文字符串核对。",
+          f"- 读取 guard 的 3 次负向检查全部拒绝；概率基线的查询顺序与上一轮不设 600 上限的运行完全一致：`{baseline_same_order}`。", "",
+          "## 解释范围", "",
+          "这是同一条样本、同一个种子的探索性对比。本次同时改变了旧实验的候选初始化、查询截断和接受规则；本轮两种方法内部共享相同 L2 停止条件，结果可以直接配对。不能把跨轮差异全部归因于前 50 个概率候选，也不能据一条样本保证普遍恢复率。", "",
+          "目录 `kv8_unit_probe/` 是阈值单位确认之前的 KV8 数值检查，不属于本轮 BF16 原始 L2 对比，不混入上述统计。原实验文件和旧结果保持原样。", "",
+          "## 文件与复现", "",
+          "`results_raw_l2_4/evaluation.json` 保存汇总；两个方法目录中的 `trace.json` 保存全部候选 ID、距离、接受 KV 向量和时间；`protocol.json` 固定本次阈值和方案；`validation.json` 保存校验结果。", "",
+          "```bash", "cd /path/to/litertlm",
+          "PY=kvidence/experiments/kv_guided_search_gemma4_int8/.venv/bin/python",
+          "EXP=kvidence/experiments/ciphertext_hybrid_l2",
+          '# 新复跑应复制实验目录或归档 results_raw_l2_4；脚本拒绝覆盖完成结果。',
+          '"$PY" "$EXP/run.py" prepare', '"$PY" "$EXP/run.py" run',
+          '"$PY" "$EXP/run.py" evaluate', '"$PY" "$EXP/report.py"', "```", ""]
+(ROOT / "REPORT.md").write_text("\n".join(lines))
+hashes={}
+for p in sorted(OUT.rglob("*")):
+    if p.is_file() and p.name != "integrity.json":
+        hashes[str(p.relative_to(OUT))]=hashlib.sha256(p.read_bytes()).hexdigest()
+experiment.exp.dump(OUT / "integrity.json", dict(
+    file_sha256=hashes, evaluated_runner_sha256=experiment.exp.digest(ROOT / "run.py"),
+    report_sha256=experiment.exp.digest(ROOT / "REPORT.md"), validation_passed=True))
+print(ROOT / "REPORT.md")

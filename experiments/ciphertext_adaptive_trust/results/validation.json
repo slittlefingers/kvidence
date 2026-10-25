@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "raw_l2_recomputed": true,
+  "complete_recovery_all_methods": true,
+  "source_observation_unchanged": true,
+  "original_search_unchanged": true,
+  "frozen_code_unchanged": true,
+  "trace_and_checkpoint_match": true,
+  "private_read_guard_negative_checks": 3
+}

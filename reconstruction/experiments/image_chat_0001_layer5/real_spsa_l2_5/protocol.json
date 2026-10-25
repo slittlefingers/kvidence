@@ -1,0 +1,36 @@
+{
+  "config": {
+    "dimension": 768,
+    "directions": 64,
+    "initial_candidates": 128,
+    "steps": 1000,
+    "lr": 0.05,
+    "lr_floor": 0.1,
+    "perturbation": 0.1,
+    "perturbation_decay": 0.101,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "adam_epsilon": 1e-08,
+    "acceptance_l2": 5.0,
+    "seed": 29
+  },
+  "sample": "0001",
+  "target_layer_1based": 5,
+  "acceptance": "strict raw concatenated K+V L2 < 5 separately at every image position; query AND commit",
+  "criterion_change": "User revised image threshold after synthetic experiment; original < 4 results preserved",
+  "synthetic_evidence": "seed 29 query and commit L2 4.903690516402157; seed 17 did not reach 5",
+  "plan": "Sequential positions; stop on first failed position. Describe image only after all 260 positions pass.",
+  "seed_selection": "29 chosen from prior synthetic performance, before real target optimization",
+  "original_image_accessed": false,
+  "original_text_accessed": false,
+  "target_cache_used_as_prefix": false,
+  "desktop_model_loaded": false,
+  "adapter": "phone CPU vision_adapter_280",
+  "decoder": "phone NPU prefill_128 / decode",
+  "model_sha256": "af1082986639ecde7db95d91be6fe54f8b6b458104734c5bafc204e69d6852dc",
+  "target_sha256": "af6b66b92112e54b2806d9df9c3e192a79fadf16d45ffc0746a05141b3a6265d",
+  "source_sha256": {
+    "run_real_spsa.py": "2ca143b04def4eb934dd3fdf030edbad288de68d70de51410baf771246e78ce9",
+    "spsa_adam.py": "d21920925bd48e753488a3bc202018fa70ace2416486bd1fceda8e3b5d5d5aab"
+  }
+}

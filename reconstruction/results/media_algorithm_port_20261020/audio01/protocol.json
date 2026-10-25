@@ -1,0 +1,61 @@
+{
+  "modality": "audio",
+  "observation_metadata": {
+    "id": "audio01",
+    "modality": "audio",
+    "media_positions": 45,
+    "full_prompt_positions": 62,
+    "layer_1based": 5,
+    "kv_dtype": "mlx.core.bfloat16",
+    "feature_dtype": "mlx.core.bfloat16",
+    "weight_bits": 8,
+    "feature_dim": 1536,
+    "adapter_input_dim": 1536,
+    "use_bidirectional_attention": null,
+    "observation_after_extra_positions": 768,
+    "forward_map_validation_nmse": 0.0,
+    "model_id": "mlx-community/gemma-4-e2b-it-8bit",
+    "model_revision": "03dcf209f3f549b4075e7191e77cf69b3d48e1b2",
+    "media_sha256": "6436bebc2c2a99b6d3b50cabcfcd656d3ac516c3a679f8f07b40f3d20c714cf5",
+    "backend": "Apple MLX GPU",
+    "evidence_source": "instrumented runtime cache"
+  },
+  "observation_sha256": "9d30dbf1f4feefdb6c1bf16f50d6c1c72570cac63e9efa642dd338716f6bf680",
+  "metadata_sha256": "fefa3dc15e0eb4833258a190fccf0fd92fbaeafd6d6344f15409d44b9ae8cb29",
+  "model_assets": {
+    "config.json": "774dd6a497b968e2b9879859a0e01603eaa3db0d977b6fce95abce770c9ba2a4",
+    "generation_config.json": "d4226bbe3117d2d253ba4609720ba82c6c4ce4627a9a6ae05387c78983ac03de",
+    "model-00001-of-00002.safetensors": "0e82359bc2f0effdad15168d05a2ae3d46e72cb3296b5658303a2f78eee9926b",
+    "model-00002-of-00002.safetensors": "797c7786d137de2b77826ae838ee366eab5a9479dfca91b345f71b7e99d71cfe",
+    "model.safetensors.index.json": "4d9b453cfe99bdf882436f068a364af032c4f48bf6ab953ce69bf6a6294a2b72",
+    "processor_config.json": "de3e580aebdc98272d4c4547daffe6525fcbae18a83a0e0bcf0d7444d4ee6f37",
+    "tokenizer.json": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+    "tokenizer_config.json": "080d9e1aff284e2f6043889cd05367966f7c7b80e025fbc0b06745e218158656"
+  },
+  "source_hashes": {
+    "__init__.py": "f3a96d38ccbc5d4ff8e66c548880eea95f21cadb38cda94b4774655c3788ef0f",
+    "audio.py": "7c263e13da78d9a2eaae2fd447b76d6ab503c8b885841651d21c75ba56709295",
+    "gemma4.py": "a694c9be3c6a7ba57d8b0c4ca7bde435042e10ee0f97958fd25a2c5b4b36d6d7",
+    "image.py": "3ddafbc9b7bb99df27e5e75343de2b2a23c89d911694a3535fc45adde0499267",
+    "pilot.py": "098a8419507c488cbe8ea49166d6497c88b9770bc5ac370195af5355f0c31512",
+    "solver.py": "f5f14c8c53cf88dd2fa36faca4479149c9393ad82bd9e140858bdea158b78f58"
+  },
+  "packages": {
+    "mlx": "0.32.4",
+    "mlx-vlm": "0.7.8",
+    "numpy": "2.5.4"
+  },
+  "steps": 3000,
+  "lr": 0.08,
+  "seeds": [
+    17,
+    29
+  ],
+  "epsilon": 4.0,
+  "selection": "minimum KV NMSE across seeds, never true media/features",
+  "backend": "MLX; W8 weights/BF16 KV pilot, not Pixel NPU",
+  "target_features_accessed": false,
+  "original_media_accessed": false,
+  "subsequent_text_recovery_evaluated": false,
+  "full_model_replay": true
+}
